@@ -685,7 +685,7 @@ void gRiTransformPoints(char* fromspace, char* tospace)
 	RtPoint *m;
 	float *mp;
 	double *a,*ap; long *dims;
-	char **heads; long d,i,j; int err = 0;
+    char **heads; long d,i;
 	
 	MLGetRealArray(stdlink,&a,&dims,&heads,&d);
 	if(d!=2 || dims[1]!=3){
