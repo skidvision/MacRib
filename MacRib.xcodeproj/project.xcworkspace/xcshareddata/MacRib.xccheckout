@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C0F50598-B504-4F9D-AC40-F4FBA407F328</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MacRib</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C1B6F31E-5C2F-468E-9AB2-6FD0134668B4</key>
+		<string>svn://ebv.skidmore.edu/MacRib/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MacRib.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C1B6F31E-5C2F-468E-9AB2-6FD0134668B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>C1B6F31E-5C2F-468E-9AB2-6FD0134668B4</key>
+		<string>svn://ebv.skidmore.edu/MacRib</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://ebv.skidmore.edu/MacRib/trunk/MacRib.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C1B6F31E-5C2F-468E-9AB2-6FD0134668B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C1B6F31E-5C2F-468E-9AB2-6FD0134668B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MacRib</string>
+		</dict>
+	</array>
+</dict>
+</plist>
