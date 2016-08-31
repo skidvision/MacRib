@@ -12,6 +12,7 @@
 #include "ri.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 // #include <RibGlue.h>
 
 ////
@@ -42,7 +43,6 @@ chompPairs(long *nparams, RtToken **tokens, RtPointer **pparams)
 {
 	int	n,np;
 	int i,j;
-	int narg;
 	float* fp;
 	int* ip;
 	apar* ap;
@@ -258,7 +258,7 @@ int gRiProjection(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiProjectionV(name, nparams, tokens, params);
@@ -290,7 +290,7 @@ int gRiImager(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &parms))
+	if((err=chompPairs(&nparams, &tokens, &parms)))
 		goto error;
 	
 	RiImagerV(name, nparams, tokens, parms); 
@@ -312,7 +312,7 @@ int gRiDisplay(char *name, char* type, char* mode)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &parms))
+	if((err=chompPairs(&nparams, &tokens, &parms)))
 		goto error;
 	
 	RiDisplayV(name, type, mode, nparams, tokens, parms);
@@ -332,7 +332,7 @@ int gRiHider(char* type)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &parms))
+	if((err=chompPairs(&nparams, &tokens, &parms)))
 		goto error;
 	
 	RiHiderV(type, nparams, tokens, parms);
@@ -371,7 +371,7 @@ int gRiOption(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiOptionV(name, nparams, tokens, params);
@@ -419,7 +419,7 @@ void gRiLightSource(char* type)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	hndl = RiLightSourceV(type, nparams, tokens, params);
@@ -445,7 +445,7 @@ void gRiAreaLightSource(char* type)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	hndl = RiAreaLightSource(type, nparams, tokens, params);
@@ -477,7 +477,7 @@ int gRiSurface(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiSurfaceV(name, nparams, tokens, params);
@@ -498,7 +498,7 @@ int gRiAtmosphere(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiAtmosphereV(name, nparams, tokens, params);
@@ -519,7 +519,7 @@ int gRiInterior(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiInteriorV(name, nparams, tokens, params);
@@ -540,7 +540,7 @@ int gRiExterior(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiExteriorV(name, nparams, tokens, params);
@@ -640,7 +640,7 @@ int gRiDeformation(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiDeformationV(name, nparams, tokens, params);
@@ -661,7 +661,7 @@ int gRiDisplacement(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiDisplacementV(name, nparams, tokens, params);
@@ -726,7 +726,7 @@ int gRiAttribute(char* name)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiAttributeV(name, nparams, tokens, params);
@@ -751,7 +751,7 @@ int gRiPolygon(void)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	// hack alert... presumes that P is first...
@@ -777,7 +777,7 @@ gRiPointsPolygons(int npolys, int* nverts, long nnnverts, int* verts, long nnver
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiPointsPolygonsV(npolys,nverts,verts,nparams,tokens,params);
@@ -804,7 +804,7 @@ int gRiPatch(char* type)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiPatchV(type,nparams,tokens,params);
@@ -830,7 +830,7 @@ int gRiSphere(double radius, double zmin, double zmax, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiSphereV(radius, zmin, zmax, tmax,nparams,tokens,params);
@@ -849,7 +849,7 @@ int gRiCone(double height, double radius, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiConeV(height, radius, tmax,nparams,tokens,params);
@@ -868,7 +868,7 @@ int gRiCylinder(double radius, double zmin, double zmax, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiCylinderV(radius, zmin, zmax, tmax,nparams,tokens,params);
@@ -887,7 +887,7 @@ int gRiHyperboloid(RtPoint point1, RtPoint point2, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiHyperboloidV(point1, point2, tmax,nparams,tokens,params);
@@ -906,7 +906,7 @@ int gRiParaboloid(double rmax, double zmin, double zmax, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiParaboloidV(rmax, zmin, zmax, tmax,nparams,tokens,params);
@@ -925,7 +925,7 @@ int gRiDisk(double height, double radius, double tmax)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiDiskV(height, radius, tmax,nparams,tokens,params);
@@ -944,7 +944,7 @@ int gRiTorus(double majrad, double minrad, double phimin, double phimax, double 
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 
 	RiTorusV(majrad, minrad, phimin, phimax, tmax,nparams,tokens,params);
@@ -968,7 +968,7 @@ int gRiCurves(char* type, int ncurves, int nvertices[], char* wrap)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiCurvesV(type, ncurves, nvertices, wrap, nparams,tokens,params);
@@ -987,7 +987,7 @@ int gRiPoints(int nverts)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiPointsV(nverts, nparams,tokens,params);
@@ -1011,7 +1011,7 @@ int gRiGeometry(char* type)
 	long nparams;
 	int err;
 	
-	if(err=chompPairs(&nparams, &tokens, &params))
+	if((err=chompPairs(&nparams, &tokens, &params)))
 		goto error;
 	
 	RiGeometryV(type, nparams,tokens,params);
@@ -1077,7 +1077,7 @@ int gRiReadArchive(char *name)
     long nparams;
     int err;
     
-    if(err=chompPairs(&nparams, &tokens, &params))
+    if((err=chompPairs(&nparams, &tokens, &params)))
         goto error;
     
     RiReadArchive(name,NULL,nparams,tokens,params);
@@ -1096,7 +1096,7 @@ int gRiArchiveBegin(char* name)
     long nparams;
     int err;
     
-    if(err=chompPairs(&nparams, &tokens, &params))
+    if((err=chompPairs(&nparams, &tokens, &params)))
         goto error;
     
     RiArchiveBegin(name,nparams,tokens,params);

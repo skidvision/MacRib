@@ -1,0 +1,3642 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.1'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[    164912,       3477]*)
+(*NotebookOutlinePosition[    165568,       3500]*)
+(*  CellTagsIndexPosition[    165524,       3496]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["go", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(link = 
+      Install["\</Volumes/iDisk/Documents/MacRib/build/MacRib\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(LinkObject["/Volumes/iDisk/Documents/MacRib/build/MacRib", 6, 
+      2]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(link = Install[LinkConnect["\<53140@10.0.1.2\>"]]\)], "Input"],
+
+Cell[BoxData[
+    \(LinkObject["53140@10.0.1.2", 16, 2]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(fname = "\</Volumes/iDisk/Documents/MacRib/bob.rib\>";\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiBegin[fname]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ctx = RiGetContext[]\)], "Input"],
+
+Cell[BoxData[
+    \(RtContextHandle[5247952]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(\(RiFrameBegin[1];\)\), "\[IndentingNewLine]", 
+    \(\(RiWorldBegin[];\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiDeclare["\<Nn\>", "\<normal\>"]\)], "Input"],
+
+Cell[BoxData[
+    \("Nn"\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiLastError\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiProjection["\<orthographic\>", {"\<fov\>", 90.0}]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiDisplay["\<pxr0\>", "\<framebuffer\>", "\<rgba\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiQuantize["\<rgba\>", 10000, 0, 10000, 0.5]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lh = RiLightSource["\<spotlight\>", {"\<coneangle\>", 5.0}]\)], "Input"],
+
+Cell[BoxData[
+    \(RtLightHandle[3148096]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiIlluminate[lh, True]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiTransformBegin[]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiIdentity[]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"RiTransform", "[", 
+      RowBox[{"(", GridBox[{
+            {"1", "0", "0", "0"},
+            {"0", "1", "0", "0"},
+            {"0", "0", "1", "0"},
+            {"6", \(-2\), ".2", "1"}
+            }], ")"}], "]"}]], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiPolygon[{"\<P\>", {{0, 0, 0}, {1, 0, 0}, {1, 1, 0}, {0, 1, 
+            0}}}]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiPolygon[{"\<P\>", {{0, 0, 0}, {1, 0, 0}, {1, 1, 0}, {0, 1, 
+            0}}, "\<N\>", {{0, 0, 1}, { .1, 0, 1}, { .1,  .1, 1}, {0,  .1, 
+            1}}}]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(huhu\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiTransformEnd[]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(\(RiWorldEnd[];\)\), "\[IndentingNewLine]", 
+    \(\(RiFrameEnd[];\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiContext[ctx]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(RiEnd[];\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Uninstall[link]\)], "Input"],
+
+Cell[BoxData[
+    \("53140@10.0.1.2"\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Import[fname, "\<Lines\>"]\)], "Input"],
+
+Cell[BoxData[
+    \({"##RenderMan RIB", "version 3.04", 
+      "Polygon \"P\" [0 0 0 1 0 0 1 1 0 0 1 0]\"N\" [0 0 1 0.1 0 1 0.1 0.1 1 \
+0 0.1 1]", "Polygon \"P\" [0 0 0 1 0 0 1 1 0 0 1 0]", 
+      "Polygon \"P\" [0 0 0 1 0 0 1 1 0 0 1 0]\"N\" [0 0 1 0.1 0 1 0.1 0.1 1 \
+0 0.1 1]"}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Quit\)], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["stop", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?RenderMan`*\)\)], "Input"],
+
+Cell[BoxData[GridBox[{
+        {
+          StyleBox["RenderMan`",
+            FontFamily->"Helvetica",
+            FontSize->12,
+            FontWeight->"Bold"]},
+        {GridBox[{
+              {
+                ButtonBox[
+                  StyleBox["RiAreaLightSource",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiAreaLightSource"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorAbort",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorAbort"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiMitchellFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiMitchellFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiAttributeBegin",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiAttributeBegin"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorCleanup",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorCleanup"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiOpacity",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiOpacity"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiAttributeEnd",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiAttributeEnd"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorCondAbort",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorCondAbort"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiOption",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiOption"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiBegin",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  ButtonData:>{"Info3305737919-1879235", "RenderMan`RiBegin"},
+                  
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorIgnore",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorIgnore"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiPixelFidelity",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiPixelFidelity"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiBesselFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiBesselFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorPrint",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorPrint"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiPixelSamples",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiPixelSamples"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiBlackmanHarrisFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiBlackmanHarrisFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiErrorPrintOnce",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiErrorPrintOnce"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiPixelVariance",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiPixelVariance"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiBoxFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiBoxFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiExposure",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiExposure"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiProjection",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiProjection"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiCatmullRomFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiCatmullRomFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiFormat",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiFormat"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiQuantize",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiQuantize"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiClipping",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiClipping"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiFrameAspectRatio",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiFrameAspectRatio"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiRelativeDetail",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiRelativeDetail"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiClippingPlane",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiClippingPlane"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiFrameBegin",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiFrameBegin"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiScreenWindow",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiScreenWindow"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiColor",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  ButtonData:>{"Info3305737919-1879235", "RenderMan`RiColor"},
+                  
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiFrameEnd",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiFrameEnd"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiSeparableCatmullRomFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiSeparableCatmullRomFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiColorSamples",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiColorSamples"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiGaussianFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiGaussianFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiShutter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiShutter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiContext",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiContext"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiGetContext",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiGetContext"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiSincFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiSincFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiCropWindow",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiCropWindow"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiHider",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  ButtonData:>{"Info3305737919-1879235", "RenderMan`RiHider"},
+                  
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiTextureCoordinates",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiTextureCoordinates"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiDeclare",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiDeclare"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiIlluminate",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiIlluminate"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiTriangleFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiTriangleFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiDepthOfField",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiDepthOfField"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiImager",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiImager"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiWorldBegin",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiWorldBegin"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiDiskFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiDiskFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiLanczosFilter",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiLanczosFilter"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiWorldEnd",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiWorldEnd"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"]},
+              {
+                ButtonBox[
+                  StyleBox["RiDisplay",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiDisplay"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiLastError",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiLastError"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], ""},
+              {
+                ButtonBox[
+                  StyleBox["RiEnd",
+                    "Hyperlink"],
+                  
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  ButtonData:>{"Info3305737919-1879235", "RenderMan`RiEnd"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], 
+                ButtonBox[
+                  StyleBox["RiLightSource",
+                    "Hyperlink"],
+                  ButtonFunction:>(
+                    Internal`PutInformation[ #, LongForm -> False]&),
+                  ButtonEvaluator->Automatic,
+                  
+                  ButtonData:>{"Info3305737919-1879235", 
+                    "RenderMan`RiLightSource"},
+                  ButtonFrame->"None",
+                  ButtonNote->"RenderMan`"], ""}
+              },
+            
+            RowMinHeight->{
+              1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.05}]}
+        },
+      RowSpacings->{2, 3},
+      ColumnsEqual->True]], "Print",
+  CellMargins->{{20, Inherited}, {Inherited, Inherited}},
+  ShowCellLabel->False,
+  CellFrameMargins->{{Inherited, Inherited}, {14, 14}},
+  Background->RGBColor[0.964706, 0.929412, 0.839216],
+  ButtonBoxOptions->{Active->True},
+  GridBoxOptions->{ColumnAlignments->{Left}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(RiCatmullRomFilter[1.0, 2.0, 3.0, 3.0]\)], "Input"],
+
+Cell[BoxData[
+    \(0.`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Plot3D[
+      RiGaussianFilter[u, v, 2. , 2. ], {u, \(-3\), 3}, {v, \(-3\), 3}, 
+      PlotRange \[Rule] All]\)], "Input"],
+
+Cell[GraphicsData["PostScript", "\<\
+%!
+%%Creator: Mathematica
+%%AspectRatio: .81114 
+MathPictureStart
+/Mabs {
+Mgmatrix idtransform
+Mtmatrix dtransform
+} bind def
+/Mabsadd { Mabs
+3 -1 roll add
+3 1 roll add
+exch } bind def
+%% SurfaceGraphics
+%%IncludeResource: font Courier
+%%IncludeFont: Courier
+/Courier findfont 10  scalefont  setfont
+% Scaling calculations
+-7.37803e-17 1.04977 -0.0679587 1.04977 [
+[.12586 .2075 -12 -8.99448 ]
+[.12586 .2075 0 .00552 ]
+[.3345 .12542 -5.5867 -9 ]
+[.3345 .12542 .4133 0 ]
+[.56094 .0364 -5.16972 -9 ]
+[.56094 .0364 .83028 0 ]
+[.75679 .08071 0 -6.17777 ]
+[.75679 .08071 12 2.82223 ]
+[.8565 .23339 0 -6.03127 ]
+[.8565 .23339 6 2.96873 ]
+[.9429 .3657 0 -5.9083 ]
+[.9429 .3657 6 3.0917 ]
+[.02411 .26511 -6 -2.74232 ]
+[.02411 .26511 0 6.25768 ]
+[.01568 .31795 -24 -2.78699 ]
+[.01568 .31795 0 6.21301 ]
+[.00696 .37264 -18 -2.83339 ]
+[.00696 .37264 0 6.16661 ]
+[-0.00208 .42927 -24 -2.88161 ]
+[-0.00208 .42927 0 6.11839 ]
+[-0.01144 .48795 -6 -2.93176 ]
+[-0.01144 .48795 0 6.06824 ]
+[ 0 0 0 0 ]
+[ 1 .81114 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+0 g
+.25 Mabswid
+[ ] 0 setdash
+.03716 .25514 m
+.68874 0 L
+s
+.13514 .21677 m
+.13978 .22141 L
+s
+[(-2)] .12586 .2075 1 .99877 Mshowa
+.34306 .13535 m
+.34735 .14032 L
+s
+[(0)] .3345 .12542 .86223 1 Mshowa
+.56863 .04703 m
+.57247 .05235 L
+s
+[(2)] .56094 .0364 .72324 1 Mshowa
+.125 Mabswid
+.18558 .19702 m
+.18832 .19985 L
+s
+.23703 .17687 m
+.23971 .17975 L
+s
+.28951 .15632 m
+.29214 .15925 L
+s
+.39772 .11395 m
+.40023 .11699 L
+s
+.4535 .09211 m
+.45595 .0952 L
+s
+.51046 .06981 m
+.51284 .07294 L
+s
+.08568 .23614 m
+.08851 .23887 L
+s
+.62804 .02377 m
+.63027 .02701 L
+s
+.25 Mabswid
+.68874 0 m
+.96935 .42924 L
+s
+.7445 .0853 m
+.73835 .08759 L
+s
+[(-2)] .75679 .08071 -1 .37284 Mshowa
+.84407 .23761 m
+.83786 .23973 L
+s
+[(0)] .8565 .23339 -1 .34028 Mshowa
+.93037 .36962 m
+.92411 .37158 L
+s
+[(2)] .9429 .3657 -1 .31296 Mshowa
+.125 Mabswid
+.7708 .12553 m
+.7671 .12688 L
+s
+.79613 .16428 m
+.79242 .1656 L
+s
+.82054 .20161 m
+.81682 .20291 L
+s
+.86679 .27235 m
+.86305 .2736 L
+s
+.88871 .30589 m
+.88497 .30711 L
+s
+.9099 .3383 m
+.90615 .3395 L
+s
+.71716 .04348 m
+.71349 .04489 L
+s
+.95018 .39992 m
+.94642 .40107 L
+s
+.25 Mabswid
+.03716 .25514 m
+0 .48963 L
+s
+.03634 .26033 m
+.04245 .25795 L
+s
+[(0)] .02411 .26511 1 -0.3906 Mshowa
+.02795 .31328 m
+.03408 .31095 L
+s
+[(0.25)] .01568 .31795 1 -0.38067 Mshowa
+.01926 .36808 m
+.02541 .3658 L
+s
+[(0.5)] .00696 .37264 1 -0.37036 Mshowa
+.01027 .42483 m
+.01644 .42261 L
+s
+[(0.75)] -0.00208 .42927 1 -0.35964 Mshowa
+.00095 .48363 m
+.00715 .48147 L
+s
+[(1)] -0.01144 .48795 1 -0.3485 Mshowa
+.125 Mabswid
+.03468 .27078 m
+.03835 .26935 L
+s
+.03301 .2813 m
+.03669 .27988 L
+s
+.03134 .29189 m
+.03501 .29047 L
+s
+.02965 .30255 m
+.03332 .30114 L
+s
+.02623 .32409 m
+.02991 .3227 L
+s
+.02451 .33497 m
+.02819 .33359 L
+s
+.02277 .34593 m
+.02646 .34455 L
+s
+.02102 .35697 m
+.02471 .35559 L
+s
+.01749 .37927 m
+.02118 .37791 L
+s
+.0157 .39054 m
+.0194 .38919 L
+s
+.0139 .40189 m
+.0176 .40054 L
+s
+.01209 .41332 m
+.01579 .41198 L
+s
+.00843 .43642 m
+.01214 .4351 L
+s
+.00658 .4481 m
+.01029 .44678 L
+s
+.00472 .45986 m
+.00843 .45855 L
+s
+.00284 .4717 m
+.00656 .4704 L
+s
+.25 Mabswid
+.03716 .25514 m
+0 .48963 L
+s
+0 .48963 m
+.39787 .81114 L
+s
+.39787 .81114 m
+.40529 .59895 L
+s
+.40529 .59895 m
+.03716 .25514 L
+s
+.68874 0 m
+.96935 .42924 L
+s
+.96935 .42924 m
+1 .6535 L
+s
+1 .6535 m
+.70298 .24544 L
+s
+.70298 .24544 m
+.68874 0 L
+s
+.03716 .25514 m
+0 .48963 L
+s
+0 .48963 m
+.70298 .24544 L
+s
+.70298 .24544 m
+.68874 0 L
+s
+.68874 0 m
+.03716 .25514 L
+s
+.40529 .59895 m
+.96935 .42924 L
+s
+.96935 .42924 m
+1 .6535 L
+s
+1 .6535 m
+.39787 .81114 L
+s
+.39787 .81114 m
+.40529 .59895 L
+s
+0 0 m
+1 0 L
+1 .81114 L
+0 .81114 L
+closepath
+clip
+newpath
+.5 Mabswid
+.664 .741 .908 r
+.39236 .59183 .40512 .60371 .42651 .5973 .41385 .58532 Metetra
+.664 .741 .908 r
+.41385 .58532 .42651 .5973 .44806 .59083 .43552 .57875 Metetra
+.664 .741 .908 r
+.43552 .57875 .44806 .59083 .46979 .58431 .45736 .57214 Metetra
+.664 .741 .908 r
+.45736 .57214 .46979 .58431 .4917 .57774 .47938 .56547 Metetra
+.664 .741 .908 r
+.47938 .56547 .4917 .57774 .51378 .57112 .50157 .55874 Metetra
+.664 .741 .908 r
+.50157 .55874 .51378 .57112 .53604 .56444 .52395 .55197 Metetra
+.664 .741 .908 r
+.52395 .55197 .53604 .56444 .55848 .55771 .54651 .54513 Metetra
+.664 .741 .908 r
+.54651 .54513 .55848 .55771 .58111 .55092 .56926 .53824 Metetra
+.664 .741 .908 r
+.56926 .53824 .58111 .55092 .60392 .54407 .5922 .53129 Metetra
+.664 .741 .908 r
+.5922 .53129 .60392 .54407 .62692 .53717 .61532 .52429 Metetra
+.664 .741 .908 r
+.61532 .52429 .62692 .53717 .65011 .53022 .63864 .51722 Metetra
+.664 .741 .908 r
+.63864 .51722 .65011 .53022 .67349 .5232 .66216 .5101 Metetra
+.664 .741 .908 r
+.66216 .5101 .67349 .5232 .69706 .51613 .68587 .50292 Metetra
+.664 .741 .908 r
+.68587 .50292 .69706 .51613 .72084 .509 .70978 .49567 Metetra
+.664 .741 .908 r
+.70978 .49567 .72084 .509 .74481 .50181 .7339 .48837 Metetra
+.664 .741 .908 r
+.7339 .48837 .74481 .50181 .76899 .49455 .75822 .481 Metetra
+.664 .741 .908 r
+.75822 .481 .76899 .49455 .79338 .48724 .78275 .47357 Metetra
+.664 .741 .908 r
+.78275 .47357 .79338 .48724 .81797 .47986 .80749 .46607 Metetra
+.664 .741 .908 r
+.80749 .46607 .81797 .47986 .84277 .47242 .83244 .45851 Metetra
+.664 .741 .908 r
+.83244 .45851 .84277 .47242 .86778 .46492 .85762 .45089 Metetra
+.664 .741 .908 r
+.85762 .45089 .86778 .46492 .89301 .45735 .883 .4432 Metetra
+.664 .741 .908 r
+.883 .4432 .89301 .45735 .91846 .44971 .90862 .43544 Metetra
+.664 .741 .908 r
+.90862 .43544 .91846 .44971 .94414 .44201 .93445 .42761 Metetra
+.664 .741 .908 r
+.93445 .42761 .94414 .44201 .97003 .43424 .96052 .41972 Metetra
+.664 .741 .908 r
+.37941 .57977 .39236 .59183 .41385 .58532 .40101 .57316 Metetra
+.664 .741 .908 r
+.40101 .57316 .41385 .58532 .43552 .57875 .42278 .5665 Metetra
+.664 .741 .908 r
+.42278 .5665 .43552 .57875 .45736 .57214 .44473 .55978 Metetra
+.664 .741 .908 r
+.44473 .55978 .45736 .57214 .47938 .56547 .46687 .55301 Metetra
+.664 .741 .908 r
+.46687 .55301 .47938 .56547 .50157 .55874 .48918 .54619 Metetra
+.664 .741 .908 r
+.48918 .54619 .50157 .55874 .52395 .55197 .51168 .5393 Metetra
+.664 .741 .908 r
+.51168 .5393 .52395 .55197 .54651 .54513 .53436 .53236 Metetra
+.664 .741 .908 r
+.53436 .53236 .54651 .54513 .56926 .53824 .55723 .52537 Metetra
+.664 .741 .908 r
+.55723 .52537 .56926 .53824 .5922 .53129 .5803 .51831 Metetra
+.664 .741 .908 r
+.5803 .51831 .5922 .53129 .61532 .52429 .60355 .5112 Metetra
+.664 .741 .908 r
+.60355 .5112 .61532 .52429 .63864 .51722 .627 .50403 Metetra
+.664 .741 .908 r
+.627 .50403 .63864 .51722 .66216 .5101 .65065 .49679 Metetra
+.664 .741 .908 r
+.65065 .49679 .66216 .5101 .68587 .50292 .6745 .4895 Metetra
+.664 .741 .908 r
+.6745 .4895 .68587 .50292 .70978 .49567 .69855 .48214 Metetra
+.664 .741 .908 r
+.69855 .48214 .70978 .49567 .7339 .48837 .72281 .47472 Metetra
+.664 .741 .908 r
+.72281 .47472 .7339 .48837 .75822 .481 .74728 .46723 Metetra
+.664 .741 .908 r
+.74728 .46723 .75822 .481 .78275 .47357 .77196 .45968 Metetra
+.664 .741 .908 r
+.77196 .45968 .78275 .47357 .80749 .46607 .79685 .45207 Metetra
+.664 .741 .908 r
+.79685 .45207 .80749 .46607 .83244 .45851 .82196 .44439 Metetra
+.664 .741 .908 r
+.82196 .44439 .83244 .45851 .85762 .45089 .84728 .43664 Metetra
+.664 .741 .908 r
+.84728 .43664 .85762 .45089 .883 .4432 .87283 .42882 Metetra
+.664 .741 .908 r
+.87283 .42882 .883 .4432 .90862 .43544 .89861 .42094 Metetra
+.664 .741 .908 r
+.89861 .42094 .90862 .43544 .93445 .42761 .92461 .41298 Metetra
+.664 .741 .908 r
+.92461 .41298 .93445 .42761 .96052 .41972 .95085 .40496 Metetra
+.664 .741 .908 r
+.36626 .56753 .37941 .57977 .40101 .57316 .38797 .56082 Metetra
+.664 .741 .908 r
+.38797 .56082 .40101 .57316 .42278 .5665 .40985 .55406 Metetra
+.664 .741 .908 r
+.40985 .55406 .42278 .5665 .44473 .55978 .43192 .54724 Metetra
+.664 .741 .908 r
+.43192 .54724 .44473 .55978 .46687 .55301 .45417 .54037 Metetra
+.664 .741 .908 r
+.45417 .54037 .46687 .55301 .48918 .54619 .4766 .53344 Metetra
+.664 .741 .908 r
+.4766 .53344 .48918 .54619 .51168 .5393 .49922 .52645 Metetra
+.664 .741 .908 r
+.49922 .52645 .51168 .5393 .53436 .53236 .52202 .5194 Metetra
+.664 .741 .908 r
+.52202 .5194 .53436 .53236 .55723 .52537 .54502 .5123 Metetra
+.664 .741 .908 r
+.54502 .5123 .55723 .52537 .5803 .51831 .56821 .50514 Metetra
+.664 .741 .908 r
+.56821 .50514 .5803 .51831 .60355 .5112 .5916 .49791 Metetra
+.664 .741 .908 r
+.5916 .49791 .60355 .5112 .627 .50403 .61518 .49063 Metetra
+.664 .741 .908 r
+.61518 .49063 .627 .50403 .65065 .49679 .63896 .48328 Metetra
+.664 .741 .908 r
+.63896 .48328 .65065 .49679 .6745 .4895 .66295 .47587 Metetra
+.664 .741 .908 r
+.66295 .47587 .6745 .4895 .69855 .48214 .68715 .46839 Metetra
+.664 .741 .908 r
+.68715 .46839 .69855 .48214 .72281 .47472 .71155 .46085 Metetra
+.664 .741 .908 r
+.71155 .46085 .72281 .47472 .74728 .46723 .73616 .45324 Metetra
+.664 .741 .908 r
+.73616 .45324 .74728 .46723 .77196 .45968 .76099 .44557 Metetra
+.664 .741 .908 r
+.76099 .44557 .77196 .45968 .79685 .45207 .78603 .43783 Metetra
+.664 .741 .908 r
+.78603 .43783 .79685 .45207 .82196 .44439 .8113 .43003 Metetra
+.664 .741 .908 r
+.8113 .43003 .82196 .44439 .84728 .43664 .83678 .42216 Metetra
+.664 .741 .908 r
+.83678 .42216 .84728 .43664 .87283 .42882 .86249 .41421 Metetra
+.664 .741 .908 r
+.86249 .41421 .87283 .42882 .89861 .42094 .88844 .4062 Metetra
+.664 .741 .908 r
+.88844 .4062 .89861 .42094 .92461 .41298 .91461 .39811 Metetra
+.664 .741 .908 r
+.91461 .39811 .92461 .41298 .95085 .40496 .94101 .38995 Metetra
+.664 .741 .908 r
+.35291 .5551 .36626 .56753 .38797 .56082 .37473 .54829 Metetra
+.664 .741 .908 r
+.37473 .54829 .38797 .56082 .40985 .55406 .39673 .54143 Metetra
+.664 .741 .908 r
+.39673 .54143 .40985 .55406 .43192 .54724 .41891 .53451 Metetra
+.664 .741 .908 r
+.41891 .53451 .43192 .54724 .45417 .54037 .44127 .52753 Metetra
+.664 .741 .908 r
+.44127 .52753 .45417 .54037 .4766 .53344 .46382 .52049 Metetra
+.664 .741 .908 r
+.46382 .52049 .4766 .53344 .49922 .52645 .48656 .51339 Metetra
+.664 .741 .908 r
+.48656 .51339 .49922 .52645 .52202 .5194 .50949 .50624 Metetra
+.663 .741 .908 r
+.50949 .50624 .52202 .5194 .54502 .5123 .53262 .49903 Metetra
+.663 .741 .908 r
+.53262 .49903 .54502 .5123 .56821 .50514 .55594 .49177 Metetra
+.663 .741 .908 r
+.55594 .49177 .56821 .50514 .5916 .49791 .57945 .48445 Metetra
+.663 .742 .908 r
+.57945 .48445 .5916 .49791 .61518 .49063 .60317 .47706 Metetra
+.663 .742 .909 r
+.60317 .47706 .61518 .49063 .63896 .48328 .62709 .46961 Metetra
+.664 .742 .909 r
+.62709 .46961 .63896 .48328 .66295 .47587 .65122 .46207 Metetra
+.664 .742 .908 r
+.65122 .46207 .66295 .47587 .68715 .46839 .67556 .45446 Metetra
+.664 .742 .908 r
+.67556 .45446 .68715 .46839 .71155 .46085 .7001 .44678 Metetra
+.664 .742 .908 r
+.7001 .44678 .71155 .46085 .73616 .45324 .72486 .43904 Metetra
+.664 .741 .908 r
+.72486 .43904 .73616 .45324 .76099 .44557 .74984 .43124 Metetra
+.664 .741 .908 r
+.74984 .43124 .76099 .44557 .78603 .43783 .77504 .42337 Metetra
+.664 .741 .908 r
+.77504 .42337 .78603 .43783 .8113 .43003 .80046 .41544 Metetra
+.664 .741 .908 r
+.80046 .41544 .8113 .43003 .83678 .42216 .82611 .40743 Metetra
+.664 .741 .908 r
+.82611 .40743 .83678 .42216 .86249 .41421 .85199 .39936 Metetra
+.664 .741 .908 r
+.85199 .39936 .86249 .41421 .88844 .4062 .87809 .39121 Metetra
+.664 .741 .908 r
+.87809 .39121 .88844 .4062 .91461 .39811 .90444 .38299 Metetra
+.664 .741 .908 r
+.90444 .38299 .91461 .39811 .94101 .38995 .93102 .3747 Metetra
+.664 .741 .908 r
+.33937 .54249 .35291 .5551 .37473 .54829 .3613 .53557 Metetra
+.664 .741 .908 r
+.3613 .53557 .37473 .54829 .39673 .54143 .38341 .5286 Metetra
+.664 .741 .908 r
+.38341 .5286 .39673 .54143 .41891 .53451 .4057 .52158 Metetra
+.664 .741 .908 r
+.4057 .52158 .41891 .53451 .44127 .52753 .42818 .51449 Metetra
+.664 .741 .908 r
+.42818 .51449 .44127 .52753 .46382 .52049 .45085 .50734 Metetra
+.663 .741 .908 r
+.45085 .50734 .46382 .52049 .48656 .51339 .47371 .50014 Metetra
+.663 .741 .908 r
+.47371 .50014 .48656 .51339 .50949 .50624 .49677 .49289 Metetra
+.663 .741 .908 r
+.49677 .49289 .50949 .50624 .53262 .49903 .52002 .4856 Metetra
+.662 .742 .909 r
+.52002 .4856 .53262 .49903 .55594 .49177 .54347 .47829 Metetra
+.662 .742 .91 r
+.54347 .47829 .55594 .49177 .57945 .48445 .56712 .47096 Metetra
+.662 .744 .911 r
+.56712 .47096 .57945 .48445 .60317 .47706 .59098 .46356 Metetra
+.663 .746 .912 r
+.59098 .46356 .60317 .47706 .62709 .46961 .61504 .45603 Metetra
+.664 .747 .912 r
+.61504 .45603 .62709 .46961 .65122 .46207 .63931 .44833 Metetra
+.665 .747 .911 r
+.63931 .44833 .65122 .46207 .67556 .45446 .66379 .44049 Metetra
+.665 .745 .91 r
+.66379 .44049 .67556 .45446 .7001 .44678 .68848 .43258 Metetra
+.665 .744 .909 r
+.68848 .43258 .7001 .44678 .72486 .43904 .71339 .42464 Metetra
+.664 .742 .908 r
+.71339 .42464 .72486 .43904 .74984 .43124 .73852 .41668 Metetra
+.664 .742 .908 r
+.73852 .41668 .74984 .43124 .77504 .42337 .76387 .40868 Metetra
+.664 .741 .908 r
+.76387 .40868 .77504 .42337 .80046 .41544 .78945 .40061 Metetra
+.664 .741 .908 r
+.78945 .40061 .80046 .41544 .82611 .40743 .81526 .39247 Metetra
+.664 .741 .908 r
+.81526 .39247 .82611 .40743 .85199 .39936 .8413 .38426 Metetra
+.664 .741 .908 r
+.8413 .38426 .85199 .39936 .87809 .39121 .86758 .37598 Metetra
+.664 .741 .908 r
+.86758 .37598 .87809 .39121 .90444 .38299 .8941 .36762 Metetra
+.664 .741 .908 r
+.8941 .36762 .90444 .38299 .93102 .3747 .92085 .35918 Metetra
+.664 .741 .908 r
+.32561 .52968 .33937 .54249 .3613 .53557 .34765 .52266 Metetra
+.664 .741 .908 r
+.34765 .52266 .3613 .53557 .38341 .5286 .36988 .51558 Metetra
+.664 .741 .908 r
+.36988 .51558 .38341 .5286 .4057 .52158 .39229 .50845 Metetra
+.664 .741 .908 r
+.39229 .50845 .4057 .52158 .42818 .51449 .41489 .50125 Metetra
+.663 .741 .908 r
+.41489 .50125 .42818 .51449 .45085 .50734 .43768 .494 Metetra
+.663 .741 .908 r
+.43768 .494 .45085 .50734 .47371 .50014 .46066 .4867 Metetra
+.662 .741 .909 r
+.46066 .4867 .47371 .50014 .49677 .49289 .48384 .47939 Metetra
+.66 .742 .91 r
+.48384 .47939 .49677 .49289 .52002 .4856 .50722 .47214 Metetra
+.657 .743 .913 r
+.50722 .47214 .52002 .4856 .54347 .47829 .5308 .46505 Metetra
+.653 .747 .919 r
+.5308 .46505 .54347 .47829 .56712 .47096 .5546 .4581 Metetra
+.652 .755 .925 r
+.5546 .4581 .56712 .47096 .59098 .46356 .57861 .45108 Metetra
+.658 .764 .928 r
+.57861 .45108 .59098 .46356 .61504 .45603 .60283 .44364 Metetra
+.667 .77 .927 r
+.60283 .44364 .61504 .45603 .63931 .44833 .62725 .43561 Metetra
+.673 .769 .923 r
+.62725 .43561 .63931 .44833 .66379 .44049 .65186 .42715 Metetra
+.673 .761 .917 r
+.65186 .42715 .66379 .44049 .68848 .43258 .67669 .41861 Metetra
+.67 .752 .912 r
+.67669 .41861 .68848 .43258 .71339 .42464 .70173 .41021 Metetra
+.667 .746 .91 r
+.70173 .41021 .71339 .42464 .73852 .41668 .72701 .40195 Metetra
+.665 .743 .908 r
+.72701 .40195 .73852 .41668 .76387 .40868 .75252 .39375 Metetra
+.664 .742 .908 r
+.75252 .39375 .76387 .40868 .78945 .40061 .77826 .38553 Metetra
+.664 .741 .908 r
+.77826 .38553 .78945 .40061 .81526 .39247 .80423 .37726 Metetra
+.664 .741 .908 r
+.80423 .37726 .81526 .39247 .8413 .38426 .83044 .36891 Metetra
+.664 .741 .908 r
+.83044 .36891 .8413 .38426 .86758 .37598 .85689 .36049 Metetra
+.664 .741 .908 r
+.85689 .36049 .86758 .37598 .8941 .36762 .88358 .35199 Metetra
+.664 .741 .908 r
+.88358 .35199 .8941 .36762 .92085 .35918 .91052 .34341 Metetra
+.664 .741 .908 r
+.31165 .51668 .32561 .52968 .34765 .52266 .3338 .50955 Metetra
+.664 .741 .908 r
+.3338 .50955 .34765 .52266 .36988 .51558 .35614 .50236 Metetra
+.664 .741 .908 r
+.35614 .50236 .36988 .51558 .39229 .50845 .37866 .49511 Metetra
+.664 .741 .908 r
+.37866 .49511 .39229 .50845 .41489 .50125 .40138 .48781 Metetra
+.663 .741 .908 r
+.40138 .48781 .41489 .50125 .43768 .494 .4243 .48045 Metetra
+.662 .741 .909 r
+.4243 .48045 .43768 .494 .46066 .4867 .4474 .47309 Metetra
+.659 .741 .911 r
+.4474 .47309 .46066 .4867 .48384 .47939 .47071 .46588 Metetra
+.65 .742 .916 r
+.47071 .46588 .48384 .47939 .50722 .47214 .49421 .45912 Metetra
+.634 .746 .929 r
+.49421 .45912 .50722 .47214 .5308 .46505 .51793 .45315 Metetra
+.613 .759 .949 r
+.51793 .45315 .5308 .46505 .5546 .4581 .54188 .44794 Metetra
+.602 .789 .97 r
+.54188 .44794 .5546 .4581 .57861 .45108 .56608 .44263 Metetra
+.621 .829 .98 r
+.56608 .44263 .57861 .45108 .60283 .44364 .5905 .43585 Metetra
+.663 .856 .973 r
+.5905 .43585 .60283 .44364 .62725 .43561 .61509 .42693 Metetra
+.696 .849 .956 r
+.61509 .42693 .62725 .43561 .65186 .42715 .63984 .41652 Metetra
+.701 .818 .937 r
+.63984 .41652 .65186 .42715 .67669 .41861 .66476 .40598 Metetra
+.689 .783 .922 r
+.66476 .40598 .67669 .41861 .70173 .41021 .68992 .39619 Metetra
+.676 .759 .914 r
+.68992 .39619 .70173 .41021 .72701 .40195 .71532 .38719 Metetra
+.668 .747 .91 r
+.71532 .38719 .72701 .40195 .75252 .39375 .74098 .37863 Metetra
+.665 .743 .908 r
+.74098 .37863 .75252 .39375 .77826 .38553 .76688 .37022 Metetra
+.664 .742 .908 r
+.76688 .37022 .77826 .38553 .80423 .37726 .79302 .36179 Metetra
+.664 .741 .908 r
+.79302 .36179 .80423 .37726 .83044 .36891 .8194 .3533 Metetra
+.664 .741 .908 r
+.8194 .3533 .83044 .36891 .85689 .36049 .84602 .34473 Metetra
+.664 .741 .908 r
+.84602 .34473 .85689 .36049 .88358 .35199 .87289 .33609 Metetra
+.664 .741 .908 r
+.87289 .33609 .88358 .35199 .91052 .34341 .90001 .32736 Metetra
+.664 .741 .908 r
+.29746 .50347 .31165 .51668 .3338 .50955 .31973 .49623 Metetra
+.664 .741 .908 r
+.31973 .49623 .3338 .50955 .35614 .50236 .34218 .48893 Metetra
+.664 .741 .908 r
+.34218 .48893 .35614 .50236 .37866 .49511 .36483 .48157 Metetra
+.663 .741 .908 r
+.36483 .48157 .37866 .49511 .40138 .48781 .38767 .47415 Metetra
+.663 .741 .908 r
+.38767 .47415 .40138 .48781 .4243 .48045 .4107 .46671 Metetra
+.66 .741 .91 r
+.4107 .46671 .4243 .48045 .4474 .47309 .43393 .4594 Metetra
+.649 .74 .916 r
+.43393 .4594 .4474 .47309 .47071 .46588 .45735 .45267 Metetra
+.618 .739 .933 r
+.45735 .45267 .47071 .46588 .49421 .45912 .48096 .44746 Metetra
+.545 .741 .967 r
+.48096 .44746 .49421 .45912 .51793 .45315 .5048 .44487 Metetra
+.393 .739 .992 r
+.5048 .44487 .51793 .45315 .54188 .44794 .52893 .44478 Metetra
+.188 .701 .892 r
+.52893 .44478 .54188 .44794 .56608 .44263 .55339 .44453 Metetra
+.158 .697 .727 r
+.55339 .44453 .56608 .44263 .5905 .43585 .57811 .43987 Metetra
+.379 .833 .739 r
+.57811 .43987 .5905 .43585 .61509 .42693 .60294 .42863 Metetra
+.653 .97 .869 r
+.60294 .42863 .61509 .42693 .63984 .41652 .62781 .41293 Metetra
+.761 .952 .938 r
+.62781 .41293 .63984 .41652 .66476 .40598 .65278 .39699 Metetra
+.742 .861 .936 r
+.65278 .39699 .66476 .40598 .68992 .39619 .67797 .38353 Metetra
+.702 .792 .921 r
+.67797 .38353 .68992 .39619 .71532 .38719 .70347 .3727 Metetra
+.677 .758 .912 r
+.70347 .3727 .71532 .38719 .74098 .37863 .72925 .36339 Metetra
+.667 .746 .909 r
+.72925 .36339 .74098 .37863 .76688 .37022 .75531 .35467 Metetra
+.664 .742 .908 r
+.75531 .35467 .76688 .37022 .79302 .36179 .78161 .34607 Metetra
+.664 .741 .908 r
+.78161 .34607 .79302 .36179 .8194 .3533 .80816 .33742 Metetra
+.664 .741 .908 r
+.80816 .33742 .8194 .3533 .84602 .34473 .83496 .32871 Metetra
+.664 .741 .908 r
+.83496 .32871 .84602 .34473 .87289 .33609 .86201 .31992 Metetra
+.664 .741 .908 r
+.86201 .31992 .87289 .33609 .90001 .32736 .88931 .31104 Metetra
+.664 .741 .908 r
+.28306 .49006 .29746 .50347 .31973 .49623 .30544 .4827 Metetra
+.664 .741 .908 r
+.30544 .4827 .31973 .49623 .34218 .48893 .32801 .47529 Metetra
+.664 .741 .908 r
+.32801 .47529 .34218 .48893 .36483 .48157 .35077 .46781 Metetra
+.663 .741 .908 r
+.35077 .46781 .36483 .48157 .38767 .47415 .37373 .46029 Metetra
+.662 .741 .909 r
+.37373 .46029 .38767 .47415 .4107 .46671 .39688 .4528 Metetra
+.654 .74 .913 r
+.39688 .4528 .4107 .46671 .43393 .4594 .42023 .4457 Metetra
+.626 .736 .927 r
+.42023 .4457 .43393 .4594 .45735 .45267 .44374 .4401 Metetra
+.53 .721 .961 r
+.44374 .4401 .45735 .45267 .48096 .44746 .46743 .43827 Metetra
+.193 .612 .946 r
+.46743 .43827 .48096 .44746 .5048 .44487 .49135 .44288 Metetra
+.442 0 0 r
+.49135 .44288 .5048 .44487 .52893 .44478 .51565 .45376 Metetra
+.578 .076 .026 r
+.51565 .45376 .52893 .44478 .55339 .44453 .54045 .46446 Metetra
+.453 .025 .135 r
+.54045 .46446 .55339 .44453 .57811 .43987 .56562 .46451 Metetra
+.188 0 .063 r
+.56562 .46451 .57811 .43987 .60294 .42863 .59083 .44845 Metetra
+.59083 .44845 .60294 .42863 .62781 .41293 .61585 .42157 Metetra
+.701 .944 .652 r
+.61585 .42157 .62781 .41293 .65278 .39699 .64079 .39436 Metetra
+.826 .969 .894 r
+.64079 .39436 .65278 .39699 .67797 .38353 .66593 .37336 Metetra
+.753 .849 .922 r
+.66593 .37336 .67797 .38353 .70347 .3727 .69145 .35883 Metetra
+.696 .778 .914 r
+.69145 .35883 .70347 .3727 .72925 .36339 .71734 .34812 Metetra
+.672 .751 .91 r
+.71734 .34812 .72925 .36339 .75531 .35467 .74354 .3389 Metetra
+.665 .743 .908 r
+.74354 .3389 .75531 .35467 .78161 .34607 .77001 .33008 Metetra
+.664 .742 .908 r
+.77001 .33008 .78161 .34607 .80816 .33742 .79674 .32128 Metetra
+.664 .741 .908 r
+.79674 .32128 .80816 .33742 .83496 .32871 .82371 .31241 Metetra
+.664 .741 .908 r
+.82371 .31241 .83496 .32871 .86201 .31992 .85094 .30346 Metetra
+.664 .741 .908 r
+.85094 .30346 .86201 .31992 .88931 .31104 .87843 .29443 Metetra
+.664 .741 .908 r
+.26843 .47643 .28306 .49006 .30544 .4827 .29092 .46896 Metetra
+.664 .741 .908 r
+.29092 .46896 .30544 .4827 .32801 .47529 .31361 .46143 Metetra
+.663 .741 .908 r
+.31361 .46143 .32801 .47529 .35077 .46781 .33649 .45384 Metetra
+.663 .741 .908 r
+.33649 .45384 .35077 .46781 .37373 .46029 .35957 .44621 Metetra
+.66 .741 .91 r
+.35957 .44621 .37373 .46029 .39688 .4528 .38284 .4387 Metetra
+.645 .738 .916 r
+.38284 .4387 .39688 .4528 .42023 .4457 .40629 .43198 Metetra
+.586 .726 .94 r
+.40629 .43198 .42023 .4457 .44374 .4401 .42988 .42813 Metetra
+.335 .645 .967 r
+.42988 .42813 .44374 .4401 .46743 .43827 .45358 .43144 Metetra
+.47 0 0 r
+.45358 .43144 .46743 .43827 .49135 .44288 .47748 .44705 Metetra
+.764 .293 .123 r
+.47748 .44705 .49135 .44288 .51565 .45376 .50186 .47487 Metetra
+.717 .321 .299 r
+.50186 .47487 .51565 .45376 .54045 .46446 .52701 .5028 Metetra
+.563 .212 .331 r
+.52701 .5028 .54045 .46446 .56562 .46451 .55278 .51038 Metetra
+.283 0 .258 r
+.55278 .51038 .56562 .46451 .59083 .44845 .57853 .48674 Metetra
+0 0 .037 r
+.57853 .48674 .59083 .44845 .61585 .42157 .60378 .44244 Metetra
+.638 .802 .364 r
+.60378 .44244 .61585 .42157 .64079 .39436 .62869 .39794 Metetra
+.889 .99 .76 r
+.62869 .39794 .64079 .39436 .66593 .37336 .65375 .36557 Metetra
+.82 .897 .897 r
+.65375 .36557 .66593 .37336 .69145 .35883 .67926 .34556 Metetra
+.723 .798 .911 r
+.67926 .34556 .69145 .35883 .71734 .34812 .70523 .33278 Metetra
+.68 .757 .909 r
+.70523 .33278 .71734 .34812 .74354 .3389 .73158 .3229 Metetra
+.667 .744 .908 r
+.73158 .3229 .74354 .3389 .77001 .33008 .75821 .31382 Metetra
+.664 .742 .908 r
+.75821 .31382 .77001 .33008 .79674 .32128 .78511 .30485 Metetra
+.664 .741 .908 r
+.78511 .30485 .79674 .32128 .82371 .31241 .81227 .29583 Metetra
+.664 .741 .908 r
+.81227 .29583 .82371 .31241 .85094 .30346 .83968 .28672 Metetra
+.664 .741 .908 r
+.83968 .28672 .85094 .30346 .87843 .29443 .86736 .27753 Metetra
+.664 .741 .908 r
+.25356 .46259 .26843 .47643 .29092 .46896 .27617 .455 Metetra
+.664 .741 .908 r
+.27617 .455 .29092 .46896 .31361 .46143 .29897 .44735 Metetra
+.663 .741 .908 r
+.29897 .44735 .31361 .46143 .33649 .45384 .32198 .43963 Metetra
+.663 .741 .908 r
+.32198 .43963 .33649 .45384 .35957 .44621 .34518 .4319 Metetra
+.658 .74 .91 r
+.34518 .4319 .35957 .44621 .38284 .4387 .36857 .42437 Metetra
+.636 .735 .92 r
+.36857 .42437 .38284 .4387 .40629 .43198 .39213 .41803 Metetra
+.542 .709 .949 r
+.39213 .41803 .40629 .43198 .42988 .42813 .41577 .41589 Metetra
+.095 .502 .903 r
+.41577 .41589 .42988 .42813 .45358 .43144 .43943 .42431 Metetra
+.723 .195 0 r
+.43943 .42431 .45358 .43144 .47748 .44705 .46322 .45093 Metetra
+.841 .417 .227 r
+.46322 .45093 .47748 .44705 .50186 .47487 .48754 .49604 Metetra
+.785 .405 .337 r
+.48754 .49604 .50186 .47487 .52701 .5028 .5129 .54191 Metetra
+.611 .256 .344 r
+.5129 .54191 .52701 .5028 .55278 .51038 .53922 .55746 Metetra
+.178 0 .21 r
+.53922 .55746 .55278 .51038 .57853 .48674 .56559 .52582 Metetra
+.56559 .52582 .57853 .48674 .60378 .44244 .59122 .46336 Metetra
+.864 .886 .456 r
+.59122 .46336 .60378 .44244 .62869 .39794 .61624 .40121 Metetra
+.953 .951 .707 r
+.61624 .40121 .62869 .39794 .65375 .36557 .64129 .35744 Metetra
+.863 .89 .853 r
+.64129 .35744 .65375 .36557 .67926 .34556 .66683 .33198 Metetra
+.746 .803 .898 r
+.66683 .33198 .67926 .34556 .70523 .33278 .69291 .31717 Metetra
+.687 .759 .906 r
+.69291 .31717 .70523 .33278 .73158 .3229 .7194 .30662 Metetra
+.668 .745 .908 r
+.7194 .30662 .73158 .3229 .75821 .31382 .74621 .29728 Metetra
+.664 .742 .908 r
+.74621 .29728 .75821 .31382 .78511 .30485 .77329 .28814 Metetra
+.664 .741 .908 r
+.77329 .28814 .78511 .30485 .81227 .29583 .80062 .27895 Metetra
+.664 .741 .908 r
+.80062 .27895 .81227 .29583 .83968 .28672 .82822 .26969 Metetra
+.664 .741 .908 r
+.82822 .26969 .83968 .28672 .86736 .27753 .85609 .26033 Metetra
+.664 .741 .908 r
+.23846 .44853 .25356 .46259 .27617 .455 .26118 .44082 Metetra
+.664 .741 .908 r
+.26118 .44082 .27617 .455 .29897 .44735 .28411 .43304 Metetra
+.663 .741 .908 r
+.28411 .43304 .29897 .44735 .32198 .43963 .30723 .4252 Metetra
+.663 .741 .908 r
+.30723 .4252 .32198 .43963 .34518 .4319 .33056 .41734 Metetra
+.657 .74 .91 r
+.33056 .41734 .34518 .4319 .36857 .42437 .35407 .40973 Metetra
+.633 .733 .92 r
+.35407 .40973 .36857 .42437 .39213 .41803 .37774 .40348 Metetra
+.525 .696 .947 r
+.37774 .40348 .39213 .41803 .41577 .41589 .40146 .40202 Metetra
+.041 .441 .873 r
+.40146 .40202 .41577 .41589 .43943 .42431 .42512 .41258 Metetra
+.73 .225 0 r
+.42512 .41258 .43943 .42431 .46322 .45093 .4488 .44399 Metetra
+.88 .448 .141 r
+.4488 .44399 .46322 .45093 .48754 .49604 .47297 .49674 Metetra
+.867 .445 .215 r
+.47297 .49674 .48754 .49604 .5129 .54191 .49832 .55067 Metetra
+.665 .174 .074 r
+.49832 .55067 .5129 .54191 .53922 .55746 .52489 .5698 Metetra
+.772 .952 .626 r
+.52489 .5698 .53922 .55746 .56559 .52582 .55171 .53441 Metetra
+.988 .895 .609 r
+.55171 .53441 .56559 .52582 .59122 .46336 .5778 .46363 Metetra
+.983 .858 .636 r
+.5778 .46363 .59122 .46336 .61624 .40121 .60314 .39351 Metetra
+.944 .849 .718 r
+.60314 .39351 .61624 .40121 .64129 .35744 .62841 .34463 Metetra
+.856 .827 .818 r
+.62841 .34463 .64129 .35744 .66683 .33198 .65411 .31669 Metetra
+.751 .784 .88 r
+.65411 .31669 .66683 .33198 .69291 .31717 .68035 .30091 Metetra
+.69 .755 .901 r
+.68035 .30091 .69291 .31717 .7194 .30662 .70701 .28999 Metetra
+.669 .744 .907 r
+.70701 .28999 .7194 .30662 .74621 .29728 .73399 .28044 Metetra
+.664 .742 .908 r
+.73399 .28044 .74621 .29728 .77329 .28814 .76125 .27113 Metetra
+.664 .741 .908 r
+.76125 .27113 .77329 .28814 .80062 .27895 .78877 .26178 Metetra
+.664 .741 .908 r
+.78877 .26178 .80062 .27895 .82822 .26969 .81656 .25235 Metetra
+.664 .741 .908 r
+.81656 .25235 .82822 .26969 .85609 .26033 .84462 .24283 Metetra
+.664 .741 .908 r
+.22311 .43424 .23846 .44853 .26118 .44082 .24595 .4264 Metetra
+.664 .741 .908 r
+.24595 .4264 .26118 .44082 .28411 .43304 .269 .4185 Metetra
+.663 .741 .908 r
+.269 .4185 .28411 .43304 .30723 .4252 .29224 .41053 Metetra
+.663 .741 .908 r
+.29224 .41053 .30723 .4252 .33056 .41734 .31569 .40253 Metetra
+.658 .74 .91 r
+.31569 .40253 .33056 .41734 .35407 .40973 .33934 .39475 Metetra
+.637 .733 .918 r
+.33934 .39475 .35407 .40973 .37774 .40348 .36314 .38815 Metetra
+.548 .698 .938 r
+.36314 .38815 .37774 .40348 .40146 .40202 .38699 .38579 Metetra
+.213 .514 .913 r
+.38699 .38579 .40146 .40202 .42512 .41258 .41077 .39405 Metetra
+0 0 .54 r
+.41077 .39405 .42512 .41258 .4488 .44399 .43452 .42066 Metetra
+.699 .282 0 r
+.43452 .42066 .4488 .44399 .47297 .49674 .45865 .46592 Metetra
+0 0 .425 r
+.45865 .46592 .47297 .49674 .49832 .55067 .48385 .51196 Metetra
+.349 .39 .763 r
+.48385 .51196 .49832 .55067 .52489 .5698 .51029 .52743 Metetra
+.746 .608 .704 r
+.51029 .52743 .52489 .5698 .55171 .53441 .53721 .49529 Metetra
+.84 .661 .659 r
+.53721 .49529 .55171 .53441 .5778 .46363 .56363 .43207 Metetra
+.866 .692 .664 r
+.56363 .43207 .5778 .46363 .60314 .39351 .58941 .36921 Metetra
+.857 .723 .714 r
+.58941 .36921 .60314 .39351 .62841 .34463 .61508 .32487 Metetra
+.808 .749 .797 r
+.61508 .32487 .62841 .34463 .65411 .31669 .64108 .29898 Metetra
+.735 .753 .866 r
+.64108 .29898 .65411 .31669 .68035 .30091 .66754 .28382 Metetra
+.686 .746 .897 r
+.66754 .28382 .68035 .30091 .70701 .28999 .6944 .27295 Metetra
+.668 .742 .906 r
+.6944 .27295 .70701 .28999 .73399 .28044 .72156 .26328 Metetra
+.664 .741 .908 r
+.72156 .26328 .73399 .28044 .76125 .27113 .749 .25381 Metetra
+.664 .741 .908 r
+.749 .25381 .76125 .27113 .78877 .26178 .77671 .2443 Metetra
+.664 .741 .908 r
+.77671 .2443 .78877 .26178 .81656 .25235 .80469 .2347 Metetra
+.664 .741 .908 r
+.80469 .2347 .81656 .25235 .84462 .24283 .83294 .225 Metetra
+.664 .741 .908 r
+.20751 .41972 .22311 .43424 .24595 .4264 .23047 .41175 Metetra
+.664 .741 .908 r
+.23047 .41175 .24595 .4264 .269 .4185 .25364 .40372 Metetra
+.663 .741 .908 r
+.25364 .40372 .269 .4185 .29224 .41053 .27701 .39561 Metetra
+.663 .741 .908 r
+.27701 .39561 .29224 .41053 .31569 .40253 .30059 .38747 Metetra
+.66 .74 .909 r
+.30059 .38747 .31569 .40253 .33934 .39475 .32436 .37944 Metetra
+.645 .734 .914 r
+.32436 .37944 .33934 .39475 .36314 .38815 .34831 .37221 Metetra
+.591 .709 .925 r
+.34831 .37221 .36314 .38815 .38699 .38579 .37236 .36788 Metetra
+.424 .609 .925 r
+.37236 .36788 .38699 .38579 .41077 .39405 .39639 .37081 Metetra
+.114 .36 .823 r
+.39639 .37081 .41077 .39405 .43452 .42066 .42041 .38621 Metetra
+.006 .184 .698 r
+.42041 .38621 .43452 .42066 .45865 .46592 .44473 .41403 Metetra
+.244 .262 .68 r
+.44473 .41403 .45865 .46592 .48385 .51196 .46985 .44197 Metetra
+.506 .398 .666 r
+.46985 .44197 .48385 .51196 .51029 .52743 .49599 .44923 Metetra
+.652 .487 .647 r
+.49599 .44923 .51029 .52743 .53721 .49529 .52266 .42475 Metetra
+.726 .543 .643 r
+.52266 .42475 .53721 .49529 .56363 .43207 .54918 .37927 Metetra
+.764 .591 .663 r
+.54918 .37927 .56363 .43207 .58941 .36921 .57533 .33362 Metetra
+.775 .642 .715 r
+.57533 .33362 .58941 .36921 .61508 .32487 .60143 .30031 Metetra
+.754 .695 .795 r
+.60143 .30031 .61508 .32487 .64108 .29898 .62778 .27952 Metetra
+.711 .728 .864 r
+.62778 .27952 .64108 .29898 .66754 .28382 .6545 .26606 Metetra
+.679 .739 .896 r
+.6545 .26606 .66754 .28382 .6944 .27295 .68155 .25554 Metetra
+.667 .741 .906 r
+.68155 .25554 .6944 .27295 .72156 .26328 .7089 .24581 Metetra
+.664 .741 .908 r
+.7089 .24581 .72156 .26328 .749 .25381 .73653 .23619 Metetra
+.664 .741 .908 r
+.73653 .23619 .749 .25381 .77671 .2443 .76443 .2265 Metetra
+.664 .741 .908 r
+.76443 .2265 .77671 .2443 .80469 .2347 .7926 .21673 Metetra
+.664 .741 .908 r
+.7926 .21673 .80469 .2347 .83294 .225 .82105 .20686 Metetra
+.664 .741 .908 r
+.19166 .40496 .20751 .41972 .23047 .41175 .21474 .39686 Metetra
+.664 .741 .908 r
+.21474 .39686 .23047 .41175 .25364 .40372 .23802 .38869 Metetra
+.664 .741 .908 r
+.23802 .38869 .25364 .40372 .27701 .39561 .26152 .38045 Metetra
+.663 .741 .908 r
+.26152 .38045 .27701 .39561 .30059 .38747 .28522 .37215 Metetra
+.662 .74 .909 r
+.28522 .37215 .30059 .38747 .32436 .37944 .30914 .36388 Metetra
+.654 .737 .91 r
+.30914 .36388 .32436 .37944 .34831 .37221 .33325 .356 Metetra
+.627 .721 .915 r
+.33325 .356 .34831 .37221 .37236 .36788 .3575 .34964 Metetra
+.556 .669 .913 r
+.3575 .34964 .37236 .36788 .39639 .37081 .38183 .34712 Metetra
+.441 .551 .871 r
+.38183 .34712 .39639 .37081 .42041 .38621 .40624 .35118 Metetra
+.389 .43 .782 r
+.40624 .35118 .42041 .38621 .44473 .41403 .43089 .36164 Metetra
+.455 .399 .705 r
+.43089 .36164 .44473 .41403 .46985 .44197 .45609 .37192 Metetra
+.55 .426 .664 r
+.45609 .37192 .46985 .44197 .49599 .44923 .48198 .37128 Metetra
+.624 .466 .648 r
+.48198 .37128 .49599 .44923 .52266 .42475 .50835 .35416 Metetra
+.674 .508 .653 r
+.50835 .35416 .52266 .42475 .54918 .37927 .5348 .32596 Metetra
+.706 .555 .681 r
+.5348 .32596 .54918 .37927 .57533 .33362 .56117 .29744 Metetra
+.721 .614 .738 r
+.56117 .29744 .57533 .33362 .60143 .30031 .58761 .27527 Metetra
+.713 .677 .814 r
+.58761 .27527 .60143 .30031 .62778 .27952 .61427 .25969 Metetra
+.689 .719 .873 r
+.61427 .25969 .62778 .27952 .6545 .26606 .64122 .24799 Metetra
+.672 .736 .899 r
+.64122 .24799 .6545 .26606 .68155 .25554 .66848 .23781 Metetra
+.665 .74 .906 r
+.66848 .23781 .68155 .25554 .7089 .24581 .69602 .22802 Metetra
+.664 .741 .908 r
+.69602 .22802 .7089 .24581 .73653 .23619 .72384 .21824 Metetra
+.664 .741 .908 r
+.72384 .21824 .73653 .23619 .76443 .2265 .75192 .20838 Metetra
+.664 .741 .908 r
+.75192 .20838 .76443 .2265 .7926 .21673 .78029 .19843 Metetra
+.664 .741 .908 r
+.78029 .19843 .7926 .21673 .82105 .20686 .80894 .18838 Metetra
+.664 .741 .908 r
+.17555 .38995 .19166 .40496 .21474 .39686 .19874 .38172 Metetra
+.664 .741 .908 r
+.19874 .38172 .21474 .39686 .23802 .38869 .22215 .37341 Metetra
+.664 .741 .908 r
+.22215 .37341 .23802 .38869 .26152 .38045 .24577 .36503 Metetra
+.663 .741 .908 r
+.24577 .36503 .26152 .38045 .28522 .37215 .2696 .35658 Metetra
+.663 .741 .908 r
+.2696 .35658 .28522 .37215 .30914 .36388 .29365 .3481 Metetra
+.66 .739 .909 r
+.29365 .3481 .30914 .36388 .33325 .356 .31791 .33973 Metetra
+.649 .731 .909 r
+.31791 .33973 .33325 .356 .3575 .34964 .34236 .33195 Metetra
+.622 .706 .905 r
+.34236 .33195 .3575 .34964 .38183 .34712 .36697 .32572 Metetra
+.579 .646 .881 r
+.36697 .32572 .38183 .34712 .40624 .35118 .39174 .32218 Metetra
+.547 .562 .822 r
+.39174 .32218 .40624 .35118 .43089 .36164 .41673 .32119 Metetra
+.554 .502 .752 r
+.41673 .32119 .43089 .36164 .45609 .37192 .44209 .32003 Metetra
+.587 .485 .705 r
+.44209 .32003 .45609 .37192 .48198 .37128 .46791 .31432 Metetra
+.624 .497 .687 r
+.46791 .31432 .48198 .37128 .50835 .35416 .49409 .30181 Metetra
+.655 .527 .695 r
+.49409 .30181 .50835 .35416 .5348 .32596 .52048 .2847 Metetra
+.678 .573 .73 r
+.52048 .2847 .5348 .32596 .56117 .29744 .54698 .26734 Metetra
+.69 .633 .787 r
+.54698 .26734 .56117 .29744 .58761 .27527 .57365 .25252 Metetra
+.686 .69 .848 r
+.57365 .25252 .58761 .27527 .61427 .25969 .60055 .24038 Metetra
+.674 .724 .887 r
+.60055 .24038 .61427 .25969 .64122 .24799 .62772 .22981 Metetra
+.667 .737 .902 r
+.62772 .22981 .64122 .24799 .66848 .23781 .65518 .21981 Metetra
+.664 .74 .907 r
+.65518 .21981 .66848 .23781 .69602 .22802 .6829 .20991 Metetra
+.664 .741 .908 r
+.6829 .20991 .69602 .22802 .72384 .21824 .71091 .19997 Metetra
+.664 .741 .908 r
+.71091 .19997 .72384 .21824 .75192 .20838 .73919 .18993 Metetra
+.664 .741 .908 r
+.73919 .18993 .75192 .20838 .78029 .19843 .76776 .17979 Metetra
+.664 .741 .908 r
+.76776 .17979 .78029 .19843 .80894 .18838 .79661 .16955 Metetra
+.664 .741 .908 r
+.15916 .3747 .17555 .38995 .19874 .38172 .18248 .36633 Metetra
+.664 .741 .908 r
+.18248 .36633 .19874 .38172 .22215 .37341 .20601 .35788 Metetra
+.664 .741 .908 r
+.20601 .35788 .22215 .37341 .24577 .36503 .22975 .34936 Metetra
+.664 .741 .908 r
+.22975 .34936 .24577 .36503 .2696 .35658 .25372 .34076 Metetra
+.663 .741 .908 r
+.25372 .34076 .2696 .35658 .29365 .3481 .2779 .33209 Metetra
+.662 .74 .908 r
+.2779 .33209 .29365 .3481 .31791 .33973 .30231 .32341 Metetra
+.659 .737 .908 r
+.30231 .32341 .31791 .33973 .34236 .33195 .32693 .31486 Metetra
+.65 .726 .905 r
+.32693 .31486 .34236 .33195 .36697 .32572 .35176 .30676 Metetra
+.636 .7 .892 r
+.35176 .30676 .36697 .32572 .39174 .32218 .37679 .29948 Metetra
+.621 .655 .862 r
+.37679 .29948 .39174 .32218 .41673 .32119 .40205 .29296 Metetra
+.617 .607 .818 r
+.40205 .29296 .41673 .32119 .44209 .32003 .4276 .28631 Metetra
+.625 .577 .78 r
+.4276 .28631 .44209 .32003 .46791 .31432 .45347 .27813 Metetra
+.64 .573 .764 r
+.45347 .27813 .46791 .31432 .49409 .30181 .47964 .26771 Metetra
+.657 .594 .772 r
+.47964 .26771 .49409 .30181 .52048 .2847 .50605 .25573 Metetra
+.67 .632 .803 r
+.50605 .25573 .52048 .2847 .54698 .26734 .53267 .2436 Metetra
+.675 .677 .845 r
+.53267 .2436 .54698 .26734 .57365 .25252 .55952 .23223 Metetra
+.672 .713 .879 r
+.55952 .23223 .57365 .25252 .60055 .24038 .58662 .22166 Metetra
+.667 .732 .898 r
+.58662 .22166 .60055 .24038 .62772 .22981 .61399 .21153 Metetra
+.665 .739 .905 r
+.61399 .21153 .62772 .22981 .65518 .21981 .64163 .20152 Metetra
+.664 .741 .907 r
+.64163 .20152 .65518 .21981 .6829 .20991 .66955 .19148 Metetra
+.664 .741 .908 r
+.66955 .19148 .6829 .20991 .71091 .19997 .69774 .18136 Metetra
+.664 .741 .908 r
+.69774 .18136 .71091 .19997 .73919 .18993 .72622 .17114 Metetra
+.664 .741 .908 r
+.72622 .17114 .73919 .18993 .76776 .17979 .75499 .16081 Metetra
+.664 .741 .908 r
+.75499 .16081 .76776 .17979 .79661 .16955 .78405 .15038 Metetra
+.664 .741 .908 r
+.1425 .35918 .15916 .3747 .18248 .36633 .16594 .35067 Metetra
+.664 .741 .908 r
+.16594 .35067 .18248 .36633 .20601 .35788 .18959 .34208 Metetra
+.664 .741 .908 r
+.18959 .34208 .20601 .35788 .22975 .34936 .21346 .33341 Metetra
+.664 .741 .908 r
+.21346 .33341 .22975 .34936 .25372 .34076 .23756 .32466 Metetra
+.663 .741 .908 r
+.23756 .32466 .25372 .34076 .2779 .33209 .26188 .31583 Metetra
+.663 .741 .908 r
+.26188 .31583 .2779 .33209 .30231 .32341 .28642 .30694 Metetra
+.662 .74 .908 r
+.28642 .30694 .30231 .32341 .32693 .31486 .3112 .29802 Metetra
+.66 .736 .906 r
+.3112 .29802 .32693 .31486 .35176 .30676 .3362 .28914 Metetra
+.656 .727 .902 r
+.3362 .28914 .35176 .30676 .37679 .29948 .36143 .28041 Metetra
+.652 .71 .89 r
+.36143 .28041 .37679 .29948 .40205 .29296 .38689 .2718 Metetra
+.65 .688 .872 r
+.38689 .2718 .40205 .29296 .4276 .28631 .41262 .2631 Metetra
+.652 .67 .854 r
+.41262 .2631 .4276 .28631 .45347 .27813 .43861 .25394 Metetra
+.657 .664 .845 r
+.43861 .25394 .45347 .27813 .47964 .26771 .46487 .24414 Metetra
+.663 .674 .85 r
+.46487 .24414 .47964 .26771 .50605 .25573 .49139 .23388 Metetra
+.667 .694 .866 r
+.49139 .23388 .50605 .25573 .53267 .2436 .51816 .22351 Metetra
+.667 .716 .885 r
+.51816 .22351 .53267 .2436 .55952 .23223 .54517 .21326 Metetra
+.666 .731 .898 r
+.54517 .21326 .55952 .23223 .58662 .22166 .57246 .20314 Metetra
+.664 .738 .905 r
+.57246 .20314 .58662 .22166 .61399 .21153 .60001 .19305 Metetra
+.664 .74 .907 r
+.60001 .19305 .61399 .21153 .64163 .20152 .62783 .18293 Metetra
+.664 .741 .908 r
+.62783 .18293 .64163 .20152 .66955 .19148 .65594 .17272 Metetra
+.664 .741 .908 r
+.65594 .17272 .66955 .19148 .69774 .18136 .68433 .1624 Metetra
+.664 .741 .908 r
+.68433 .1624 .69774 .18136 .72622 .17114 .71301 .15199 Metetra
+.664 .741 .908 r
+.71301 .15199 .72622 .17114 .75499 .16081 .74198 .14147 Metetra
+.664 .741 .908 r
+.74198 .14147 .75499 .16081 .78405 .15038 .77124 .13084 Metetra
+.664 .741 .908 r
+.12556 .34341 .1425 .35918 .16594 .35067 .14912 .33475 Metetra
+.664 .741 .908 r
+.14912 .33475 .16594 .35067 .18959 .34208 .1729 .32601 Metetra
+.664 .741 .908 r
+.1729 .32601 .18959 .34208 .21346 .33341 .1969 .31719 Metetra
+.664 .741 .908 r
+.1969 .31719 .21346 .33341 .23756 .32466 .22112 .30829 Metetra
+.664 .741 .908 r
+.22112 .30829 .23756 .32466 .26188 .31583 .24557 .29931 Metetra
+.663 .741 .908 r
+.24557 .29931 .26188 .31583 .28642 .30694 .27026 .29024 Metetra
+.663 .741 .908 r
+.27026 .29024 .28642 .30694 .3112 .29802 .29517 .2811 Metetra
+.663 .74 .907 r
+.29517 .2811 .3112 .29802 .3362 .28914 .32033 .27189 Metetra
+.662 .738 .906 r
+.32033 .27189 .3362 .28914 .36143 .28041 .34572 .26265 Metetra
+.661 .733 .903 r
+.34572 .26265 .36143 .28041 .38689 .2718 .37136 .25335 Metetra
+.661 .726 .898 r
+.37136 .25335 .38689 .2718 .41262 .2631 .39725 .24397 Metetra
+.661 .72 .893 r
+.39725 .24397 .41262 .2631 .43861 .25394 .42339 .23441 Metetra
+.662 .718 .89 r
+.42339 .23441 .43861 .25394 .46487 .24414 .4498 .22466 Metetra
+.664 .721 .892 r
+.4498 .22466 .46487 .24414 .49139 .23388 .47646 .21474 Metetra
+.664 .728 .897 r
+.47646 .21474 .49139 .23388 .51816 .22351 .50338 .20472 Metetra
+.664 .734 .902 r
+.50338 .20472 .51816 .22351 .54517 .21326 .53057 .19464 Metetra
+.664 .738 .905 r
+.53057 .19464 .54517 .21326 .57246 .20314 .55803 .1845 Metetra
+.664 .74 .907 r
+.55803 .1845 .57246 .20314 .60001 .19305 .58577 .1743 Metetra
+.664 .741 .908 r
+.58577 .1743 .60001 .19305 .62783 .18293 .61378 .164 Metetra
+.664 .741 .908 r
+.61378 .164 .62783 .18293 .65594 .17272 .64208 .1536 Metetra
+.664 .741 .908 r
+.64208 .1536 .65594 .17272 .68433 .1624 .67067 .14309 Metetra
+.664 .741 .908 r
+.67067 .14309 .68433 .1624 .71301 .15199 .69955 .13248 Metetra
+.664 .741 .908 r
+.69955 .13248 .71301 .15199 .74198 .14147 .72872 .12176 Metetra
+.664 .741 .908 r
+.72872 .12176 .74198 .14147 .77124 .13084 .7582 .11093 Metetra
+.664 .741 .908 r
+.10832 .32736 .12556 .34341 .14912 .33475 .13201 .31856 Metetra
+.664 .741 .908 r
+.13201 .31856 .14912 .33475 .1729 .32601 .15591 .30967 Metetra
+.664 .741 .908 r
+.15591 .30967 .1729 .32601 .1969 .31719 .18004 .30069 Metetra
+.664 .741 .908 r
+.18004 .30069 .1969 .31719 .22112 .30829 .2044 .29164 Metetra
+.664 .741 .908 r
+.2044 .29164 .22112 .30829 .24557 .29931 .22898 .28249 Metetra
+.664 .741 .908 r
+.22898 .28249 .24557 .29931 .27026 .29024 .25381 .27326 Metetra
+.664 .741 .908 r
+.25381 .27326 .27026 .29024 .29517 .2811 .27887 .26394 Metetra
+.663 .741 .908 r
+.27887 .26394 .29517 .2811 .32033 .27189 .30417 .25454 Metetra
+.663 .741 .907 r
+.30417 .25454 .32033 .27189 .34572 .26265 .32971 .24506 Metetra
+.663 .74 .907 r
+.32971 .24506 .34572 .26265 .37136 .25335 .35551 .23548 Metetra
+.663 .738 .906 r
+.35551 .23548 .37136 .25335 .39725 .24397 .38155 .22582 Metetra
+.663 .737 .905 r
+.38155 .22582 .39725 .24397 .42339 .23441 .40786 .21604 Metetra
+.663 .736 .904 r
+.40786 .21604 .42339 .23441 .4498 .22466 .43442 .20616 Metetra
+.664 .737 .905 r
+.43442 .20616 .4498 .22466 .47646 .21474 .46125 .19616 Metetra
+.664 .738 .906 r
+.46125 .19616 .47646 .21474 .50338 .20472 .48834 .18607 Metetra
+.664 .74 .907 r
+.48834 .18607 .50338 .20472 .53057 .19464 .5157 .17588 Metetra
+.664 .741 .907 r
+.5157 .17588 .53057 .19464 .55803 .1845 .54334 .16559 Metetra
+.664 .741 .908 r
+.54334 .16559 .55803 .1845 .58577 .1743 .57126 .15521 Metetra
+.664 .741 .908 r
+.57126 .15521 .58577 .1743 .61378 .164 .59947 .14472 Metetra
+.664 .741 .908 r
+.59947 .14472 .61378 .164 .64208 .1536 .62796 .13412 Metetra
+.664 .741 .908 r
+.62796 .13412 .64208 .1536 .67067 .14309 .65675 .12342 Metetra
+.664 .741 .908 r
+.65675 .12342 .67067 .14309 .69955 .13248 .68583 .1126 Metetra
+.664 .741 .908 r
+.68583 .1126 .69955 .13248 .72872 .12176 .71521 .10167 Metetra
+.664 .741 .908 r
+.71521 .10167 .72872 .12176 .7582 .11093 .7449 .09063 Metetra
+.664 .741 .908 r
+.09079 .31104 .10832 .32736 .13201 .31856 .1146 .30208 Metetra
+.664 .741 .908 r
+.1146 .30208 .13201 .31856 .15591 .30967 .13863 .29303 Metetra
+.664 .741 .908 r
+.13863 .29303 .15591 .30967 .18004 .30069 .16289 .2839 Metetra
+.664 .741 .908 r
+.16289 .2839 .18004 .30069 .2044 .29164 .18738 .27469 Metetra
+.664 .741 .908 r
+.18738 .27469 .2044 .29164 .22898 .28249 .2121 .26538 Metetra
+.664 .741 .908 r
+.2121 .26538 .22898 .28249 .25381 .27326 .23706 .25599 Metetra
+.664 .741 .908 r
+.23706 .25599 .25381 .27326 .27887 .26394 .26226 .2465 Metetra
+.664 .741 .908 r
+.26226 .2465 .27887 .26394 .30417 .25454 .28771 .23692 Metetra
+.664 .741 .908 r
+.28771 .23692 .30417 .25454 .32971 .24506 .31341 .22725 Metetra
+.663 .741 .908 r
+.31341 .22725 .32971 .24506 .35551 .23548 .33936 .21749 Metetra
+.663 .741 .908 r
+.33936 .21749 .35551 .23548 .38155 .22582 .36556 .20763 Metetra
+.663 .741 .907 r
+.36556 .20763 .38155 .22582 .40786 .21604 .39202 .19767 Metetra
+.664 .741 .907 r
+.39202 .19767 .40786 .21604 .43442 .20616 .41875 .18761 Metetra
+.664 .741 .907 r
+.41875 .18761 .43442 .20616 .46125 .19616 .44575 .17744 Metetra
+.664 .741 .908 r
+.44575 .17744 .46125 .19616 .48834 .18607 .47302 .16718 Metetra
+.664 .741 .908 r
+.47302 .16718 .48834 .18607 .5157 .17588 .50056 .15681 Metetra
+.664 .741 .908 r
+.50056 .15681 .5157 .17588 .54334 .16559 .52838 .14634 Metetra
+.664 .741 .908 r
+.52838 .14634 .54334 .16559 .57126 .15521 .55649 .13576 Metetra
+.664 .741 .908 r
+.55649 .13576 .57126 .15521 .59947 .14472 .58488 .12507 Metetra
+.664 .741 .908 r
+.58488 .12507 .59947 .14472 .62796 .13412 .61357 .11427 Metetra
+.664 .741 .908 r
+.61357 .11427 .62796 .13412 .65675 .12342 .64256 .10336 Metetra
+.664 .741 .908 r
+.64256 .10336 .65675 .12342 .68583 .1126 .67184 .09234 Metetra
+.664 .741 .908 r
+.67184 .09234 .68583 .1126 .71521 .10167 .70144 .0812 Metetra
+.664 .741 .908 r
+.70144 .0812 .71521 .10167 .7449 .09063 .73135 .06994 Metetra
+.664 .741 .908 r
+.07296 .29443 .09079 .31104 .1146 .30208 .09689 .28531 Metetra
+.664 .741 .908 r
+.09689 .28531 .1146 .30208 .13863 .29303 .12104 .27611 Metetra
+.664 .741 .908 r
+.12104 .27611 .13863 .29303 .16289 .2839 .14543 .26682 Metetra
+.664 .741 .908 r
+.14543 .26682 .16289 .2839 .18738 .27469 .17005 .25744 Metetra
+.664 .741 .908 r
+.17005 .25744 .18738 .27469 .2121 .26538 .19491 .24797 Metetra
+.664 .741 .908 r
+.19491 .24797 .2121 .26538 .23706 .25599 .22002 .2384 Metetra
+.664 .741 .908 r
+.22002 .2384 .23706 .25599 .26226 .2465 .24536 .22874 Metetra
+.664 .741 .908 r
+.24536 .22874 .26226 .2465 .28771 .23692 .27096 .21899 Metetra
+.664 .741 .908 r
+.27096 .21899 .28771 .23692 .31341 .22725 .29681 .20914 Metetra
+.664 .741 .908 r
+.29681 .20914 .31341 .22725 .33936 .21749 .32291 .1992 Metetra
+.664 .741 .908 r
+.32291 .1992 .33936 .21749 .36556 .20763 .34927 .18915 Metetra
+.664 .741 .908 r
+.34927 .18915 .36556 .20763 .39202 .19767 .3759 .17901 Metetra
+.664 .741 .908 r
+.3759 .17901 .39202 .19767 .41875 .18761 .40279 .16876 Metetra
+.664 .741 .908 r
+.40279 .16876 .41875 .18761 .44575 .17744 .42996 .15841 Metetra
+.664 .741 .908 r
+.42996 .15841 .44575 .17744 .47302 .16718 .4574 .14796 Metetra
+.664 .741 .908 r
+.4574 .14796 .47302 .16718 .50056 .15681 .48513 .13739 Metetra
+.664 .741 .908 r
+.48513 .13739 .50056 .15681 .52838 .14634 .51313 .12672 Metetra
+.664 .741 .908 r
+.51313 .12672 .52838 .14634 .55649 .13576 .54143 .11594 Metetra
+.664 .741 .908 r
+.54143 .11594 .55649 .13576 .58488 .12507 .57002 .10505 Metetra
+.664 .741 .908 r
+.57002 .10505 .58488 .12507 .61357 .11427 .5989 .09404 Metetra
+.664 .741 .908 r
+.5989 .09404 .61357 .11427 .64256 .10336 .62809 .08292 Metetra
+.664 .741 .908 r
+.62809 .08292 .64256 .10336 .67184 .09234 .65759 .07168 Metetra
+.664 .741 .908 r
+.65759 .07168 .67184 .09234 .70144 .0812 .6874 .06033 Metetra
+.664 .741 .908 r
+.6874 .06033 .70144 .0812 .73135 .06994 .71752 .04885 Metetra
+.664 .741 .908 r
+.05481 .27753 .07296 .29443 .09689 .28531 .07886 .26825 Metetra
+.664 .741 .908 r
+.07886 .26825 .09689 .28531 .12104 .27611 .10315 .25889 Metetra
+.664 .741 .908 r
+.10315 .25889 .12104 .27611 .14543 .26682 .12766 .24943 Metetra
+.664 .741 .908 r
+.12766 .24943 .14543 .26682 .17005 .25744 .15242 .23988 Metetra
+.664 .741 .908 r
+.15242 .23988 .17005 .25744 .19491 .24797 .17742 .23024 Metetra
+.664 .741 .908 r
+.17742 .23024 .19491 .24797 .22002 .2384 .20266 .2205 Metetra
+.664 .741 .908 r
+.20266 .2205 .22002 .2384 .24536 .22874 .22815 .21067 Metetra
+.664 .741 .908 r
+.22815 .21067 .24536 .22874 .27096 .21899 .2539 .20073 Metetra
+.664 .741 .908 r
+.2539 .20073 .27096 .21899 .29681 .20914 .2799 .19071 Metetra
+.664 .741 .908 r
+.2799 .19071 .29681 .20914 .32291 .1992 .30616 .18058 Metetra
+.664 .741 .908 r
+.30616 .18058 .32291 .1992 .34927 .18915 .33268 .17034 Metetra
+.664 .741 .908 r
+.33268 .17034 .34927 .18915 .3759 .17901 .35947 .16001 Metetra
+.664 .741 .908 r
+.35947 .16001 .3759 .17901 .40279 .16876 .38654 .14957 Metetra
+.664 .741 .908 r
+.38654 .14957 .40279 .16876 .42996 .15841 .41388 .13902 Metetra
+.664 .741 .908 r
+.41388 .13902 .42996 .15841 .4574 .14796 .4415 .12837 Metetra
+.664 .741 .908 r
+.4415 .12837 .4574 .14796 .48513 .13739 .4694 .11761 Metetra
+.664 .741 .908 r
+.4694 .11761 .48513 .13739 .51313 .12672 .49759 .10673 Metetra
+.664 .741 .908 r
+.49759 .10673 .51313 .12672 .54143 .11594 .52608 .09574 Metetra
+.664 .741 .908 r
+.52608 .09574 .54143 .11594 .57002 .10505 .55486 .08464 Metetra
+.664 .741 .908 r
+.55486 .08464 .57002 .10505 .5989 .09404 .58395 .07342 Metetra
+.664 .741 .908 r
+.58395 .07342 .5989 .09404 .62809 .08292 .61335 .06208 Metetra
+.664 .741 .908 r
+.61335 .06208 .62809 .08292 .65759 .07168 .64305 .05062 Metetra
+.664 .741 .908 r
+.64305 .05062 .65759 .07168 .6874 .06033 .67308 .03904 Metetra
+.664 .741 .908 r
+.67308 .03904 .6874 .06033 .71752 .04885 .70343 .02733 Metetra
+.664 .741 .908 r
+.03634 .26033 .05481 .27753 .07886 .26825 .06052 .25089 Metetra
+.664 .741 .908 r
+.06052 .25089 .07886 .26825 .10315 .25889 .08493 .24135 Metetra
+.664 .741 .908 r
+.08493 .24135 .10315 .25889 .12766 .24943 .10958 .23173 Metetra
+.664 .741 .908 r
+.10958 .23173 .12766 .24943 .15242 .23988 .13447 .222 Metetra
+.664 .741 .908 r
+.13447 .222 .15242 .23988 .17742 .23024 .15961 .21218 Metetra
+.664 .741 .908 r
+.15961 .21218 .17742 .23024 .20266 .2205 .18499 .20227 Metetra
+.664 .741 .908 r
+.18499 .20227 .20266 .2205 .22815 .21067 .21063 .19226 Metetra
+.664 .741 .908 r
+.21063 .19226 .22815 .21067 .2539 .20073 .23652 .18214 Metetra
+.664 .741 .908 r
+.23652 .18214 .2539 .20073 .2799 .19071 .26268 .17193 Metetra
+.664 .741 .908 r
+.26268 .17193 .2799 .19071 .30616 .18058 .2891 .16161 Metetra
+.664 .741 .908 r
+.2891 .16161 .30616 .18058 .33268 .17034 .31578 .15118 Metetra
+.664 .741 .908 r
+.31578 .15118 .33268 .17034 .35947 .16001 .34274 .14065 Metetra
+.664 .741 .908 r
+.34274 .14065 .35947 .16001 .38654 .14957 .36997 .13002 Metetra
+.664 .741 .908 r
+.36997 .13002 .38654 .14957 .41388 .13902 .39749 .11927 Metetra
+.664 .741 .908 r
+.39749 .11927 .41388 .13902 .4415 .12837 .42528 .10841 Metetra
+.664 .741 .908 r
+.42528 .10841 .4415 .12837 .4694 .11761 .45337 .09744 Metetra
+.664 .741 .908 r
+.45337 .09744 .4694 .11761 .49759 .10673 .48175 .08636 Metetra
+.664 .741 .908 r
+.48175 .08636 .49759 .10673 .52608 .09574 .51043 .07515 Metetra
+.664 .741 .908 r
+.51043 .07515 .52608 .09574 .55486 .08464 .53942 .06383 Metetra
+.664 .741 .908 r
+.53942 .06383 .55486 .08464 .58395 .07342 .56871 .05239 Metetra
+.664 .741 .908 r
+.56871 .05239 .58395 .07342 .61335 .06208 .59831 .04083 Metetra
+.664 .741 .908 r
+.59831 .04083 .61335 .06208 .64305 .05062 .62823 .02914 Metetra
+.664 .741 .908 r
+.62823 .02914 .64305 .05062 .67308 .03904 .65848 .01733 Metetra
+.664 .741 .908 r
+.65848 .01733 .67308 .03904 .70343 .02733 .68905 .00539 Metetra
+0 g
+.25 Mabswid
+.68874 0 m
+.96935 .42924 L
+s
+.96935 .42924 m
+1 .6535 L
+s
+1 .6535 m
+.70298 .24544 L
+s
+.70298 .24544 m
+.68874 0 L
+s
+.03716 .25514 m
+0 .48963 L
+s
+0 .48963 m
+.70298 .24544 L
+s
+.70298 .24544 m
+.68874 0 L
+s
+.68874 0 m
+.03716 .25514 L
+s
+.03716 .25514 m
+.68874 0 L
+s
+.13514 .21677 m
+.13978 .22141 L
+s
+[(-2)] .12586 .2075 1 .99877 Mshowa
+.34306 .13535 m
+.34735 .14032 L
+s
+[(0)] .3345 .12542 .86223 1 Mshowa
+.56863 .04703 m
+.57247 .05235 L
+s
+[(2)] .56094 .0364 .72324 1 Mshowa
+.125 Mabswid
+.18558 .19702 m
+.18832 .19985 L
+s
+.23703 .17687 m
+.23971 .17975 L
+s
+.28951 .15632 m
+.29214 .15925 L
+s
+.39772 .11395 m
+.40023 .11699 L
+s
+.4535 .09211 m
+.45595 .0952 L
+s
+.51046 .06981 m
+.51284 .07294 L
+s
+.08568 .23614 m
+.08851 .23887 L
+s
+.62804 .02377 m
+.63027 .02701 L
+s
+% End of Graphics
+MathPictureEnd
+\
+\>"], "Graphics",
+  ImageSize->{288, 233.562},
+  ImageMargins->{{5, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}},
+  ImageCache->GraphicsData["Bitmap", "\<\
+CF5dJ6E]HGAYHf4PAg9QL6QYHg<PAVmbKF5d0`40004P0000jB000`400?l00000o`00003ooooooolQ
+ooooo`00oooooolQooooo`00oooooolQooooo`00oooooolQooooo`00oooooolQooooo`00oooooolQ
+ooooo`00oooooolQooooo`00oooooolQooooo`00oooooolQooooo`00oooooolQooooo`00c?ooool2
+o`0005;ooooo002Vooooo`Go00007_ooool5o`0005;ooooo002Wooooo`04o`000?ooooooooooo`00
+01cooooo1Ol000000onY_NSo0000o`00001Aooooo`00Z?ooool00ol0003oooooooooo`0Iooooo`Go
+00001?nY_NP3o`00053ooooo002Yooooo`03o`000?oooooooooo01Kooooo1?l00007ojVmj003o`00
+0?nY_NSo0000053ooooo002Vooooo`05o`000?ooooooooooooooool000005?ooool5o`000003ojVm
+j?l0003oZKgX00KoZKgX00Co0000ojVmj?l0003o0000Coooool00:Kooooo00Go0000oooooooooooo
+ooooo`00000Aooooo`Go00001OnY_NP00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSoZKgX00;o
+0000C_ooool00:Oooooo0ol0000@ooooo`Co00002OnY_NP00ol0003oZKgXojVmj003ojVmj003o`00
+0?nY_NSoZKgX00;o0000C_ooool00;Oooooo1Ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY
+_NSoZKgX00?oZKgX0ol000000onY_NSo0000o`00001=ooooo`00]Oooool4o`0000GoZKgX00?o0000
+ojVmj?nY_NP01onY_NP00ol0003oZKgXo`000002o`000003ojVmj?l0003oZKgX00;oZKgX0_l0001<
+ooooo`00/_ooool4o`0000WoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000CoZKgX00Co0000ojVm
+j?nY_NSoZKgX0_l0001<ooooo`00/?ooool4o`000003ojVmj?l0003oZKgX00SoZKgX00?o0000ojVm
+j?nY_NP00onY_NP3o`000003ojVmj?l0003oZKgX00?oZKgX00?o0000ojVmj?nY_NP00_nY_NP2o`00
+04_ooooo002]ooooo`Go00001?nY_NP00ol0003oZKgXojVmj007ojVmj003o`000?nY_NSo000000;o
+00001OnY_NP01Ol0003oZKgXojVmj?nY_NSo000000CoZKgX0_l0001;ooooo`00Zoooool5o`0000Oo
+ZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000SoZKgX00Go0000ojVmj?nY_NSoZKgXo`000004ojVm
+j0?o0000B_ooool00:Sooooo0ol000001?oooooo0000o`000?l00008ojVmj003o`000?nY_NSoZKgX
+00?oZKgX0ol000000onY_NSo0000ojVmj008ojVmj005o`000?nY_NSoZKgXo`000?nY_NP00ol00000
+1?nY_NSo0000ooooool00019ooooo`00YOooool3o`000006ooooool0003o0000o`000?nY_NSo0000
+2_nY_NP00ol0003oZKgXo`000002o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003oZKgX
+o`000002o`0000GoZKgX0_l00019ooooo`00Xoooool2o`0000;ooooo0_l00005ojVmj003o`000?nY
+_NSoZKgX00OoZKgX0_l00009ojVmj003o`000?nY_NSoZKgX00GoZKgX0_l000000onY_NSo0000ojVm
+j006ojVmj0;o00003Oooool5o`0003Kooooo002Pooooo`?o000000Coooooo`000?l0003o00002?nY
+_NP00ol0003oZKgXojVmj003ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP00ol0003oZKgXojVm
+j002ojVmj0?o000000CoZKgXo`000?nY_NSo00002?nY_NP2o`0000gooooo00Co0000oooooooooooo
+0000=_ooool009kooooo1_l00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ojVmj?l00000
+0_l00005ojVmj003o`000?nY_NSoZKgX00OoZKgX00Co0000ojVmj?l0003o00001OnY_NP2o`0000So
+ZKgX0_l00006ooooo`Go00000oooool00ol0003oooooooooo`0fooooo`00Voooool5o`0000OoZKgX
+00?o0000ojVmj?nY_NP01_nY_NP2o`0000WoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000SoZKgX
+00?o0000ojVmj?nY_NP00onY_NP3o`000003ojVmj?l0003o000000kooooo00?o0000ooooooooool0
+=Oooool009Wooooo1?l000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol0
+00000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00?oZKgX0ol000000onY_NSo0000ojVm
+j007ojVmj0;o000000CoZKgXo`000?l0003o00001OnY_NP2o`0000[ooooo00Go0000oooooooooooo
+ooooo`00000fooooo`00U_ooool4o`0000GoZKgX00?o0000ojVmj?nY_NP01onY_NP01?l0003oZKgX
+o`000?l00005ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ojVmj?l000000_l00005ojVmj003
+o`000?nY_NSoZKgX00GoZKgX0ol00009ojVmj003o`000?oooooooooo00Sooooo00Go0000oooooooo
+ooooooooo`00000fooooo`00U?ooool3o`0000WoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000So
+ZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000WoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003
+ojVmj?l0003oZKgX00SoZKgX0_l0000:ooooo`?o0000=oooool0097ooooo1?l000000onY_NSo0000
+ojVmj008ojVmj003o`000?nY_NSoZKgX00?oZKgX0ol000000onY_NSo0000ojVmj008ojVmj003o`00
+0?nY_NSoZKgX00Co00000_nY_NP00ol0003oZKgXojVmj007ojVmj003o`000?nY_NSo000000;o0000
+0_nY_NP01?l0003oZKgXojVmj?l00009ojVmj0;o0000@oooool008kooooo1?l00005ojVmj003o`00
+0?nY_NSoZKgX00OoZKgX00?o0000ojVmj?l000000_l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX
+0ol00007ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l00005ojVmj005o`000?nY_NSoZKgXojVmj?l0
+00001onY_NP3o`0004?ooooo001/ooooo`;o00007_ooool5o`0000OoZKgX00?o0000ojVmj?nY_NP0
+1_nY_NP2o`0000WoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX
+00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00GoZKgX00Go0000ojVmj?nY_NSo
+ZKgXo`000002ojVmj0Co00000_nY_NP2o`0004;ooooo001[ooooo`04o`000?ooooooooooo`0001[o
+oooo1Ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo
+0000ojVmj009ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01onY_NP01?l0
+003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00?oZKgX00Co0000ojVmj?nY_NSoZKgX0ol0
+0007ojVmj0;o0000@Oooool006_ooooo00Co0000oooooooooooo00006?ooool4o`0000GoZKgX00?o
+0000ojVmj?nY_NP01onY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00OoZKgX
+0_l00008ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l00008ojVmj003o`000?nY_NSoZKgX00;oZKgX
+1?l000000onY_NSo0000ojVmj008ojVmj003o`000?oooooooooo03oooooo001[ooooo`04o`000?oo
+ooooooooo`0001Gooooo1Ol00008ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l00008ojVmj003o`00
+0?nY_NSoZKgX00?oZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00?oZKgX
+0ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSo000000;o00001OnY_NP00ol0003oZKgX
+ojVmj006ojVmj0;o0000@?ooool006_ooooo00Co0000oooooooooooo00004oooool5o`000003ojVm
+j?l0003oZKgX00OoZKgX00?o0000ojVmj?nY_NP00onY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX
+00?o0000ojVmj?l000000_l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?l00000
+0_l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l00002ojVmj003o`000?nY_NSoZKgX00?oZKgX
+00?o0000ojVmj?nY_NP01_nY_NP3o`0003oooooo001[ooooo`04o`000?ooooooooooo`00013ooooo
+1Ol00005ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?l000000_l00005ojVmj003o`00
+0?nY_NSoZKgX00KoZKgX0_l00009ojVmj003o`000?nY_NSoZKgX00GoZKgX0_l00009ojVmj003o`00
+0?nY_NSoZKgX00;oZKgX0ol000001OnY_NSo0000ojVmj?nY_NSo000000KoZKgX00?o0000ojVmj?nY
+_NP00_nY_NP3o`000003ojVmj?l0003o000003oooooo001/ooooo`;o00003oooool4o`0000WoZKgX
+00?o0000ojVmj?nY_NP01?nY_NP3o`0000WoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVm
+j?l0003oZKgX00SoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX
+00?o0000ojVmj?l000000_l00005ojVmj003o`000?nY_NSo000000KoZKgX00?o0000ojVmj?l00000
+0_l00005ojVmj0;o0000?_ooool007[ooooo1Ol00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o
+0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00SoZKgX00Co0000ojVmj?l0003o0000
+1OnY_NP00ol0003oZKgXojVmj007ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY
+_NP01_nY_NP2o`0000WoZKgX0_l00006ojVmj0;o00002OnY_NP2o`0003gooooo001gooooo`Go0000
+1_nY_NP00ol0003oZKgXojVmj006ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj007ojVmj0;o0000
+2?nY_NP00ol0003oZKgXojVmj005ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj002ojVmj0?o0000
+00?oZKgXo`000?nY_NP02?nY_NP2o`0000?oZKgX0ol000000onY_NSo0000ojVmj008ojVmj0;o0000
+?Oooool007Gooooo0_l000000ooooooo0000o`000009ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol0
+00000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00?oZKgX0ol000000onY_NSo0000ojVm
+j008ojVmj003o`000?nY_NSoZKgX00Co00000_nY_NP00ol0003oZKgXojVmj007ojVmj004o`000?nY
+_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01onY_NP01?l0003oZKgXo`000?l00005ojVmj003
+o`000?nY_NSoZKgX00KoZKgX0ol0000looooo`00L_ooool6o`000003ojVmj?l0003oZKgX00WoZKgX
+00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj006ojVmj003o`000?nY_NSo000000;o
+00001OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj006ojVmj0;o
+00002?nY_NP00ol0003oZKgXojVmj005ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj002ojVmj0?o
+000000?oZKgXo`000?l00000??ooool0073ooooo1Ol00005ojVmj003o`000?nY_NSoZKgX00OoZKgX
+0_l00008ojVmj003o`000?nY_NSoZKgX00GoZKgX0_l00009ojVmj003o`000?nY_NSoZKgX00;oZKgX
+0ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000
+ojVmj008ojVmj003o`000?nY_NSoZKgX00Co000000?oZKgXo`000?l000002OnY_NP01?l0003oZKgX
+o`000?l00005ojVmj0;o0000>oooool006gooooo1ol00007ojVmj003o`000?nY_NSoZKgX00?oZKgX
+0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000
+ojVmj009ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003o
+ZKgXo`000002o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000GoZKgX00?o0000ojVmj?l0
+00002?nY_NP2o`0000SoZKgX0_l0000jooooo`00Joooool5o`0000;oZKgX00?o0000ojVmj?nY_NP0
+1onY_NP00ol0003oZKgXo`000002o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgX
+o`000?l00005ojVmj003o`000?nY_NSoZKgX00OoZKgX0_l00008ojVmj003o`000?nY_NSoZKgX00Go
+ZKgX0_l00009ojVmj003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000ojVmj005ojVmj004
+o`000?nY_NSoZKgXo`0000CoZKgX0ol000000onY_NSo0000ojVmj008ojVmj003o`000?oooooooooo
+03Sooooo001Xooooo`Go00001_nY_NP00ol0003oZKgXojVmj006ojVmj0;o00002OnY_NP00ol0003o
+ZKgXojVmj004ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj003ojVmj0?o000000?oZKgXo`000?nY
+_NP01onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02OnY_NP01?l0003o
+ZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00?oZKgX00Go0000ojVmj?nY_NSo0000ojVmj003
+o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0003Wooooo001Vooooo`Co000000?oZKgXo`00
+0?nY_NP01onY_NP00ol0003oZKgXojVmj002ojVmj0?o00000_nY_NP00ol0003oZKgXojVmj007ojVm
+j003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj007ojVmj003o`000?nY_NSo0000
+00;o00001OnY_NP00ol0003oZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000
+ojVmj?nY_NP01onY_NP2o`0000SoZKgX00?o0000ojVmj?nY_NP00_nY_NP00ol0003oZKgXo`000002
+o`0000WoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003o000003Sooooo001Soooo
+o`Co00001OnY_NP00ol0003oZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000KoZKgX00?o0000
+ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000WoZKgX00?o0000
+ojVmj?nY_NP01?nY_NP3o`0000SoZKgX00?o0000ojVmj?nY_NP00onY_NP3o`000003ojVmj?l0003o
+ZKgX00SoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000
+ojVmj?l000000_l00005ojVmj003o`000?oooooooooo03Kooooo001Qooooo`Go00001onY_NP00ol0
+003oZKgXojVmj004ojVmj0?o00002OnY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`00
+0?nY_NP01onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02OnY_NP00ol0
+003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01onY_NP00ol0003oZKgXo`000002o`00
+00GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000;oZKgX00Go0000ojVmj?nY_NSoZKgXo`000008
+ojVmj0;o00002OnY_NP00ol0003oooooooooo`0eooooo`00G_ooool5o`000003ojVmj?l0003oZKgX
+00SoZKgX00?o0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00OoZKgX00Co0000ojVm
+j?l0003o00001OnY_NP00ol0003oZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o
+0000ojVmj?nY_NP01onY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000WoZKgX00?o
+0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00;oZKgX00?o0000ojVmj?nY_NP00_nY
+_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP2o`0003Kooooo001K
+ooooo`Go00001OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj006
+ojVmj0;o00002?nY_NP00ol0003oZKgXojVmj004ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj003
+ojVmj0?o000000?oZKgXo`000?nY_NP01onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgX
+o`000?nY_NP02?nY_NP00ol0003oZKgXo`000002o`0000GoZKgX00Co0000ojVmj?nY_NSo00001OnY
+_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l0000fooooo`00FOoo
+ool2o`000003ooooool0003o000000SoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`0000;oZKgX00?o
+0000ojVmj?nY_NP01_nY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY
+_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01onY_NP00ol0003oZKgXo`00
+0002o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVmj003o`00
+0?nY_NSoZKgX00KoZKgX0_l00009ojVmj003o`000?nY_NSo000000CoZKgX0ol00008ojVmj003o`00
+0?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000o`00000eooooo`00<oooool5o`0001kooooo1_l0
+0002ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o00001_nY_NP00ol0003oZKgX
+ojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000Ko
+ZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000WoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000So
+ZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX00?o0000ojVmj?l0
+00001?l00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00Co0000ojVmj?l0003o00001OnY_NP2o`00
+03Cooooo000dooooo`04o`000?ooooooooooo`0001cooooo0_l000000ooooooo0000o`000006ojVm
+j003o`000?nY_NSoZKgX00GoZKgX0_l00009ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00008ojVm
+j003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX
+00;oZKgX0ol000000onY_NSo0000ojVmj009ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0
+003oZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3
+o`0000OoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000SoZKgX00?o0000ooooooooool0<_ooool0
+02gooooo1Ol00003ooooo`03o`000?oooooooooo01Wooooo1ol00008ojVmj003o`000?nY_NSoZKgX
+00;oZKgX0_l00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ojVmj?nY_NP00ol00002ojVm
+j003o`000?nY_NSoZKgX00OoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj006
+ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01onY_NP3o`0000OoZKgX00?o
+0000ojVmj?nY_NP01?nY_NP3o`0000SoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0
+003o000000SoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00OoZKgX0_l0
+000cooooo`00=_ooool00ol0003oooooooooo`0Fooooo`Go00001?nY_NP00ol0003oZKgXojVmj006
+ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o
+0000ojVmj?nY_NP01_nY_NP2o`0000SoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000SoZKgX00?o
+0000ojVmj?nY_NP00onY_NP3o`000003ojVliol0003oZKgX00SoZKgX00?o0000ojVmj?nY_NP00ol0
+0002ojVmj003o`000?nY_NSoZKgX00OoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgX
+ojVmj006ojVmj003o`000?nY_NSo000000;o00001OnY_NP00ol0003oZKgXojVmj005ojVmj0?o0000
+<_ooool003?ooooo00Go0000ooooooooooooooooo`00000Dooooo`Go00002?nY_NP00ol0003oZKgX
+ojVmj004ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP0
+1onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP00ol0003oZKgX
+ojVmj003o`0000;oZKcW00?o0000ojVmj?nY_NP01onY_NP00ol0003oZKgXo`000002o`0000GoZKcW
+00?o0000ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0000OoZKgX
+0_l00006ojVmj0?o00002OnY_NP01?l0003oZKgXojVmj?nY_NP3o`000003ojVmj?l0003o000003;o
+oooo000cooooo`05o`000?ooooooooooooooool000004Oooool5o`0000;oZKgX00?o0000ojVmj?nY
+_NP01onY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01onY_NP01?l0003o
+ZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o00001OnY_NP0
+0ol0003oZKgXojVmj006ojVmj0?o00001_nY_>L00ol0003oZKgXojVmj006ojVmj0;o00002OnY_>L0
+0ol0003oZKgXojVmj002ojVmj0?o000000?oZKcWo`000?nY_NP01onY_NP00ol0003oZKgXojVmj002
+ojVmj0?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXo`000002ojVmj0?o00000_nY_NP0
+0ol0003oZKgXojVmj007ojVmj004o`000?nY_NSo0000o`0000GoZKgX0_l0000aooooo`00=?ooool3
+o`00013ooooo1Ol00005ojVmj003o`000?nY_NSoZKgX00KoZKgX0ol00006ojVmj003o`000?nY_NSo
+ZKgX00KoZKgX0_l00008ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00008ojVmj003o`000?nY_NSo
+ZKgX00;oZKgX0ol000000onY_>Oo0000ojVli`07ojVli`03o`000?nY_NSoZKgX00;oZKgX0ol00000
+0onY^nKo0000ojVli`08ojVli`03o`000?nY_NSo000000;o00001OnY_>L00ol0003oZKgXojVmj005
+ojVmj003o`000?nY_NSo000000;o00001OnY_NP00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSo
+000000;o00001_nY_NP00ol0003oZKgXojVmj005ojVmj0?o00002?nY_NP2o`00033ooooo0014oooo
+o`Ko00002?nY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP01onY_NP00ol0
+003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP00ol0003oZKgXojVmj003o`00
+00?oZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVli`03o`000?nY_>Oo
+ZKcW00KoZKcW00Co0000ojVmj?l0003o00001OnY^nH00ol0003oZKcWojVli`06ojVli`;o00002OnY
+_>L00ol0003oZKgXojVmj003ojVmj0?o00002OnY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?o
+ZKgXo`000?nY_NP01onY_NP00ol0003oZKgXojVmj004o`0000;oZKgX00?o0000ojVmj?nY_NP01onY
+_NP00ol0003oooooooooo`0^ooooo`00@_ooool5o`0000;oZKgX00?o0000ojVmj?nY_NP01onY_NP0
+1?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o0000
+1OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o0000
+2?nY_>L00ol0003oZKcWojVli`04ojVli`?o00002?nY^nH00ol0003oZKcWojVli`02ojVli`?o0000
+00?oZ[_Uo`000?nY_>L02?nY_>L00ol0003oZKgXojVmj003o`0000?oZ[gW00?o0000ojVmj?nY_NP0
+1_nY_NP00ol0003oZKgXo`000002o`000003ojVmj?l0003oZKgX00;oZKgX00?o0000ojVmj?nY_NP0
+1OnY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`0002oooooo000oooooo`Go00001_nY
+_NP00ol0003oZKgXojVmj006ojVmj0;o00002?nY_NP00ol0003oZKgXojVmj004ojVmj0?o00002?nY
+_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP00ol0003oZKgXojVm
+j003o`0000;oZKcW00?o0000ojVlionY_>L01onY_>L00ol0003oZKcWojVli`03o`0000?oZK[U00?o
+0000ojVki_nY^nH01_nY^nH01?l0003oZKcWo`000?l00005ojZki@03o`000?nY_>OoZKcW00KoZKcW
+0ol00007ojZmi`03o`000?nY_NSoZKgX00CoZKgX0ol00004ojVmj003o`000?nY_NSoZKgX00;oZKgX
+00Co0000ojVmj?nY_NSoZKgX0ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00;o
+ZKgX0ol000000onY_NSo0000o`00000^ooooo`00?Oooool4o`0000;oZKgX00?o0000ojVmj?nY_NP0
+1OnY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP00ol0003oZKgX
+ojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVmj003
+o`000?nY_NSoZKgX00KoZKgX0ol00006ojVli`03o`000?nY_>OoZKcW00KoZKcW0ol00007ojVji@03
+o`000?nY^nKoZK_V00CoZK_V0ol00008ojZki@03o`000?nY_>OoZKcW00;oZKcW0ol000000onZ^nGo
+0000ojZmi`08ojZmi`03o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj002ojVmj003
+o`000?nY_NSoZKgX00;oZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj006ojVm
+j003o`000?nY_NSo000000;o00001OnY_NP00ol0003oooooooooo`0/ooooo`00>_ooool4o`0000Ko
+ZKgX00?o0000ojVmj?nY_NP01OnY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX
+00KoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00008ojVmj003o`000?nY_NSoZKgX
+00;oZKgX0ol000000onY_>Oo0000ojVli`07ojVli`03o`000?nY_>OoZKcW00;oZKcW0ol000000onY
+^>Co0000ojVji@08ojVji@03o`000?nY^nKoZK_V00?o00000_nZ]n800ol0003oZ[_UojZki@07ojZk
+i@04o`000?nY_>Oo0000o`0000GoZ[_U00?o0000ojZmionZ_NL01_nZ_NL3o`0000KoZKgX00?o0000
+ojVmj?nY_NP00_nY_NP01?l0003oZKgXojVmj?nY_NP2o`0000SoZKgX00?o0000ojVmj?nY_NP01?nY
+_NP3o`0000WoZKgX00?o0000ooooooooool01_ooool2o`0002?ooooo000hooooo`Co000000?oZKgX
+o`000?nY_NP01_nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003oZKgXojVmj002
+ojVmj0?o00000_nY_NP00ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP0
+0ol0003oZKgXojVmj007ojVmj004o`000?nY_NSo0000o`0000GoZKcW00?o0000ojVlionY_>L01_nY
+_>L01?l0003oZKcWo`000?l00005ojVhi003o`000?nY^^GoZK[U00KoZK[U0ol00006ojZghP03o`00
+0?nZ^nGoZ[_U00KoZ[_U0_l00008ojZki@03o`000?nZ_NOoZ[gW00;oZ[gW0ol000000onZ_>Ko0000
+ojVmj007ojVmj004o`000?nY_NSoZKgXojVmj0Co000000?oZKgXo`000?nY_NP02?nY_NP00ol0003o
+ZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01onY_NP00ol0003oooooooooo`05ooooo`04
+o`000?ooooooooooo`0002;ooooo000eooooo`Go00000_nY_NP00ol0003oZKgXojVmj007ojVmj003
+o`000?nY_NSoZKgX00?o00000onY_NP00ol0003oZKgXojVmj005ojVmj004o`000?nY_NSo0000o`00
+00KoZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01_nY_NP2o`00
+00SoZKcW00?o0000ojVlionY_>L01?nY_>L3o`0000SoZKST00?o0000ojVjiOnY^^D00_nY^^D3o`00
+0003ojZagOl0003oZ[OR00OoZ[OR00?o0000ojZkiOnZ^nD00_nZ^nD3o`000003ojbfhOl0003oZ[_U
+00SoZ[_U00Co0000ojZmiol0003o00001OnZ_>H00ol0003oZKgXojVmj006ojVmj004o`000?nY_NSo
+0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01OnY
+_NP3o`0000Kooooo00Co0000oooooooooooo00008_ooool003?ooooo0_l000000ooooooo0000o`00
+0005ojVmj003o`000?nY_NSoZKgX00KoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0
+0008ojVmj003o`000?nY_NSoZKgX00;oZKgX0_l00002ojVmj003o`000?nY_NSoZKgX00GoZKgX00?o
+0000ojVmj?nY_NP00_nY_NP3o`000003ojVliol0003oZKcW00SoZKcW00?o0000ojVlionY_>L00ol0
+0002ojVgh`03o`000?nY^>CoZKST00OoZKST00Co0000ojVjiOl0003o00001OnZ/Md00ol0003oZ[OR
+ojZghP06ojZghP04o`000?nZ^nGo0000o`0000Go[;KQ00?o0000ojZkiOnZ^nD01_nZ^nD2o`0000So
+Z[cV00?o0000ojVmj?nY_NP01?nY_NP3o`000003ojVmj?l0003oZKgX00GoZKgX00?o0000ojVmj?nY
+_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00OoZKgX00?o0000ojVmj?nY_NP01?l00002ojVmj0;o
+00001Oooool01?l0003oooooooooool0000Rooooo`00<?ooool7o`0000OoZKgX00?o0000ojVmj?nY
+_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX00?o0000ojVmj?nY_NP00ol00003ojVmj003
+o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj005ojVm
+j004o`000?nY_NSo0000o`0000GoZKcW00?o0000ojVlionY_>L01_nY_>L3o`0000KoZKOS00?o0000
+ojVhi?nY^>@01_nY^>@2o`0000SoZ[7M00?o0000ojZgh_nZ]n801OnZ]n82o`0000So[;KQ00?o0000
+ojZkiOnZ^nD00_nZ^nD3o`000003ojbihol0003oZ[cV00OoZ[cV00?o0000ojVmj?nY_NP01?l00002
+ojZmi`03o`000?nY_NSo000000KoZKgX00?o0000ojVmj?l000000_l00005ojVmj003o`000?nY_NSo
+ZKgX00GoZKgX0ol00007ojVmj003o`000?oooooooooo00?ooooo00Co0000oooooooooooo00008_oo
+ool002gooooo1_l00004ojVmj003o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?l0003o00001OnY
+_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o00002?nY
+_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_>L00ol0003oZKcWojVli`02ojVli`?o000000?o
+ZKSTo`000?nY]n<01onY]n<00ol0003oZKSTojVhi002ojVhi0?o000000?oZJcIo`000?nZ/Md01onZ
+/Md00ol0003oZ[ORojZghP02ojZghP?o000000?o[:gHo`000?n/]^402?n/]^401?l0003oZ[_Uo`00
+0?l00005ojbih`03o`000?nZ_>KoZ[cV00GoZ[cV0ol00007ojZmi`;o00001OnY_NP3o`0000WoZKgX
+00Co0000ojVmj?nY_NSoZKgX0ol000000onY_NSo0000ojVmj008ojVmj0;o00000oooool01?l0003o
+ooooooooool0000Rooooo`00:oooool5o`0000SoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000Oo
+ZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX00?o0000ojVmj?nY
+_NP00ol00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ojVmj?nY_NP00ol00003ojVmj003
+o`000?nY_>OoZKcW00GoZKcW00Co0000ojVliol0003o00001OnY^>@00ol0003oZKOSojVgh`06ojVg
+h`04o`000?nY^>Co0000o`0000GoZJcI00?o0000ojZagOnZ/Md01_nZ/Md01?l0003oZ[ORo`000?l0
+0005ojb]f003o`000?n/]^7o[;KQ00Ko[;KQ0_l00008ojbih`04o`000?nZ_>KoZ[cVojZliP?o0000
+00?o[;cVo`000?nZ_NL02?nZ_NL00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP0
+1_nY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l00004ooooo`;o
+00008oooool002Sooooo1Ol00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ojVmj?nY_NP0
+0ol00003ojVmj003o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003o
+ZKgXojVmj006ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003o
+ZKcWojVli`04ojVli`;o00002?nY^>@00ol0003oZKOSojVgh`04ojVgh`?o00002?nY[=T00ol0003o
+Z[7MojZag@05ojZag@;o00002?n/[MP00ol0003o[;KQojbfh@02ojbfh@?o000000?o[k3Io`000?n/
+^N<01on/^N<01?l0003oZ[cVo`000?l00005ojbliP03o`000?nZ_NOoZ[gW00GoZ[gW1?l00007ojVm
+j003o`000?nY_NSoZKgX00CoZKgX0ol00008ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0000Yoooo
+o`009_ooool2o`000003ooooool0003o000000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000Oo
+ZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003
+ojVmj?l0003oZKgX00OoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00So
+ZKgX00?o0000ojVlionY_>L00ol000000onY^NGo0000ojVhi008ojVhi003o`000?nY]n?oZKOS00?o
+00000_nXZMP00ol0003oZJcIojV/f@06ojV/f@03o`000?nZ/MgoZ[7M00;oZ[7M0ol000000on[XLgo
+0000ojb]f008ojb]f004o`000?n/]^7o0000o`0000Go[k3I00?o0000ojbihon/^N<01On/^N<2o`00
+00So[;cV00Co0000ojZmionZ_NOoZ[gW1_l00009ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP0
+0ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00Co00000_nY_NP2o`0002Sooooo000Soooo
+o`?o000000Coooooo`000?l0003o00001onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgX
+o`000?nY_NP02?nY_NP00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01OnY_NP0
+1?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o0000
+1OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001OnY^ND00ol0003oZKSTojVhi006ojVhi0?o0000
+1_nXZMP00ol0003oZJcIojV/f@06ojV/f@04o`000?nZ/Mgo0000o`0000GoZj7=00?o0000ojb]f?n/
+[MP01_n/[MP2o`0000So[k3I00Co0000ojbihon/^N?o[;WS0ol000000on`^=oo0000ojbliP08ojbl
+iPCo00001?nZ_NL2o`0000SoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00007ojVm
+j0;o00009oooool002;ooooo1Ol00003ojVmj003o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?l0
+003o00001OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj004ojVm
+j0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o00002?nY_NP00ol0003oZKgXojVmj002ojVm
+j0?o000000?oZK_Wo`000?nY^ND01_nY^ND00ol0003oZKSTojVhi002ojVhi0?o000000?oYZ_Jo`00
+0?nXZMP01onXZMP00ol0003oZJcIojV/f@05ojV/f@;o00002?n[XLd00ol0003o[:gHojb]f003ojb]
+f0;o000000?o/:;9o`000?n_/=T01on_/=T01?l0003o[;WSo`000?l00005ok2hg`03o`000?n/_>Ko
+[;cV00?o[;cV1Ol00007ojZmi`;o00001?nY_NP3o`000003ojVmj?l0003oZKgX00OoZKgX00?o0000
+ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00OoZKgX00?o0000ooooooooool09Oooool0
+02;ooooo0_l00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX
+00;oZKgX0ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0
+003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0003oZKgXojVmj006ojVm
+j004o`000?nY_NSo0000o`0000GoZK_W00?o0000ojViiOnY^ND01OnY^ND01?l0003oZKSTo`000?l0
+0005ojJ[fP03o`000?nXZMSoZ:WH00GoZ:WH00?o0000ojV/fOnY[=T00_nY[=T3o`000003ojRHaOl0
+003oZj7=00OoZj7=00?o0000ojb]f?n/[MP00_n/[MP00ol0003o/:;9ok2Rb@02ok2Rb@03o`000?n_
+/=Wo[k3I00Go[k3I0_l00008ok2hg`03o`000?n/_>Ko000000Go000000?o[KgUo`000?nZ_NL01onZ
+_NL00ol0003oZKgXo`000002o`0000GoZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000KoZKgX00?o
+0000ojVmj?nY_NP01_nY_NP2o`0002Kooooo000Jooooo`;o00001_ooool00ol0003oZKgXojVmj007
+ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0003oZKgXojVmj005ojVmj004o`000?nY_NSo
+0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP01?nY
+_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000SoZK_W00?o0000ojViiOnY^ND01?nY
+^ND2o`0000OoYZ_J00?o0000ojRYf?nXZMP01_nXZMP01?l0003oZJcIo`000?l00005ojRHa@03o`00
+0?n[XLgoZj7=00KoZj7=00Co0000ojb]f?l0003o00001On`X/T00ol0003o[k3Iojn`f@03ojn`f@;o
+000000?o]Zg@o`000?n`^=l01_n`^=l3o`000003ojbli_l0003o000000Go[KgU00?o0000ojZmionZ
+_NL01?nZ_NL3o`0000WoZKgX00Co0000ojVmj?nY_NSoZKgX0ol000000onY_NSo0000ojVmj007ojVm
+j003o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000o`00000Uooooo`006Oooool01?l0003o
+ooooooooool00005ooooo`;o00002?nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`00
+00OoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003oZKgX00SoZKgX00?o0000ojVm
+j?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00003ojVl
+i`03o`000?nY^nOoZK_W00KoZK_W00?o0000ojViiOnY^ND00ol000000onV/=oo0000ojJ[fP07ojJ[
+fP03o`000?nXZMSoZ:WH00GoZ:WH0_l00007ojRHa@03o`000?n[XLgoZj7=00KoZj7=0_l00008ok2R
+b@05o`000?n_/=Wo[k3Iojn`fOl000001?nf[M001?l0003o/;SOok2hgon`^=l3o`0000;o/;SO0_l0
+0008ojfmi@03o`000?nZ_NOoZ[gW00?o00000_n[_NL2o`0000SoZKgX00Co0000ojVmj?l0003o0000
+1OnY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSo000000;o00001OnY_NP00ol0003ooooo
+ooooo`0Sooooo`006Oooool01?l0003oooooooooool00004ooooo`04o`000?ooooooooooo`0000Co
+ZKgX0ol000000onY_NSo0000ojVmj008ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0003o
+ZKgXojVmj005ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`00
+00KoZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000OoZKcW00?o0000ojVkionY^nL01?nY^nL4o`00
+00GoY[3O00?o0000ojJ[f_nVZmX01_nVZmX01?l0003oZ:WHojRYf?nXZMP3o`000003oj>B`ol0003o
+Z9S500OoZ9S500?o0000oj^QcOn[XLd00on[XLd2o`000003ojfB^_l0003o/:;900Oo/:;900Co0000
+ojn`fOl0003o00001_nf[M03o`0000;o/;SO0ol000000onf^]go0000ojfmi@07ojfmi@?o00001_n[
+_NL2o`0000KoZKgX0ol00008ojVmj003o`000?nY_NSoZKgX00?oZKgX0ol00009ojVmj0;o00008ooo
+ool001Wooooo00Co0000oooooooooooo00001?ooool01_l0003ooooooooooooooooo0000ojVmj0;o
+00001OnY_NP00ol0003oZKgXojVmj006ojVmj0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o
+00001onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP01onY_NP00ol0003o
+ZKgXojVmj002ojVmj0;o000000?oZKgXo`000?nY_>L02?nY_>L00ol0003oZK_WojVki`03o`0000;o
+Y[GS00?o0000ojJ`gonV/=l01OnV/=l00ol0003oYZ_JojJ[fP05ojJ[fP04o`000?nXZMSo0000o`00
+00GoXi;300?o0000ojRHaOnXV<D01_nXV<D01Ol0003oZj7=oj^QcOn[XLgo000000Co[I:j00?o0000
+ok2RbOn`X/T01On`X/T2o`0000Go]Zg@0ol000000onf[M3o0000ok2hg`02o`0000Go][[M00?o0000
+ojfmiOn]_ND00_n]_ND3o`000003ojnniOl0003oZkgW00KoZkgW00?o0000oj^miol000000_nY_NP3
+o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000
+ojVmj?nY_NP01onY_NP2o`0002?ooooo000Iooooo`04o`000?ooooooooooo`0000Cooooo0_l00003
+ooooo`;o00001onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP02?nY_NP0
+0ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01OnY_NP01?l0003oZKgXo`000?l0
+0005ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000ojVmj?l0003o00001?nY_NP00ol0003oZKcW
+ojVli`06ojVli`?o00001_nV]N<00ol0003oY[3OojJ`g`04ojJ`g`03o`000?nVZm[oYZ_J00CoYZ_J
+0ol00007oj>B``03o`000?nXV<GoZ9S500KoZ9S500Co0000oj^QcOl0003o00001On]T[X00ol0003o
+/:;9ok2Rb@04ok2Rb@03o`000?nhWKco000000?o]Zg@0_l00004okJ]d0;o00002?nf^]d01?l0003o
+[KgUo`000?l00005ojnni@03o`000?n[_NOoZkgW00GoZkgW1?l00006ojVmj003o`000?nY_NSoZKgX
+00CoZKgX1?l00006ojVmj003o`000?nY_NSoZKgX00GoZKgX0ol0000Sooooo`006Oooool01?l0003o
+ooooooooool00004ooooo`03o`000?oooooooooo00Cooooo00?o0000ojVmj?nY_NP01OnY_NP01?l0
+003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00KoZKgX0ol00007ojVmj003o`000?nY_NSo
+ZKgX00CoZKgX0_l00008ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_>Oo
+ZKcW00;oZKcW0ol000000onW^^Ko0000ojJeh`07ojJeh`03o`000?nV/=ooY[3O00CoY[3O00?o0000
+ojJ[f_nVZmX00ol00002oinCa`03o`000?nST/?oXi;300KoXi;300?o0000ojRHaOnXV<D01OnXV<D2
+o`0000Oo[I:j00?o0000ok2RbOn`X/T00on`X/T01?l0003o^9flokRM_?nhWK`3o`0000Go]Zg@00?o
+0000ol6abol000002?nf^]d2o`0000So[kkU00?o0000oj^mion[_NL00_n[_NL5o`0000SoZKgX00?o
+0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?nY_NP01?l0
+0002ojVmj0;o00008_ooool001[ooooo0_l00005ooooo`03o`000?oooooooooo00Gooooo00?o0000
+ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003ojVmj?l0003o
+ZKgX00SoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000
+ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00GoZKgX00Co0000ojVliol0003o00001OnW
+^^H00ol0003oY[GSojJeh`05ojJeh`03o`000?nV/=ooY[3O00CoY[3O0ol00006oinCa`03o`000?nS
+T/?oXi;300GoXi;300?o0000ojRHaOnXV<D01?nXV<D00ol0003oYhJao`000008ojfB^P06o`000?n`
+X/Wo/:;9ok2RbOl0003o^9fl1?l00006okJ]d005o`000?o1/L_o`K7;ol6abol000001Onf^]d2o`00
+0003okc0gOl0003o[kkU00So[kkU00Co0000oj^miol0003o00001?n[_^P2o`0000OoZKgX0ol00006
+ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00007ojVmj0;o00008Oooool0023ooooo0_l00008oooo
+o`03o`000?nY_NSoZKgX00?o00000onY_NP00ol0003oZKgXojVmj005ojVmj004o`000?nY_NSo0000
+o`0000GoZKgX00?o0000ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP4
+o`0000OoZKgX00?o0000ojVmj?nY_NP01?nY_NP2o`0000SoYk[V00?o0000ojJehonV]N<01OnV]N<0
+0ol0003oY[3OojJ`g`03o`000003oifKdOl0003oWi?700KoWi?700?o0000oj>B`onST/<01OnST/<0
+0ol0003oZ9S5ojRHa@02ojRHa@;o00000_nWQ[400ol0003o[I:jojfB^P06ojfB^P03o`000?n`X/Wo
+/:;900?o00001?nhWK`00ol0003o]Zg@okJ]d002okJ]d003o`000?o1/L_o`K7;00?o`K7;00Go0000
+okJjgOnf^]go][[Mo`000004okc0g@03o`000?n__^Go[kkU00Ko[kkU0_l00006oj^nj003o`000?n[
+_^So000000?oZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00?o00000_nY
+_NP00ol0003oZKgXojVmj007ojVmj003o`000?oooooooooo01oooooo000Pooooo`03o`000?oooooo
+oooo00Sooooo0_l00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSo
+ZKgX00;oZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP0
+0ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000_nX_>L00ol0003oYk[VojNjiP06
+ojNjiP03o`000?nV]N?oY[GS00;oY[GS1Ol00005oifKd@03o`000?nOTlOoWi?700GoWi?700?o0000
+oj>B`onST/<01OnST/<01?l0003oZ9S5ojRHaOl00005ojN6/@03o`000?n]T[[o[I:j00Go[I:j0ol0
+0008okRM_004o`000?nf[M3o]Zg@o`0000Ko`K7;00Co0000okJjgOl0003o00001_nl`=d00ol0003o
+[kkUojnni@02ojnni@?o000000?o/<7Vo`000?n[_^P01_n[_^P2o`000003ojVmj?l0003o000000Go
+ZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`00023o
+oooo000Pooooo`03o`000?oooooooooo00[ooooo00?o0000ojVmj?nY_NP01OnY_NP00ol0003oZKgX
+ojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01OnY_NP01?l0003oZKgXo`000?l00005ojVmj003
+o`000?nY_NSoZKgX00GoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00006ojRli`03
+o`000?nW^^KoYk[V00CoYk[V1_l00003oijWg003o`000?nMVm7oWI_A00CoWI_A00?o0000oinCaonO
+TlL01OnOTlL00ol0003oXi;3oj>B``05oj>B``03o`000?nXV<Go000000KoYhJa00?o0000ojfB^_n]
+T[X00_n]T[X3o`000003ojfB^_l0003o^9fl00So^9fl00?o0000okJ]d?l000002?o1/L/00ol0003o
+_<3Mokc0g@07okc0g@04o`000?n__^Go0000o`0000Go/<7V00?o0000oj^nj?n[_^P01?n[_^P3o`00
+00SoZKgX00Co0000ojVmj?nY_NSoZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSo
+ZKgX00Co00000_nY_NP2o`0001oooooo000Pooooo`;o00003?ooool00ol0003oZKgXojVmj004ojVm
+j0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003oZKgXojVmj002ojVm
+j0;o00000_nY_NP00ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0
+003oZ;cWojRli`05ojRli`03o`000?nW^^KoYk[V00?o00000_nR/n@00ol0003oWZOLoijWg005oijW
+g003o`000?nMVm7oWI_A00CoWI_A00?o0000oinCaonOTlL01?nOTlL00ol0003oXi;3oj>B``05oj>B
+``;o00001onWQ[400ol0003o[I:jo`000002o`0000?o[I:j0_l0000:okRM_003o`000?o1/L_o`K7;
+00Ko`K7;0_l00009okc0g@;o00002?n``NH00ol0003oZkkXoj^nj003o`0000;oZkkX00?o0000ojVm
+j?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00GoZKgX0ol00007
+ojVmj003o`000?oooooooooo01gooooo000Pooooo`03o`000?oooooooooo00cooooo00?o0000ojVm
+j?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00GoZKgX00?o0000ojVmj?nY_NP00ol00003ojVm
+j003o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj005
+ojVmj0?o00001onY_NP00ol0003oZ;cWojRli`04ojRli`?o00001_nR/n@00ol0003oWZOLoijWg004
+oijWg003o`000?nMVm7oWI_A00CoWI_A00?o0000oinCaonOTlL01OnOTlL01?l0003oXi;3oj>B`onS
+T/<3o`000003oimo[ol0003oYhJa00GoYhJa0ol00005ojfB^P04o`000?ndSZko]8j^o`0000Wo^9fl
+00?o0000ol6aboo1/L/01Oo1/L/01?l0003oc[o<oljoc?l00006okc0g@;o000000?o`<SQo`000?n`
+`NH01on``NH3o`0000GoZkkX0_l00006ojVmj0?o00002?nY_NP01?l0003oZKgXojVmj?nY_NP3o`00
+0003ojVmj?l0003oZKgX00OoZKgX0_l0000Nooooo`008?ooool2o`0000kooooo0_l00007ojVmj003
+o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0_l00008ojVmj003
+o`000?nY_NSoZKgX00;oZKgX0_l000000onY_NSo0000ojVmj008ojVmj003o`000?nX_>OoZ;cW00?o
+000000?oY[WWo`000?nR/n@01onR/n@00ol0003oWZOLoijWg004oijWg003o`000?nMVm7oWI_A00?o
+WI_A00?o0000oinCaonOTlL01OnOTlL01?l0003oXi;3o`000?l00004oimo[`04o`000?nWQ[7oYhJa
+ojN6/@?o00000_nWQ[400ol0003o[I:jojfB^P02ojfB^P05o`000?ndSZko]8j^okB>[_l000002?nh
+WK`00ol0003oaZBgo`000005ol6ab`03o`000?o>_lcoc[o<00;oc[o<00?o0000okc0gOnl`=d00_nl
+`=d00ol0003o`<SQol38h@02ol38h@03o`000?n``NKo/<7V00;o/<7V0ol000000on_`^Oo0000oj^n
+j006oj^nj0;o00000_nY_NP3o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`00
+0?l00005ojVmj003o`000?nY_NSoZKgX00GoZKgX0_l0000Nooooo`007oooool2o`0000oooooo00?o
+0000ojVmj?nY_NP01onY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY
+_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`00
+0?l00004ojVmj003o`000?nY_NSoZKgX00KoZKgX0ol00005ojJii`03o`000?nR/nCoX[?T00GoX[?T
+00?o0000oijWg?nNYm`01?nNYm`00ol0003oWI_AoifKd@04oifKd@03o`000?nOTlOoWi?700?oWi?7
+0ol00007oimo[`?o00001OnWQ[401Ol0003o[I:jojfB^_n]T[[o000000Go]8j^00?o0000okRM_?nh
+WK`01?nhWK`01?l0003oaZBgolJT]ol00004ol6ab`03o`000?o>_lcoc[o<00Coc[o<00Co0000okc0
+gOl0003o00001_o0b>401?l0003o/<7Vo`000?l00005ojo2i`03o`000?n[_^SoZkkX00GoZkkX0ol0
+0006ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00008ojVmj004o`000?nY_NSoZKgXojVmj0?o0000
+00?oZKgXo`000?l000007Oooool000Kooooo0_l00004ooooo`04o`000?ooooooooooooooo`Go0000
+0_ooool3o`0000Gooooo00?o0000ooooooooool03oooool00ol0003oZKgXojVmj006ojVmj0?o0000
+1_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0003oZKgXojVmj004ojVmj0?o0000
+1onY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZ;cXo`000?nV^NL01_nV^NL00ol0003oX[?T
+oj:ci005oj:ci003o`000?nNYmcoWZOL00?oWZOL00?o0000oifKdOnMVm401?nMVm400ol0003oWi?7
+oinCa`03o`0000;oUWbd00?o0000oimo[onOOjl00onOOjl3o`0000OoYhJa00Co0000ojfB^_n]T[[o
+00001_ndSZh00ol0003o^9flokRM_003okRM_003o`000?o6Y;OoaZBg00;oaZBg00Co0000ol6aboo1
+/L_o00002?o>_l`00ol0003o`<SQol38h@06ol38h@;o00002?n_`^L01?l0003oZkkXoj^nj?n[_^P5
+o`0000SoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX00Co0000
+ojVmj?l0003o00001OnY_NP2o`0001cooooo0005ooooo`04o`000?ooooooooooo`0000Sooooo00Ko
+0000oooooooooooo0000ooooool00003ooooo`03o`000?oooooooooo00;ooooo0_l0000Aooooo`03
+o`000?nY_NSoZKgX00;oZKgX0ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX00?o
+00000onY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0003o
+ZKgXojVmj005ojVmj004o`000?nY_NSo0000o`0000GoZ;cX00?o0000ojJiionV^NL01OnV^NL00ol0
+003oX[?Toj:ci002oj:ci1;o00001OnFO;@00ol0003oWgn_oimo[`03o`0000;oWgn_00?o0000ojN6
+/OnWQ[401_nWQ[42o`0000Oo]8j^00?o0000okRM_?nhWK`00_nhWK`00ol0003oaZBgolJT]`03olJT
+]`03o`000?o1/L_o000000Soc[o<0_l00006ol38h@;o000000?o_/gUo`000?n_`^L01on_`^L01?l0
+003oZkkXo`000?l00004ojZnj0;o00001_nY_NP4o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3
+o`0000SoZKgX00?o0000ooooooooool06_ooool000Gooooo00Co0000oooooooooooo00002Oooool0
+0ol0003oooooooooo`05ooooo`03o`000?oooooooooo00;ooooo00?o0000ooooooooool04Oooool0
+1?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00GoZKgX0ol00007ojVmj003o`000?nY
+_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0_l00008ojRlj003o`000?nV
+^NOoY[WW00CoY[WW1Ol00003oiBUh@03o`000?n<Sm;oS8oB00?oS8oB00?o0000ohf0`?n=P<001?n=
+P<000ol0003oUWbdoiIl]004oiIl]0?o00001OnOOjl00ol0003oYhJaojN6/@06ojN6/@03o`000?nd
+SZko]8j^00Oo]8j^00Co0000okRM_?nhWKco00001oo6Y;L00ol0003oc[o<oljoc006oljoc004o`00
+0?oKdm7ofm?Ao`0000Co`<SQ00?o0000okk=iOnncND00_nncND00ol0003o[l;Wojo2i`04ojo2i`?o
+00001onZ_^P2o`0000;oZKgX0ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?nY
+_NP00ol00002ojVmj003o`000?nY_NSoZKgX00KoZKgX0_l0000Kooooo`001Oooool01?l0003ooooo
+ooooool0000:ooooo`03o`000?oooooooooo00Cooooo00?o0000ooooooooool00_ooool00ol0003o
+ooooooooo`0Booooo`;o00001onY_NP00ol0003oZKgXojVmj002ojVmj0;o00000_nY_NP00ol0003o
+ZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000onY_NP00ol0003oZKgXojVmj005ojVmj003
+o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZ;cXojRlj006ojRlj003o`000?nV^NOoY[WW00?o
+000000?oWkCWo`000?nDYN401_nDYN400ol0003oS8oBohb?dP03ohb?dP03o`000?n=P<3oSH3000?o
+SH3000Co0000oiIl]?nFO;CoUWbd0ol000000onFO;Co0000oimo[`05oimo[`03o`000?nWQ[7oYhJa
+00KoYhJa00?o0000okB>[_ndSZh01ondSZh00ol0003o^9flo`000008olJT]`03o`000?o>_lcoc[o<
+00Goc[o<00?o0000om_CdOoKdm400_oKdm401?l0003o`<SQo`000?l00006okk=i@03o`000?n_`^Oo
+[l;W00?o00000_n^`NP00ol0003oZ[kXojZnj006ojZnj0?o00001_nY_NP00ol0003oZKgXojVmj004
+ojVmj0Co00001_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00006_ooool000Gooooo00Co0000oooo
+oooooooo00001oooool01_l0003ooooooooooooooooo0000ooooo`Co00001Oooool00ol0003ooooo
+ooooo`0Dooooo`03o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003o
+ZKgXojVmj005ojVmj0?o00001onY_NP00ol0003oZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003o
+Z;cXojRlj004ojRlj0Co00001OnO]>L00ol0003oU:GQoiBUh@04oiBUh@03o`000?n<Sm;oS8oB00?o
+S8oB00?o0000ohf0`?n=P<001?n=P<03o`0000CoUWbd00?o0000oimo[onOOjl01OnOOjl00ol0003o
+YhJaojN6/@04ojN6/@;o00002_ndSZh00ol0003oaZBgolJT]`06olJT]`03o`000?oK^KKo000000Go
+c[o<00?o0000om_CdOoKdm401?oKdm400ol0003o_/gUokk=i@06okk=i@?o00001_n^`NP00ol0003o
+Z[kXojZnj002ojZnj0Go00002?nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY
+_NP01_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX0_l0000Jooooo`001Oooool01?l0003ooooo
+ooooool00007ooooo`07o`000?ooooooooooooooool0003oooooo`000007ooooo`;o00005oooool0
+0ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003oZKgXojVmj002ojVmj0;o00000_nY_NP0
+0ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005
+ojVmj003o`000?nX_>SoZ;cX00?o00000_nV^nP00ol0003oWkCWoindi`05oindi`03o`000?nDYN7o
+U:GQ00CoU:GQ00?o0000ohb?d_n<Sm800_n<Sm801?l0003oSH30ohf0`?n=P<04o`0000KoUWbd00?o
+0000oimo[onOOjl01OnOOjl00ol0003oYhJaojN6/@03ojN6/@04o`000?n/PZOo[8:Wo`0000Wo]8j^
+00?o0000olJT]oo6Y;L01_o6Y;L01?l0003ofkVfom^i]_l00003oljoc003o`000?oKdm7ofm?A00Co
+fm?A00?o0000omcSf_l000001?nncND3o`000003okW<jOl0003o[/7X00Oo[/7X00Co0000ojZnj?l0
+003o00001?nZ_^P2o`0000OoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00006ojVm
+j0;o00006Oooool000Kooooo0_l00009ooooo`?o00000_ooool5o`0000?ooooo00?o0000oooooooo
+ool05oooool00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01OnY_NP01?l0003o
+ZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00006ojVmj003o`000?nY_NSoZKgX
+00CoZKgX0ol00006ojJkj003o`000?nO]>OoWkCW00CoWkCW00?o0000oiBUhOnDYN401?nDYN400ol0
+003oS8oBohb?dP03ohb?dP?o00000on=P<000ol0003oUWbdoiIl]005oiIl]003o`000?nOOjooWgn_
+00CoWgn_00?o0000ojN6/OnWQ[400_nWQ[401Ol0003o[8:Wojb2Yon/PZOo000000So]8j^00?o0000
+ol>GZOl000001_o6Y;L00ol0003ofkVfom^i]P02om^i]P03o`000?o>_lco000000Kofm?A00Ko0000
+omcSf_oLhm[og>?Jo`000?nncND2o`0000Go^LcY00?o0000ojk1j?n^`NP01?n^`NP3o`0000OoZ[kX
+0_l00003ojVmj0?o000000?oZKgXo`000?nY_NP01onY_NP00ol0003oZKgXojVmj003o`0000;oZKgX
+00?o0000ojVmj?nY_NP01_nY_NP2o`0001Sooooo000Nooooo`;o00006Oooool2o`0000OoZKgX00?o
+0000ojVmj?nY_NP01?nY_NP2o`0000SoZKgX00?o0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY
+_NSoZKgX00GoZKgX00?o0000ojVmj?nY_NP00ol00003ojRmj003o`000?nV^nSoY[_X00CoY[_X00?o
+0000oindionO]>L01?nO]>L00ol0003oU:GQoiBUh@04oiBUh@03o`000?n<Sm;o000000?o00001_n=
+P<000ol0003oUWbdoiIl]004oiIl]003o`000?nOOjooWgn_00CoWgn_00Go0000ojN6/OnWQ[7oYhJa
+o`000004ojb2Y`03o`000?ndSZko]8j^00Ko]8j^00?o0000ol>GZOl000001_o6Y;L00ol0003ofkVf
+om^i]P03om^i]P03o`000?oKdm7ofm?A00Cofm?A00?o0000omcSf_oLhmX00ooLhmX00ol0003o^LcY
+okW<j@06okW<j@03o`000?n^`NSo[/7X00?o00000_n/`>P00ol0003oZ[kXojZnj006ojZnj004o`00
+0?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP4o`0000KoZKgX00?o0000ojVmj?nY
+_NP01?nY_NP3o`0001Sooooo000Nooooo`03o`000?oooooooooo01Wooooo00?o0000ojVmj?nY_NP0
+1_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000OoZKgX
+00?o0000ojVmj?nY_NP01?nY_NP3o`0000OoZ;gX00?o0000ojJkj?nV^nP01?nV^nP01?l0003oWkCW
+oindionO]>L8o`000003oiBUhOl0003o000000?oS8oB00?o0000ohf0`?n=P<001?n=P<000ol0003o
+UWbdoiIl]004oiIl]003o`000?nOOjooWgn_00CoWgn_00Co0000ojN6/OnWQ[7o00001_n/PZL00ol0
+003o]8j^okB>[P04okB>[P04o`000?o3UjWo`iNYo`0000GoaZBg00?o0000om^i]_oK^KH01?oK^KH0
+0ol0003ofm?Aom_Cd@03om_Cd@03o`000?oLhm[og>?J00?og>?J00?o0000om7UiOl000001onic>T3
+o`0000Ko[<3X00?o0000ojZnj?nZ_^P01?nZ_^P3o`0000SoZKgX00?o0000ojVmj?nY_NP00ol00002
+ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj0;o00005oooool0
+01kooooo00?o0000ooooooooool06_ooool00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0
+003oZKgXojVmj002ojVmj0;o00000_nY_NP00ol0003oZKgXojVmj006ojVmj003o`000?nY_NSoZKgX
+00?o00000_nY_NP00ol0003oZ;gXojRmj006ojRmj004o`000?nV^nSoY[_XojJkj0Ko00000on>ZnT0
+0ol0003oL8gNog2=gP06o`0000?oS8oB00?o0000ohf0`?n=P<000on=P<000ol0003oUWbdoiIl]005
+oiIl]003o`000?nOOjooWgn_00CoWgn_0_l00007ojb2Y`03o`000?ndSZko]8j^00?o]8j^00?o0000
+ol>GZOo3UjT00_o3UjT00ol0003oaZBgolJT]`02olJT]`03o`000?oK^KKofkVf00?ofkVf00?o0000
+oo7I]ol000000ooKdm400ol0003og>?JomcSfP03omcSfP05o`000?oAiNGodNGUom7UiOl000001?ni
+c>T2o`000003ok;7jOl0003o[<3X00Oo[<3X00?o0000ojZnj?nZ_^P00ol00002ojVmj003o`000?nY
+_NSoZKgX00KoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00006ojVmj0;o00001_oo
+ool5o`0000_ooooo000Nooooo`;o00007?ooool00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000
+ojVmj?nY_NP01OnY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00GoZKgX0ol0
+0006ojVmj003o`000?nX_NSoZ;gX00CoZ;gX1Ol00004oj2hjP03o`000?n>ZnWoSZ_Y00;oSZ_Y0ol0
+0004og2=gP06o`000?mSK/So0000o`000?n<Sm;o00001_n=P<000ol0003oUWbdoiIl]004oiIl]003
+o`000?nOOjooWgn_00?oWgn_0_l00008ojb2Y`03o`000?ndSZko]8j^00?o]8j^00?o0000ol>GZOo3
+UjT00_o3UjT01Ol0003oaZBgolJT]oo6Y;Oo000000KofkVf00Ko0000oo7I]ooafKOo0000om_CdOl0
+0005omcSfP03o`000?oAiNGodNGU00?odNGU00Co0000okW<jOl0003o00001?nbanT00ol0003o[<3X
+ojc0j004ojc0j0Co00001_nY_NP00ol0003oZKgXojVmj002ojVmj0?o000000?oZKgXo`000?nY_NP0
+1onY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003ooooo
+ooooo`05ooooo`04o`000?ooooooooooo`0000_ooooo000Nooooo`03o`000?oooooooooo01cooooo
+0_l00007ojVmj003o`000?nY_NSoZKgX00CoZKgX0_l00008ojVmj003o`000?nY_NSoZKgX00;oZKgX
+0_l00002ojVmj003o`000?nY_NSoZKgX00GoZKgX00?o0000ojRmj?nX_NP00ol00002ojNlj003o`00
+0?nP^>[oX;SZ00GoX;SZ1?l00002ohj[j@03o`000?m`SMkoL8gN00?oL8gN00?o0000of=^b?mSK/P0
+0_l00006ohf0`003o`000?nFO;CoUWbd00CoUWbd00?o0000oimo[onOOjl00_nOOjl00ol0003oWgNU
+o`000008ojb2Y`03o`000?ndSZko]8j^00;o]8j^00?o0000ol>GZOo3UjT01?o3UjT01?l0003oaZBg
+olJT]ol00005om^i]P03o`000?oafKOolMVg00;olMVg0_l00004omcSfP03o`000?oAiNGodNGU00Co
+dNGU0_l00007ok;7j@03o`000?n/`>So[<3X00?o00000_nZ_^P00ol0003oZKgXojVmj006ojVmj004
+o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000KoZKgX00?o0000ojVm
+j?nY_NP01?nY_NP3o`0000Oooooo00?o0000ooooooooool02oooool001gooooo00?o0000oooooooo
+ool07oooool00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003o
+ZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`00
+00KoYkcX00?o0000oj2hj_nP^>X00_nP^>X4o`0000CoSZ_Y00?o0000og2=g_m`SMh00om`SMh00ol0
+003oHfk8of=^b002of=^b0?o00000on=P<000ol0003oUWbdoiIl]004oiIl]003o`000?nOOjooWgn_
+00;o00000_nOMjD00ol0003o[8:Wojb2Y`07ojb2Y`05o`000?ndSZko]8j^okB>[_l000001_o3UjT0
+0ol0003oaZBgo`000006om^i]P03o`000?oafKOolMVg00;olMVg00Ko0000oo?c]?l0003o0000omcS
+f_l00005om7Ui@;o000000?o`=W/o`000?nbanT01_nbanT3o`0000KoZ[kX00?o0000ojVmj?nY_NP0
+1?nY_NP3o`0000SoZKgX00Co0000ojVmj?nY_NSoZKgX0ol000000onY_NSo0000ojVmj007ojVmj003
+o`000?nY_NSoZKgX00?o00000_nY_NP2o`0000Oooooo00?o0000ooooooooool02_ooool001gooooo
+0ol0000Pooooo`03o`000?nY_NSoZKgX00CoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol00008ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oYkcXojNlj005ojNlj0Co0000
+00?oX;SZo`000?l000001Ol000000on>ZnWo0000og2=gP03og2=gP03o`000?mSK/SoHfk800;oHfk8
+00?o0000ogAV]?mdI[@00ol000000on=P<3o0000oiIl]005oiIl]0;o00001OnOMjD00ol0003o[8:W
+ojb2Y`06ojb2Y`04o`000?ndSZko]8j^o`0000Oo`iNY00?o0000olJT]ol000001OoK^KH00ol0003o
+lMVgoo7I]`02oo7I]`03o`000?oclkColo>d00;olo>d0_l00004om7Ui@03o`000?o0fNco`=W/00;o
+`=W/00?o0000ok;7jOnbanT00_nbanT2o`0000;o[L;Y00?o0000ojZnj?nZ_^P01OnZ_^P00ol0003o
+ZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVm
+j003o`000?nY_NSoZKgX00CoZKgX1?l00006ojVmj003o`000?oooooooooo00;ooooo00Go0000oooo
+ooooooooooooo`00000;ooooo`002_ooool2o`0000Cooooo00?o0000ooooooooool00_ooool3o`00
+00Gooooo00?o0000ooooooooool08Oooool00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVm
+j?nY_NP01OnY_NP00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`00
+00KoZKgX00?o0000ojNlj?nW_>P00_nW_>P7o`0000?oUkG/00Co0000ofbKk?m/VncoK9_/1?l00003
+og2=gP05o`000?mSK/SoHfk8of=^b?l000001OmdI[@9o`0000KoWgNU00?o0000ojb2Yon/PZL01_n/
+PZL00ol0003o]8j^o`000009ol>GZ@03o`000?oK^KKofkVf00?ofkVf00?o0000oo7I]ooafKL00ooa
+fKL00ol0003olo>doo?c]002oo?c]004o`000?oSoL;o0000om7Ui@;o00001_o0fN`01?l0003o//OY
+o`000?l00005ojg2j@03o`000?nZ_^SoZ[kX00CoZ[kX0ol00006ojVmj003o`000?nY_NSoZKgX00Co
+ZKgX0ol00008ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj0;o
+00000oooool01Ol0003ooooooooooooooooo000000_ooooo0009ooooo`04o`000?ooooooooooo`00
+00Oooooo00Go0000ooooooooooooooooo`000004ooooo`03o`000?oooooooooo02;ooooo0_l00006
+ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00;oZKgX0_l00002
+ojVmj003o`000?nY_NSoZKgX00GoZKgX1_l000000onU^nWo0000oiNek006oiNek003o`000?m/Vnco
+K9_/00;oK9_/00?o0000oaeLd_l000000_m`SMh00ol0003oHfk8of=^b002of=^b003o`000?mdI[Co
+M6Jd00?oM6Jd00?o0000oha]ZOn<KJT01?n<KJT00ol0003oWgNUoimgY@04oimgY@03o`000?n/PZOo
+[8:W00Oo[8:W0_l00009ol>GZ@03o`000?oK^KKofkVf00?ofkVf00?o0000oo7I]ooafKL00_oafKL0
+0ol0003olo>doo?c]002oo?c]003o`000?oSoL;ohog200?o00001_o0fN`3o`0000So[L;Y00?o0000
+ojZnj?nZ_^P00ol000000onZ_^So0000ojVmj006ojVmj0;o00000_nY_NP3o`0000;oZKgX00?o0000
+ojVmj?nY_NP01_nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP00onY_NP4o`0000?ooooo0ol0000<
+ooooo`002Oooool01?l0003oooooooooool0000;ooooo`03o`000?oooooooooo00;ooooo0_l0000T
+ooooo`03o`000?nY_NSoZKgX00GoZKgX00?o0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSo
+ZKgX00GoZKgX00Co0000ojVmj?l0003o00001OnY_NP00ol0003oZKgXojVmj002ojVmj0Go00001OnU
+^nT00ol0003oUkG/oiNek005oiNek003o`000?m/VncoK9_/00;oK9_/00?o0000oaeLd_l000000_l0
+0004of=^b003o`000?mdI[CoM6Jd00?oM6Jd00?o0000oha]ZOn<KJT01?n<KJT00ol0003oWgNUoimg
+Y@04oimgY@03o`000?n/PZOo[8:W00Oo[8:W00?o0000ol>GZOo3UjT01oo3UjT00ol0003ogK6Yo`00
+0003om^i]P03o`000?oafKOolMVg00?olMVg00Go0000oo?c]?oclkColo>do`000002on?m`P05o`00
+0?oCn>CodoSTom?hi?l000000_o0fN`3o`0000?o/l[[00?o0000ojg2jOn]`^T01?n]`^T4o`0000Go
+Z[kX00?o0000ojVmj?nY_NP01?nY_NP4o`0000KoZKgX00?o0000ojVmj?nY_NP00_nY_NP3o`000003
+ojVmj?l0003oZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj0;o00004_ooool000Wooooo
+00Co0000oooooooooooo00002oooool00ol0003oooooooooo`02ooooo`03o`000?oooooooooo02Co
+oooo00?o0000ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP01?nY_NP2o`0000So
+ZKgX1_l00002ojRmj003o`000?nU^nWoYK_Y00CoYK_Y00?o0000oiNek?nG]N`01OnG]N`00ol0003o
+K9_/ofbKk002ofbKk003o`000?lMG=;o7EcB00;o00000omSK/P00ol0003oM6JdogAV]003ogAV]003
+o`000?n<KJWoS6fY00CoS6fY00?o0000oimgYOnOMjD01?nOMjD00ol0003o[8:Wojb2Y`07ojb2Y`03
+o`000?o3UjWo`iNY00Oo`iNY00?o0000omfaZOl000000ooK^KH00ol0003olMVgoo7I]`02oo7I]`06
+o`000?oclkColo>doo?c]?l0003ohog20_l00004om?hi0?o00001oncb^/00ol0003o[L;Yojg2j@03
+o`0000;oZkoX00?o0000ojZnj?nZ_^P01OnZ_^P00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000
+ojVmj?nY_NP01_nY_NP01?l0003oZKgXo`000?l00005ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0
+0006ojVmj0;o00004Oooool000Wooooo00Co0000oooooooooooo00001oooool4o`0000Gooooo00?o
+0000ooooooooool09Oooool00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY
+_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP4o`0000KoZ;gX00?o
+0000ojFkjOnU^nT01?nU^nT00ol0003oUkG/oiNek002oiNek0Ko000000?oK9_/o`000?lMG=800_lM
+G=800ol0003oHfk8of=^b002of=^b003o`000?mdI[CoM6Jd00?oM6Jd00?o0000oha]ZOn<KJT01?n<
+KJT00ol0003oWgNUoimgY@04oimgY@03o`000?n/PZOo[8:W00Go[8:W0_l00008ol>GZ@07o`000?oM
+/JWogK6YomfaZOl0003ofkVfo`000004oo7I]`07o`000?oclkColo>doo?c]?l0003ohog2o`000004
+om?hi0;o000000?o_Mc_o`000?ncb^/01oncb^/3o`0000KoZkoX00?o0000ojZnj?nZ_^P01?nZ_^P3
+o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000SoZKgX00?o0000ojVmj?nY_NP00ol00000
+0onY_NSo0000ojVmj007ojVmj0;o00004?ooool000Wooooo00Co0000oooooooooooo00001oooool0
+0ol0003oooooooooo`05ooooo`;o0000:?ooool2o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP4
+o`0000KoZKgX00?o0000ojVmj?nY_NP01?l00002ojVmj003o`000?nX_NSoZ;gX00GoZ;gX00Co0000
+ojFkjOnU^nWoYK_Y1ol00003ohbbl003o`000?lfPnWo=X?Y00?o00000_lMG=82o`0000?oHfk800?o
+0000ogAV]?mdI[@00omdI[@00ol0003oS6fYoha]Z@04oha]Z@03o`000?nOMjGoWgNU00CoWgNU00?o
+0000ojb2Yon/PZL01On/PZL00ol0003o^H^To`000007ol>GZ@07o`000?oM/JWogK6YomfaZOl0003o
+fkVfo`000004oo7I]`06o`000?oclkColo>do`000?oSoL;o00001?oCn>@00ol0003o_Mc_okgLk`02
+okgLk`03o`000?ncb^_o/l[[00;o/l[[0ol000000on]`^Wo0000oj^oj007oj^oj003o`000?nZ_^So
+Z[kX00?o000000?oZKgXo`000?nY_NP01_nY_NP2o`0000;oZKgX0ol00002ojVmj003o`000?nY_NSo
+ZKgX00KoZKgX0ol00005ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0000@ooooo`002_ooool2o`00
+00Sooooo1Ol00003ooooo`03o`000?oooooooooo02Sooooo00?o0000ojVmj?nY_NP01OnY_NP00ol0
+003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP5o`0000GoZKgX00?o0000ojRm
+j?nX_NP01?nX_NP4o`0000CoXk_[00?o0000ohbbl?n</_001?n</_000ol0003o=X?YocJ3j@02ocJ3
+j@03o`000?lMG=;o7EcB00;o00000_mSK/P00ol0003oM6JdogAV]003ogAV]003o`000?n<KJWoS6fY
+00CoS6fY00?o0000oimgYOnOMjD01?nOMjD00ol0003o[8:Wojb2Y`04ojb2Y`04o`000?niRjCo^H^T
+o`0000Oo`iNY00?o0000omfaZOoM/JT00_oM/JT2o`0000?olMVg00?o0000oo?c]?oclk@01Ol00000
+0ooCn>Co0000o`000006okgLk`04o`000?ncb^_o0000o`0000Go[L;Y00?o0000oj^oj?n[_nP01?n[
+_nP4o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP4o`0000KoZKgX00?o0000ojVmj?nY_NP00_nY
+_NP3o`000003ojVmj?l0003oZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj0;o00003ooo
+ool001cooooo00?o0000ooooooooool0:Oooool00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP0
+0ol0003oZKgXojVmj003o`000003ojVmj?l0003o000000SoZKgX00?o0000ojRmj?nX_NP00ol00002
+ojRmj003o`000?nS^n_oXk_[00CoXk_[00?o0000ohbbl?n</_001?n</_001Ol0003o=X?YocJ3jOlf
+PnWo000000;o7EcB00?o0000o`4_/_l000000_mSK/P00ol0003oM6JdogAV]002ogAV]003o`000?n<
+KJWoS6fY00CoS6fY00?o0000oimgYOnOMjD01?nOMjD00ol0003o[8:Wojb2Y`03ojb2Y`05o`000?ni
+RjCo^H^TokV;Y?l000001_o3UjT00ol0003ogK6YomfaZ@03omfaZ@05o`000?okfj;o0000o`000?oa
+fKL01?l000000onScEgo0000ok?aYP03o`0000Oo_Mc_0_l00008ojg2j@03o`000?n[_nSoZkoX00?o
+00000_nZ_^P00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003o
+ZKgXojVmj006ojVmj004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojVmj?nY_NP00onY_NP4o`00
+00KoZKgX00?o0000ooooooooool03Oooool001cooooo0_l0000[ooooo`03o`000?nY_NSoZKgX00?o
+00000onY_NP00ol0003oZKgXojVmj004ojVmj0?o000000CoZKgXo`000?l0003o00000_nY_NP00ol0
+003oZKgXojVmj005ojVmj0?o00001_nX_NP00ol0003oXk_[oj>kj`04oj>kj`04o`000?n</_3oS;;`
+ohbbl0Go00000_lfPnT02?l0003o7EcBoaeLd_l0003o0Bnbo`000?mSK/So00001?mdI[@00ol0003o
+S6fYoha]Z@04oha]Z@03o`000?nOMjGoWgNU00GoWgNU00?o0000ojb2Yon/PZL00_n/PZL00ol0003o
+^H^TokV;Y002okV;Y003o`000?o3UjWo`iNY00?o`iNY00?o0000omfaZOoM/JT00_oM/JT00ol0003o
+nm^Roo_KXP02oo_KXP;o000000KogN9do`000?nScEgo0000ok?aY_l00003ol;cl0;o00000_nmg>l3
+o`0000;o/<S/00?o0000ojg2jOn]`^T01?n]`^T4o`0000KoZ[kX00?o0000ojVmj?nY_NP01?nY_NP3
+o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP00ol00002
+ojVmj003o`000?nY_NSoZKgX00KoZKgX00?o0000ooooooooool03?ooool001cooooo00?o0000oooo
+ooooool0:oooool2o`0000OoZKgX00?o0000ojVmj?nY_NP00ol000001?nY_NSo0000o`000?l00006
+ojVmj003o`000?nY_NSoZKgX00;oZKgX0_l00002ojVmj003o`000?nX_NSoZ;gX00GoZ;gX00Co0000
+oj>kjonS^n_oXk_[1_l00004ohJblPGo000000Co7EcBo`000?l1;k;o0Bnb0_l00004ogAV]003o`00
+0?n<KJWoS6fY00CoS6fY00?o0000oimgYOnOMjD01OnOMjD01Ol0003o[8:Wojb2Yon/PZOo000000Go
+^H^T00?o0000ol>GZOo3UjT00_o3UjT00ol0003ogK6YomfaZ@03omfaZ@03o`000?okfj;onm^R00;o
+nm^R00Co0000omgRM?l0003oXleM0ol00005ol;cl0?o00001_n`b>`00ol0003o[L;Yojg2j@03o`00
+00;oZ[kX00?o0000ojZnj?nZ_^P01_nZ_^P00ol0003oZKgXojVmj003o`000003ojVmj?l0003oZKgX
+00KoZKgX0_l00002ojVmj0?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0
+003oZKgXojVmj004ojVmj0?o00003Oooool001cooooo00?o0000ooooooooool0;Oooool00ol0003o
+ZKgXojVmj004ojVmj0?o000000CoZKgXo`000?l0003o00000_nY_NP00ol0003oZKgXojVmj005ojVm
+j004o`000?nY_NSo0000o`0000GoZKgX00?o0000ojRmj?nX_NP01?nX_NP4o`0000GoX[_[00?o0000
+ohJbl_n6/_800on6/_800ol0003o2W3Oo`Y`g`03o`0000?o0Bnb0_l00004ogAV]003o`000?n<KJWo
+S6fY00?oS6fY00?o0000oimgYOnOMjD01OnOMjD01Ol0003o[8:Wojb2Yon/PZOo000000Go^H^T00?o
+0000ol>GZOo3UjT00_o3UjT00ol0003ogK6YomfaZ@03omfaZ@05o`000?okfj;onm^Roo_KX_l00000
+0_oMhW@3o`0000Co`_?`0ol000000oncdNoo0000ok38k006ok38k0?o00001_nZ_^P00ol0003oZ[kX
+ojZnj004ojZnj0Co00001OnY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0003oZKgX
+ojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX
+00?o0000ooooooooool02oooool001_ooooo0_l0000`ooooo`03o`000?nY_NSoZKgX00?o000000Co
+ZKgXo`000?l0003o00001_nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003oZ;gX
+ojRmj003o`0000;oZ;gX00?o0000oj:kjonR^n/01OnR^n/00ol0003oQ[;bohJblP03ohJblP04o`00
+0?l:L=oo2W3Oo`Y`g`;o00000ol1;k800ol0003oM6JdogAV]002ogAV]003o`000?n<KJWoS6fY00Co
+S6fY00?o0000oimgYOnOMjD01?nOMjD01?l0003o[8:Wojb2Yol00006okV;Y005o`000?o3UjWo`iNY
+ol>GZOl000001OoM/JT00ol0003onm^Roo_KXP02oo_KXP03o`000?oMhWCo000000Co000000?o`_?`
+o`000?l000001OncdNl00ol0003o/<S/ok38k002ok38k0;o000000?oZl3Yo`000?nZ_^P01onZ_^P0
+0ol0003oZ[kXojZnj003o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP00ol0003oZKgXojVmj003
+o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP4
+o`0000KoZKgX00?o0000ooooooooool02_ooool001_ooooo00?o0000ooooooooool0;oooool3o`00
+0004ojVmj?l0003o0000o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP00ol0003oZKgXojVmj003
+o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZ;gX00?o0000oj:kjonR^n/01?nR^n/<
+o`0000?o0Bnb00?o0000ogAV]?mdI[@00_mdI[@00ol0003oS6fYoha]Z@04oha]Z@03o`000?nOMjGo
+WgNU00CoWgNU00?o0000ojb2Yol000002?niRj@01?l0003o`iNYol>GZOl00005omfaZ@05o`000?ok
+fj;onm^Roo_KX_l000000_oMhW@01?l0003oYoSNojOhg_nWn=h2o`0000So/m7_00Co0000ok38k?l0
+003o00001?n[`>T00ol0003oZ[kXojZnj004ojZnj0Co00001_nY_NP00ol0003oZKgXojVmj003ojVm
+j0Co00001OnY_NP2o`0000CoZKgX0_l000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSoZKgX
+00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj0;o00002oooool001_ooooo00?o0000oooooooo
+ool0;Oooool2o`0000;ooooo0_l00006ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003
+o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZ;gXojRmj005ojRmj003o`000?nR^n_oX[_[00?o
+00000_nR_>/00ol0003oR[GbohZelP04ohZelPCo00000_l1;k82o`0000?oM6Jd00?o0000oha]ZOn<
+KJT01?n<KJT00ol0003oWgNUoimgY@05oimgY@;o00002?niRj@01?l0003o`iNYol>GZOl00005omfa
+Z@08o`000?okfj;onm^Roo_KX_l0003ogN9do`000?nWn=h3o`0000;o/]Wd00?o0000ok?AkoncdNl0
+1?ncdNl3o`0000OoZl3Y00?o0000ojZnj?nZ_^P00ol00002ojVmj003o`000?nY_NSoZKgX00GoZKgX
+00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00GoZKgX0_l000000onY_NSo0000
+o`000004ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00006ojVmj003o`000?nY_NSoZKgX00?oZKgX
+0ol0000;ooooo`006oooool2o`0002_ooooo0ol00005ooooo`03o`000?nY_NSoZKgX00GoZKgX00?o
+0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00006ojVmj003o`000?nX
+_NSoZ;gX00CoZ;gX0ol00006oj:lj`03o`000?n:]O;oR[Gb00CoR[Gb00?o0000oaR0iol000000ol1
+;k82o`0000;oM6Jd00?o0000oha]ZOn<KJT01?n<KJT00ol0003oWgNUoimgY@05oimgY@03o`000?ni
+RjCo^H^T00Oo^H^T00?o0000ol>GZOl000001OoM/JT00ol0003onm^Roo_KXP02oo_KXP04o`000?oM
+hWCo0000o`0000Ko/]Wd00?o0000ok?AkoncdNl00ol00003ojc2jP03o`000?n[`>WoZl3Y00CoZl3Y
+0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol00007ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`00
+0?nY_NSoZKgX00?o00000_nY_NP2o`0000[ooooo0002ooooo`;o00001?ooool00ol0003ooooooooo
+o`03ooooo`03o`000?oooooooooo00;ooooo0ol00005ooooo`03o`000?oooooooooo02Oooooo0ol0
+0009ooooo`03o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00?o00000_nY
+_NP00ol0003oZKgXojVmj005ojVmj003o`000?nX_NSoZ;gX00?o00000_nX_NP00ol0003oX[c[oj:l
+j`05oj:lj`04o`000?n:]O;oR[GbohZelPKo00000_l1;k801Ol0003o?T>^o`000?mdI[Co000000Ko
+S6fY00?o0000oimgYOnOMjD01?nOMjD2o`0000[o^H^T0_l00005omfaZ@06o`000?okfj;onm^Roo_K
+X_l0003ogN9d0_l00007ok;Im0?o00001on/`^X00ol0003oZl3Yoj_0j@03o`000003ojZnj?l0003o
+ZKgX00OoZKgX00?o0000ojVmj?nY_NP00ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSo
+ZKgX00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0003oZKgXojVmj004
+ojVmj0?o00001_nY_NP2o`0000Wooooo00001Ooooooo0000oooooooooooo000000Wooooo00Go0000
+ooooooooooooooooo`000003ooooo`03o`000?oooooooooo00;ooooo00?o0000ooooooooool09?oo
+ool3o`0000gooooo00?o0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0
+0006ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00006ojRmj003o`000?nR_>_oX[c[00CoX[c[1?l0
+0005oiJil008o`000?l1;k;o0Bnbo`000?ln@jko0000ogAV]?l00006oha]Z@03o`000?nOMjGoWgNU
+00?oWgNU00?o0000ojIlYOl000002_niRj@00ol0003ogK6YomfaZ@04omfaZ@08o`000?okfj;onm^R
+oo_KX_l0003ogN9do`000?nYfoT2o`0000;o/]Wd0ol00002ojc4k003o`000?n/`^[o[<;Z00Co[<;Z
+1?l00005ojZnj003o`000?nY_NSoZKgX00CoZKgX1?l00005ojVmj003o`000?nY_NSoZKgX00CoZKgX
+1?l00005ojVmj0;o00000_nY_NP3o`0000;oZKgX00?o0000ojVmj?nY_NP01_nY_NP00ol0003oZKgX
+ojVmj003o`000003ojVmj?l0003oZKgX00OoZKgX00?o0000ooooooooool01oooool00005ooooool0
+003oooooooooool000002_ooool00ol0003oooooooooo`04ooooo`04o`000?ooooooooooooooo`;o
+00008oooool3o`00017ooooo0_l00007ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003o
+ZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o000000?oZKgXo`000?nX_NP01onX_NP00ol0003o
+X[c[oj:lj`03o`000003ojFlj_l0003oU[W`00OoU[W`00?o0000o`4_/_l000000_ln@jh00ol0003o
+M6Jdo`000005oha]Z@03o`000?nOMjGoWgNU00;oWgNU00Go0000ojIlYOnVO:GoYWbUo`000009okV;
+Y003o`000?oM/JWogK6Y00?ogK6Y00Oo0000oo_KX_okfj;onm^Ro`000?oMhWCo000000;oZM_i1?l0
+0006ojc4k003o`000?n/`^[o[<;Z00?o00000_nZ_^P00ol0003oZ[kXojZnj005ojZnj003o`000?nY
+_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000onY
+_NP00ol0003oZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001OnY
+_NP00ol0003oZKgXojVmj004ojVmj0?o00002?ooool00005ooooool0003oooooooooool000002_oo
+ool00ol0003oooooooooo`04ooooo`05o`000?ooooooooooooooool000008Oooool3o`0001Kooooo
+00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000GoZKgX
+00?o0000ojRmj?nX_NP01?nX_NP4o`0000GoYKcZ00?o0000oiJil?nF^O001?nF^O02o`000003o`4_
+/_l0003o?T>^00;o?T>^0_l00006oha]Z@04o`000?nOMjGoWgNUo`0000CoYWbU00?o0000okV;Y?ni
+Rj@01_niRj@00ol0003oejVXo`000004omfaZ@06o`000?okfj;onm^Roo_KX_l0003ogN9d0ol00003
+oj[5k@03o`000?n/a>co[<C/00Co[<C/0ol00006ojZnj003o`000?nZ_^SoZ[kX00CoZ[kX0ol00006
+ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00007ojVmj003o`000?nY_NSoZKgX00?o000000?oZKgX
+o`000?nY_NP01onY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP0
+0ol0003oZKgXojVmj003o`000003ooooool0003ooooo00Sooooo00001Ooooooo0000oooooooooooo
+000000_ooooo00?o0000ooooool000000ol00004ooooo`03o`000?oooooooooo01cooooo0ol0000J
+ooooo`03o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSo
+ZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZ;gXojRmj003o`0000;oZ;gX00?o0000
+ojFlj_nU_>X01OnU_>X00ol0003oU[W`oiJil003o`0000;oX;c]00?o0000o`4_/_l000000oln@jh3
+o`0000CoS6fY00?o0000oimgYOl000001OnVO:D00ol0003o^H^TokV;Y006okV;Y003o`000?oGZJSo
+000000CogK6Y00Ko0000oo_KX_okfj;o0000omgRM?l00007oj[5k@03o`000?n/a>co[<C/00?o0000
+00?oZ[oYo`000?nZ_^P01onZ_^P00ol0003oZ[kXojZnj003o`000003ojVmj?l0003oZKgX00OoZKgX
+00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00005ojVmj003o`00
+0?nY_NSoZKgX00CoZKgX1?l00006ojVmj003o`000?nY_NSoZKgX00?oZKgX1?l00005ooooo`03o`00
+0?oooooooooo00Kooooo00001Ooooooo0000oooooooooooo000000Oooooo00Oo0000oooooooooooo
+ooooo`000?oooooo000000Oooooo0_l0000Jooooo`?o00007_ooool2o`0000KoZKgX00?o0000ojVm
+j?nY_NP01?nY_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZ;gX00?o0000ojFl
+j_nU_>X01?nU_>X3o`0000GoX;c]00?o0000o`4_/_l000000oln@jh00ol0003oPFFZoh5UZP03o`00
+0003oha]ZOl0003o000000KoYWbU00?o0000okV;Y?niRj@01_niRj@01?l0003oejVXomNYZ?l00002
+omfaZ@07o`000?okfj;onm^Roo_KX_l0003ogN9do`000006oj[5k@Co00001OnZ_nT00ol0003oZ[kX
+ojZnj004ojZnj0Co00001OnY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_nY_NP00ol0003oZKgX
+ojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP2o`0000;oZKgX0ol00002ojVmj003o`00
+0?nY_NSoZKgX00GoZKgX00?o0000ojVmj?nY_NP00ol00009ooooo`03o`000?oooooooooo00Kooooo
+0002ooooo`;o00002?ooool5o`000003ooooool0003o000000?o00000oooool00ol0003ooooooooo
+o`0Fooooo`?o00008_ooool00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o000000?o
+ZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojRmj?nX_NP01OnX
+_NP00ol0003oYKcZojFljP03o`0000?oYkgY00?o0000oj2lkOnP_>d00onP_>d2o`0000?o?T>^00?o
+0000oh5UZ_n1IJX00on1IJX2o`0000OoYWbU00?o0000okV;Y?niRj@01OniRj@01Ol0003oejVXomNY
+Z?oGZJSo000000;ogK6Y00Co0000oo_KX_okfj;onm^R0_l000001?nX`ngo0000oj[5kOnZaNd3o`00
+00;oZKoY00?o0000ojZojOnZ_nT01OnZ_nT00ol0003oZ[kXojZnj003o`0000;oZKgX00?o0000ojVm
+j?nY_NP01OnY_NP00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`00
+00KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP00onY_NP4o`00
+00cooooo00?o0000ooooooooool01_ooool001[ooooo00?o0000ooooooooool05?ooool2o`0002Ko
+oooo00?o0000ojVmj?nY_NP01?nY_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000Ko
+ZKgX00?o0000ojRmj?nX_NP01?nX_NP3o`0000OoYkgY00Co0000oj2lkOnP_>goX;c]0ol00004oci3
+[P03o`000?n1IJ[oPFFZ00?oPFFZ00?o0000ojIlYOnVO:D01_nVO:D00ol0003o^H^TokV;Y004okV;
+Y003o`000?oGZJSoejVX00;oejVX00?o0000omfaZOl000000_okfj83o`000004ojS3kOl0003o0000
+o`0000KoZKoY00?o0000ojZojOnZ_nT01?nZ_nT3o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3
+o`0000OoZKgX00?o0000ojVmj?nY_NP00ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY_NSo
+ZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`00013ooooo00?o0000
+ooooooooool01_ooool001Wooooo0_l0000Cooooo`?o0000:Oooool00ol0003oZKgXojVmj003o`00
+0003ojVmj?l0003oZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX
+00GoZKgX00?o0000ojRmj?nX_NP00ol00003ojVmj003o`000?nW_NWoYkgY00CoYkgY1?l00002ojJm
+jP03o`000?ln@jko?T>^00;o?T>^00?o0000oh5UZ_n1IJX00on1IJX00ol0003oYWbUojIlY@06ojIl
+Y@03o`000?niRjCo^H^T00?o^H^T00?o0000omNYZ?oGZJP00ooGZJP2o`0000?onm^R1?l00002ojVn
+j@03o`000?nY_nWoZKoY00GoZKoY00?o0000ojZojOnZ_nT00ol000000onY_NSo0000ojVmj007ojVm
+j003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001OnY_NP00ol0
+003oZKgXojVmj004ojVmj0Co00001?nY_NP2o`0000KoZKgX0ol0000Cooooo`03o`000?oooooooooo
+00Kooooo000Iooooo`03o`000?oooooooooo00oooooo0ol0000]ooooo`;o00001OnY_NP00ol0003o
+ZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003o
+YkgYojNmj@03o`000003ojRmj?l0003oY[gZ00?oY[gZ0_l00003oci3[P03o`000?n1IJ[oPFFZ00Co
+PFFZ00?o0000ojIlYOnVO:D01OnVO:D00ol0003o^H^TokV;Y003okV;Y003o`000?oGZJSoejVX00Co
+ejVX1Ol00006ojVnj@03o`000?nY_nWoZKoY00CoZKoY0ol00005ojVmj003o`000?nY_NSoZKgX00Co
+ZKgX1?l00006ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003
+o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0;o00000_nY_NP3o`0001Ko
+oooo00?o0000ooooooooool01_ooool001Wooooo00?o0000ooooooooool03?ooool3o`00033ooooo
+00?o0000ojVmj?nY_NP01OnY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP0
+1OnY_NP00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000GoZ;gX
+00?o0000ojJmj_nV_NX00_nV_NX01Ol0003o?T>^oci3[_ln@jko000000KoPFFZ00?o0000ojIlYOnV
+O:D01OnVO:D00ol0003o^H^TokV;Y002okV;Y003o`000?oGZJSoejVX00GoejVX00?o0000oocUVool
+iI/00_l00007ojVnj@03o`000?nY_nWoZKoY00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003o
+ZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00?o0000ojVmj?nY
+_NP00onY_NP4o`0000KoZKgX00?o0000ojVmj?nY_NP00onY_NP4o`0001Wooooo00?o0000oooooooo
+ool01_ooool001Wooooo0_l0000:ooooo`?o0000=?ooool00ol0003oZKgXojVmj004ojVmj0?o0000
+1_nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001onY_NP00ol0003oZKgXojVmj003o`000003ojVm
+j?l0003oZ;gX00KoZ;gX00?o0000ojJmj_nV_NX00_l00003oci3[P03o`000?n1IJ[oPFFZ00CoPFFZ
+00?o0000ojIlYOnVO:D01OnVO:D00ol0003o^H^TokV;Y002okV;Y003o`000?oGZJSoejVX00CoejVX
+00?o0000oocUVooliI/00ol00006ojVnj@Co00001OnY_NP00ol0003oZKgXojVmj004ojVmj0?o0000
+1onY_NP00ol0003oZKgXojVmj003o`000003ojVmj?l0003oZKgX00KoZKgX00?o0000ojVmj?nY_NP0
+0ol00002ojVmj003o`000?nY_NSoZKgX00GoZKgX00?o0000ojVmj?nY_NP00ol00002ooooo`03o`00
+0?oooooooooo01Wooooo00?o0000ooooooooool01Oooool001Wooooo00?o0000ooooooooool01_oo
+ool3o`0003Sooooo00?o0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00CoZKgX00?o
+0000ojVmj?nY_NP00ol00003ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol00005ojVmj003o`000?nX
+_NSoZ;gX00CoZ;gX0ol00002ojRmj@05o`000?ln@jko?T>^oci3[_l000001On1IJX00ol0003oYWbU
+ojIlY@06ojIlY@05o`000?niRjCo^H^TokV;Y?l000001_oGZJP00ol0003oo>FKoocUV`02o`000004
+ojVnjOl0003oZKkYojVnj@?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX
+00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0Co00001OnY_NP00ol0003oZKgXojVmj004ojVm
+j0?o00001_nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001Oooool00ol0003oooooooooo`0Ioooo
+o`03o`000?oooooooooo00Gooooo000Iooooo`03o`000?oooooooooo00?ooooo0ol0000looooo`;o
+00001onY_NP01?l0003oZKgXojVmj?nY_NP5o`0000OoZKgX00?o0000ojVmj?nY_NP00ol000000onY
+_NSo0000ojVmj006ojVmj003o`000?nX_NSoZ;gX00?o00000_nY_NP01?l0003oZ;gYojRmjOl00003
+oci3[P03o`000?n1IJ[oPFFZ00?oPFFZ00?o0000ojIlYOnVO:D01_nVO:D01?l0003o^H^TokV;Y?l0
+0007omNYZ004o`000?oliI_oo>FKo`0000;oZKkY0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol00006ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`00
+0?nY_NSoZKgX00?o000000?oZKgXo`000?nY_NP01onY_NP00ol0003oZKgXojVmj003o`0000Wooooo
+00?o0000ooooooooool06?ooool00ol0003oooooooooo`05ooooo`006?ooool3o`000004ooooool0
+003o0000o`00047ooooo00?o0000ojVmj?nY_NP01?nY_NP4o`0000GoZKgX00?o0000ojVmj?nY_NP0
+1?nY_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00Co0000ojRmjOnX_NWo
+00000_ln@jh00ol0003oPFFZoh5UZP04oh5UZP03o`000?nVO:GoYWbU00GoYWbU00Co0000okV;Y?ni
+RjCo00001_oGZJP00ol0003oo>FKoocUV`04o`0000;oZKgX00?o0000ojVmj?nY_NP01OnY_NP00ol0
+003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00?o0000ojVm
+j?nY_NP01?nY_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP4o`0000gooooo00?o0000oooo
+ooooool05oooool00ol0003oooooooooo`05ooooo`004?ooool3o`0000Gooooo1?l00015ooooo`03
+o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o
+000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY
+_NP01?nY_NP01_l0003oZ;gYo`000?l0003o?T>^o`0000KoPFFZ00?o0000ojIlYOnVO:D01OnVO:D0
+0ol0003o^H^To`000007omNYZ004o`000?oliI_oo>FKo`0000KoZKgX00?o0000ojVmj?nY_NP01?nY
+_NP3o`0000KoZKgX00?o0000ojVmj?nY_NP00ol000000onY_NSo0000ojVmj007ojVmj003o`000?nY
+_NSoZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0001;ooooo00?o
+0000ooooooooool05_ooool00ol0003oooooooooo`05ooooo`004Oooool00ol0003oooooooooo`04
+ooooo`;o0000B?ooool2o`0000KoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000GoZKgX00?o0000
+ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00Co0000ojVmj?nY_NSoZKgX1_l00002oci3[P03o`000?n1
+IJ[oPFFZ00?oPFFZ00?o0000ojIlYOnVO:D01OnVO:D00ol0003o^H^To`000007omNYZ004o`000?ol
+iI_o0000o`0000OoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol00005ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00005ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol0000Eooooo`03o`000?oooooooooo01Kooooo00?o0000ooooooooool01Oooool0017ooooo00?o
+0000ooooooooool01_ooool00ol0003oooooooooo`16ooooo`03o`000?nY_NSoZKgX00GoZKgX00?o
+0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00CoZKgX00?o0000ojVmj?nY_NP00ol0
+0003ojVmj003o`000?nY_NSoZKgX00CoZKgX1?l00004ojVmj0?o000000?o?T>^o`000?n1IJX01?n1
+IJX00ol0003oYWbUojIlY@06ojIlY@;o00001_oGZJP01_l0003oo>FKoocUVol0003oZKgXo`0000Co
+ZKgX1Ol00006ojVmj003o`000?nY_NSoZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003o
+ZKgXojVmj003o`0000?oZKgX00?o0000ojVmj?nY_NP01?nY_NP00ol0003oZKgXojVmj003o`0001Wo
+oooo00?o0000ooooooooool05_ooool00ol0003oooooooooo`04ooooo`004Oooool00ol0003ooooo
+ooooo`07ooooo`03o`000?oooooooooo04Kooooo00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX
+00?o0000ojVmj?nY_NP00onY_NP3o`0000OoZKgX00?o0000ojVmj?nY_NP00ol000000onY_NSo0000
+ojVmj006ojVmj0;o000000?o?T>^o`000?n1IJX01?n1IJX00ol0003oYWbUojIlY@06ojIlY@03o`00
+0?oGZJSoejVX00GoejVX00?o0000oocUVol000000_nY_NP5o`0000CoZKgX00?o0000ojVmj?nY_NP0
+1?nY_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000OoZKgX00Co0000ojVmj?nY_NSo
+ZKgX1Ol0000Mooooo`03o`000?oooooooooo01Gooooo00?o0000ooooooooool01?ooool0017ooooo
+00?o0000ooooooooool02?ooool00ol0003oooooooooo`16ooooo`03o`000?nY_NSoZKgX00?o0000
+0_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSo000000;o00000onY_NP00ol0003oZKgX
+ojVmj004ojVmj0?o00001OnY_NP00ol0003oZKgXojVmj004ojVmj0Co00001_n1IJX00ol0003oYWbU
+ojIlY@05ojIlY@03o`000?oGZJSoejVX00CoejVX00?o0000oocUVooliI/00ol000000onY_NSo0000
+ojVmj007ojVmj003o`000?nY_NSoZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgX
+ojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP5o`0002;ooooo00?o0000ooooooooool0
+5Oooool00ol0003oooooooooo`04ooooo`004?ooool2o`0000_ooooo0_l00017ooooo`;o00001_nY
+_NP00ol0003oZKgXojVmj004ojVmj0;o00001onY_NP00ol0003oZKgXojVmj003o`000003ojVmj?l0
+003oZKgX00KoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj0;o00001_n1IJX00ol0003oYWbUojIl
+Y@04ojIlY@03o`000?nnVkCo000000GoejVX00Co0000oocUVooliI_o00001?nY_NP00ol0003oZKgX
+ojVmj004ojVmj0Co00001OnY_NP00ol0003oZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003oZKgX
+ojVmj003o`0002Sooooo00?o0000ooooooooool05?ooool00ol0003oooooooooo`04ooooo`004Ooo
+ool00ol0003oooooooooo`0;ooooo`03o`000?oooooooooo04Kooooo00?o0000ojVmj?nY_NP01?nY
+_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000GoZKgX00?o
+0000ojVmj?nY_NP01?nY_NP3o`0000GoZKgX0ol00005oh5UZP03o`000?nVO:GoYWbU00?oYWbU00Co
+0000okjK]?nnVkCo00001OoGZJP00ol0003oo>FKo`000006ojVmj003o`000?nY_NSoZKgX00?o0000
+0_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgX
+ojVmj004ojVmj0?o0000;?ooool00ol0003oooooooooo`0Cooooo`03o`000?oooooooooo00Cooooo
+000Pooooo`03o`000?oooooooooo04Kooooo00Co0000ojVmj?nY_NSoZKgX1Ol00006ojVmj003o`00
+0?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSoZKgX00?o0000
+0onY_NP00ol0003oZKgXojVmj003ojVmj0?o00001?n1IJX00ol0003oYWbUojIlY@02ojIlY@05o`00
+0?nnVkCo_Y^dokjK]?l000001?oGZJP01?l0003oo>FKoocUVol00006ojVmj0?o00001_nY_NP00ol0
+003oZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj003o`00033ooooo00?o0000oooo
+ooooool04_ooool00ol0003oooooooooo`04ooooo`008Oooool00ol0003oooooooooo`16ooooo`?o
+00001?nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj003ojVmj0?o
+00001onY_NP01?l0003oZKgXojVmj?nY_NP3o`000003oeUS`ol0003o000000;oPFFZ00Go0000ojIl
+YOnVO:GoYWbUo`000005okjK]009o`000?oGZJSoejVXomNYZ?l0003oo>FKo`000?nY_NSo000000;o
+ZKgX0ol00003ojVmj003o`000?nY_NSoZKgX00CoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003
+o`000?nY_NSoZKgX00CoZKgX0ol0000cooooo`03o`000?oooooooooo01;ooooo00?o0000oooooooo
+ool01?ooool002;ooooo00?o0000ooooooooool0A_ooool00ol0003oZKgXojVmj004ojVmj003o`00
+0?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSo000000;o0000
+0onY_NP00ol0003oZKgXojVmj004ojVmj0Co00000_nY_NP2o`0000;oFF?300Ko0000oh5UZ_n1IJ[o
+0000ojIlYOl00006okjK]008o`000?oGZJSoejVXomNYZ?l0003oo>FKo`000?nY_NP3o`0000OoZKgX
+00Co0000ojVmj?nY_NSoZKgX1Ol00006ojVmj003o`000?nY_NSoZKgX00?o0000=oooool00ol0003o
+ooooooooo`0Booooo`03o`000?oooooooooo00?ooooo000Sooooo`;o0000Aoooool00ol0003oZKgX
+ojVmj003ojVmj0?o00001_nY_NP00ol0003oZKgXojVmj004ojVmj0;o00001onY_NP00ol0003oZKgX
+ojVmj003o`000003ojVmj?l0003oZKgX00?oZKgX0_l00003oeUS``Co00002?nnVk@00ol0003oejVX
+o`000002oocUV`;o00000_nY_NP00ol0003oZKgXojVmj004ojVmj0Go00001?nY_NP00ol0003oZKgX
+ojVmj004ojVmj0?o0000>oooool00ol0003oooooooooo`0Aooooo`03o`000?oooooooooo00?ooooo
+000Uooooo`03o`000?oooooooooo04Gooooo00?o0000ojVmj?l000000_l00003ojVmj003o`000?nY
+_NSoZKgX00CoZKgX00?o0000ojVmj?nY_NP00ol00002ojVmj003o`000?nY_NSoZKgX00CoZKgX0ol0
+0005ojVmj003o`000?nY_NSoZKgX00;oZKgX00?o0000oeUS`omIHl<00omIHl<00ol0003o_Y^dokjK
+]007okjK]003o`000?oGZJSo000000;o00001OnY_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o
+0000ojVmj?nY_NP01OnY_NP00ol0003oZKgXojVmj003o`0003oooooo00?o0000ooooooooool04?oo
+ool00ol0003oooooooooo`03ooooo`009_ooool00ol0003oooooooooo`15ooooo`03o`000?nY_NSo
+ZKgX00GoZKgX00Co0000ojVmj?nY_NSoZKgX1Ol00006ojVmj003o`000?nY_NSoZKgX00?o000000?o
+ZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000CoFF?300?o0000okjK]?nnVk@01onn
+Vk@01Ol0003oejVXo`000?o5lj3o000000GoZKgX0ol00006ojVmj003o`000?nY_NSoZKgX00CoZKgX
+0ol00012ooooo`03o`000?oooooooooo013ooooo00?o0000ooooooooool00oooool002Oooooo00?o
+0000ooooooooool0AOooool00ol0003oZKgXojVmj004ojVmj0Co00001?nY_NP00ol0003oZKgXojVm
+j004ojVmj0?o00001OnY_NP00ol0003oZKgXojVmj004ojVmj0?o00000_nY_NP00ol0003oFF?3oeUS
+``03oeUS``03o`000?nnVkCo_Y^d00Oo_Y^d00Co0000olGcX?l0003o00000_nY_NP3o`0000;oZKgX
+00?o0000ojVmj?nY_NP01OnY_NP00ol0003oZKgXojVmj003o`0004Kooooo00?o0000ooooooooool0
+3oooool00ol0003oooooooooo`03ooooo`00:?ooool2o`0004Kooooo00?o0000ojVmj?nY_NP00ol0
+00000onY_NSo0000ojVmj006ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVm
+j004ojVmj003o`000?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj002o`0000CoFF?300?o
+0000okjK]?nnVk@01onnVk@2o`000004ojVmj?l0003o0000o`0000KoZKgX00?o0000ojVmj?nY_NP0
+1?nY_NP3o`0004[ooooo00?o0000ooooooooool03_ooool00ol0003oooooooooo`03ooooo`00:_oo
+ool00ol0003oooooooooo`14ooooo`;o00001OnY_NP00ol0003oZKgXojVmj004ojVmj0?o00001_nY
+_NP01?l0003oZKgXojVmj?nY_NP5o`0000KoZKgX00Co0000ojVmj?nY_NSo00001?mIHl<00ol0003o
+_Y^dokjK]006okjK]0Co00000onY_NP00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSoZKgX00?o
+0000COooool00ol0003oooooooooo`0?ooooo`03o`000?oooooooooo00;ooooo000[ooooo`03o`00
+0?oooooooooo04Gooooo00?o0000ojVmj?nY_NP00onY_NP00ol0003oZKgXojVmj003o`0000?oZKgX
+00?o0000ojVmj?nY_NP00onY_NP4o`0000GoZKgX00?o0000ojVmj?nY_NP00onY_NP4o`0000GoFF?3
+00?o0000okjK]?nnVk@01?nnVk@00ol0003oaO>Po`000006ojVmj004o`000?nY_NSoZKgXojVmj0Go
+0000DOooool00ol0003oooooooooo`0>ooooo`03o`000?oooooooooo00;ooooo000/ooooo`03o`00
+0?oooooooooo04Gooooo00Co0000ojVmj?nY_NSoZKgX1?l00007ojVmj003o`000?nY_NSo000000;o
+00000_nY_NP00ol0003oZKgXojVmj005ojVmj003o`000?nY_NSo000000;o00000onY_NP3o`0000?o
+FF?300?o0000okjK]?nnVk@00onnVk@01?l0003oaO>Po`000?l00006ojVmj0Co0000Eoooool00ol0
+003oooooooooo`0=ooooo`03o`000?oooooooooo00;ooooo000]ooooo`03o`000?oooooooooo04Go
+oooo0ol00004ojVmj003o`000?nY_NSoZKgX00CoZKgX0_l00006ojVmj003o`000?nY_NSoZKgX00Co
+ZKgX0_l00007ojVmj003o`000?nY_NSo000000;oFF?300?o0000okjK]?nnVk@00_nnVk@00ol0003o
+aO>Po`000002ojVmj003o`000?nY_NSoZKgX00?o0000G?ooool00ol0003oooooooooo`0<ooooo`03
+o`000?oooooooooo00;ooooo000^ooooo`;o0000AOooool00ol0003oZKgXojVmj005ojVmj003o`00
+0?nY_NSoZKgX00?o00000_nY_NP00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSoZKgX00?o0000
+0_nY_NP00ol0003oZKgXojVmj004ojVmj0Go000000?oFF?3o`000?nnVk@00_nnVk@2o`0000?oZKgX
+0ol0001Oooooo`03o`000?oooooooooo00cooooo00?o0000ooooooooool00_ooool0033ooooo00?o
+0000ooooooooool0@oooool00ol0003oZKgXojVmj004ojVmj0?o00001_nY_NP01?l0003oZKgXojVm
+j?nY_NP5o`0000KoZKgX00?o0000ojVmj?nY_NP00ol000000onY_NSo0000ojVmj002ojVmj0;o0000
+0_nnVk@00ol0003oZKgXojVmj003o`0006?ooooo00?o0000ooooooooool02oooool00ol0003ooooo
+ooooo`02ooooo`00<Oooool00ol0003oooooooooo`13ooooo`03o`000?nY_NSoZKgX00?o00000_nY
+_NP00ol0003oZKgXojVmj004ojVmj0Co00001?nY_NP00ol0003oZKgXojVmj004ojVmj0?o00001OnY
+_NP01_l0003oZKgXojVmj?nY_NSo0000okjK]0Co0000Ioooool00ol0003oooooooooo`0:ooooo`03
+o`000?oooooooooo00;ooooo000booooo`03o`000?oooooooooo04?ooooo0_l00006ojVmj003o`00
+0?nY_NSoZKgX00?o000000?oZKgXo`000?nY_NP01_nY_NP00ol0003oZKgXojVmj003o`0000;oZKgX
+00?o0000ojVmj?nY_NP01?nY_NP00ol0003oZKgXojVmj003o`0006_ooooo00?o0000ooooooooool0
+2_ooool00ol0003oooooooooo`01ooooo`00<oooool2o`0004Gooooo00?o0000ojVmj?nY_NP00onY
+_NP3o`0000GoZKgX00?o0000ojVmj?nY_NP01?nY_NP3o`0000KoZKgX00Co0000ojVmj?nY_NSoZKgX
+1Ol0001^ooooo`03o`000?oooooooooo00[ooooo00?o0000ooooooooool00Oooool003Gooooo00?o
+0000ooooooooool0@oooool00ol0003oZKgXo`000002o`0000?oZKgX00?o0000ojVmj?nY_NP00onY
+_NP00ol0003oZKgXojVmj003o`0000;oZKgX00?o0000ojVmj?nY_NP01?nY_NP4o`0007Cooooo00?o
+0000ooooooooool02Oooool00ol0003oooooooooo`01ooooo`00=_ooool00ol0003oooooooooo`13
+ooooo`03o`000?nY_NSoZKgX00GoZKgX00Co0000ojVmj?nY_NSoZKgX1?l00006ojVmj003o`000?nY
+_NSoZKgX00?o0000NOooool00ol0003oooooooooo`08ooooo`03o`000?oooooooooo007ooooo000g
+ooooo`03o`000?oooooooooo04?ooooo00?o0000ojVmj?nY_NP01?nY_NP4o`0000CoZKgX00?o0000
+ojVmj?nY_NP00onY_NP3o`0007gooooo00?o0000ooooooooool01oooool00ol0003oooooooooo`01
+ooooo`00>?ooool00ol0003oooooooooo`13ooooo`03o`000?nY_NSoZKgX00?o000000?oZKgXo`00
+0?nY_NP01_nY_NP00ol0003oZKgXo`000002o`00083ooooo00?o0000ooooooooool01oooool00ol0
+003oooooooooo`01ooooo`00>Oooool2o`0004Cooooo0_l00005ojVmj003o`000?nY_NSoZKgX00Co
+ZKgX0_l00024ooooo`03o`000?oooooooooo00Kooooo00?o0000ooooooooool00Oooool003_ooooo
+00?o0000ooooooooool0@_ooool00ol0003oZKgXojVmj004ojVmj003o`000?nY_NSoZKgX00?o0000
+Qoooool00ol0003oooooooooo`06ooooo`7o00000Oooool1ooooo`00??ooool00ol0003ooooooooo
+o`12ooooo`04o`000?nY_NSoZKgXojVmj0Go0000R_ooool00ol0003oooooooooo`06ooooo`7o0000
+0Oooool1ooooo`00?Oooool00ol0003oooooooooo`12ooooo`?o0000T?ooool00ol0003ooooooooo
+o`05ooooo`7o00000Oooool1ooooo`00?_ooool2o`0004;ooooo00?o0000ooooooooool0TOooool0
+0ol0003oooooooooo`04ooooo`7o00000Oooool1ooooo`00@?ooool00ol0003oooooooooo`0ooooo
+o`03o`000?oooooooooo09;ooooo00?o0000ooooooooool00oooool1o`00007ooooo0Oooool0047o
+oooo00?o0000ooooooooool0?_ooool00ol0003oooooooooo`2Booooo`03o`000?oooooooooo00?o
+oooo0Ol00001ooooo`7ooooo0012ooooo`03o`000?oooooooooo03gooooo00?o0000ooooooooool0
+Toooool00ol0003oooooooooo`03ooooo`7o00000Oooool004?ooooo00?o0000ooooooooool0??oo
+ool00ol0003oooooooooo`2Dooooo`03o`000?oooooooooo00;ooooo0Ol00001ooooo`00A?ooool2
+o`0003cooooo00?o0000ooooooooool0UOooool01Ol0003ooooooooooooooooo0000007ooooo0016
+ooooo`03o`000?oooooooooo03Wooooo00?o0000ooooooooool0UOooool01Ol0003ooooooooooooo
+oooo0000007ooooo0017ooooo`03o`000?oooooooooo03Sooooo00?o0000ooooooooool0U_ooool0
+1?l0003oooooooooool00001ooooo`00B?ooool00ol0003oooooooooo`0gooooo`03o`000?oooooo
+oooo09Oooooo00?o0000ooooool000000Oooool004Wooooo0_l0000gooooo`03o`000?oooooooooo
+09Oooooo00?o0000ooooool000000Oooool004_ooooo00?o0000ooooooooool0=?ooool00ol0003o
+ooooooooo`2Hooooo`7o00000Oooool1o`000000C?ooool00ol0003oooooooooo`0cooooo`03o`00
+0?oooooooooo09Wooooo0_l0000004gooooo00?o0000ooooooooool0<_ooool00ol0003ooooooooo
+o`2Hooooo`?o0000001>ooooo`03o`000?oooooooooo033ooooo00?o0000ooooooooool0UOooool4
+o`0000?ooooo001?ooooo`;o0000<?ooool00ol0003oooooooooo`2Booooo`?o00001oooool0057o
+oooo00?o0000ooooooooool0;Oooool00ol0003oooooooooo`2>ooooo`Co00002_ooool005;ooooo
+00?o0000ooooooooool0;?ooool00ol0003oooooooooo`2:ooooo`Co00003_ooool005?ooooo00?o
+0000ooooooooool0:oooool00ol0003oooooooooo`26ooooo`Co00004_ooool005Cooooo0_l0000[
+ooooo`03o`000?oooooooooo08;ooooo1?l0000Fooooo`00E_ooool00ol0003oooooooooo`0Xoooo
+o`03o`000?oooooooooo07oooooo0ol0000Jooooo`00Eoooool00ol0003oooooooooo`0Wooooo`03
+o`000?oooooooooo07_ooooo1?l0000Mooooo`00F?ooool00ol0003oooooooooo`0Vooooo`03o`00
+0?oooooooooo07Oooooo1?l0000Qooooo`00FOooool00ol0003oooooooooo`0Uooooo`03o`000?oo
+oooooooo07?ooooo1?l0000Uooooo`00F_ooool2o`0002Gooooo00?o0000ooooooooool0Koooool4
+o`0002Wooooo001Looooo`03o`000?oooooooooo02;ooooo00?o0000ooooooooool0K?ooool3o`00
+02gooooo001Mooooo`03o`000?oooooooooo027ooooo00?o0000ooooooooool0J?ooool4o`00033o
+oooo001Nooooo`03o`000?oooooooooo023ooooo00?o0000ooooooooool0I?ooool4o`0003Cooooo
+001Oooooo`;o00008?ooool00ol0003oooooooooo`1Pooooo`Co0000>?ooool0067ooooo00?o0000
+ooooooooool07Oooool00ol0003oooooooooo`1Mooooo`?o0000??ooool006;ooooo00?o0000oooo
+ooooool07?ooool00ol0003oooooooooo`1Iooooo`Co0000?oooool006?ooooo00?o0000oooooooo
+ool06oooool00ol0003oooooooooo`1Eooooo`Co0000@oooool006Cooooo00?o0000ooooooooool0
+6_ooool00ol0003oooooooooo`1Aooooo`Co0000Aoooool006Gooooo0_l0000Jooooo`03o`000?oo
+oooooooo04gooooo1?l0001;ooooo`00Ioooool00ol0003oooooooooo`0Gooooo`03o`000?oooooo
+oooo04[ooooo0ol0001?ooooo`00J?ooool00ol0003oooooooooo`0Fooooo`03o`000?oooooooooo
+04Kooooo1?l0001Booooo`00JOooool00ol0003oooooooooo`0Eooooo`03o`000?oooooooooo04;o
+oooo1?l0001Fooooo`00J_ooool2o`0001Gooooo00?o0000ooooooooool0?_ooool4o`0005[ooooo
+001/ooooo`03o`000?oooooooooo01;ooooo00?o0000ooooooooool0>_ooool4o`0005kooooo001]
+ooooo`03o`000?oooooooooo017ooooo00?o0000ooooooooool0=oooool3o`0006;ooooo001^oooo
+o`03o`000?oooooooooo013ooooo00?o0000ooooooooool0<oooool4o`0006Gooooo001_ooooo`03
+o`000?oooooooooo00oooooo00?o0000ooooooooool0;oooool4o`0006Wooooo001`ooooo`;o0000
+3_ooool00ol0003oooooooooo`0/ooooo`Co0000KOooool007;ooooo00?o0000ooooooooool02ooo
+ool00ol0003oooooooooo`0Yooooo`?o0000LOooool007?ooooo00?o0000ooooooooool02_ooool0
+0ol0003oooooooooo`0Uooooo`Co0000M?ooool007Cooooo00?o0000ooooooooool02Oooool00ol0
+003oooooooooo`0Qooooo`Co0000N?ooool007Gooooo0_l00009ooooo`03o`000?oooooooooo01go
+oooo1?l0001looooo`00Moooool00ol0003oooooooooo`06ooooo`03o`000?oooooooooo01Wooooo
+1?l00020ooooo`00N?ooool00ol0003oooooooooo`05ooooo`03o`000?oooooooooo01Kooooo0ol0
+0024ooooo`00NOooool00ol0003oooooooooo`04ooooo`03o`000?oooooooooo01;ooooo1?l00027
+ooooo`00N_ooool00ol0003oooooooooo`03ooooo`03o`000?oooooooooo00kooooo1?l0002;oooo
+o`00Noooool2o`0000?ooooo00?o0000ooooooooool02_ooool4o`0008oooooo001mooooo`04o`00
+0?ooooooooooo`0000Sooooo1?l0002Cooooo`00O_ooool00ol0003oooooo`000005ooooo`?o0000
+Uoooool007oooooo0_l000000ooooooo0000o`000002o`0009[ooooo0020ooooo`;o0000W_ooool0
+0?oooooo8Oooool00?oooooo8Oooool00?oooooo8Oooool00?oooooo8Oooool00?oooooo8Oooool0
+0?oooooo8Oooool00?oooooo8Oooool00?oooooo8Oooool00?oooooo8Oooool00001\
+\>"],
+  ImageRangeCache->{{{0, 287}, {232.562, 0}} -> {-0.0890962, 0.029026, \
+0.00362958, 0.00362958}}],
+
+Cell[BoxData[
+    TagBox[\(\[SkeletonIndicator]  SurfaceGraphics  \[SkeletonIndicator]\),
+      False,
+      Editable->False]], "Output"]
+}, Open  ]]
+}, Open  ]]
+},
+FrontEndVersion->"5.1 for Macintosh",
+ScreenRectangle->{{0, 1440}, {0, 803}},
+WindowSize->{709, 791},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+ShowSelection->True
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 21, 0, 69, "Section"],
+
+Cell[CellGroupData[{
+Cell[1822, 57, 106, 2, 27, "Input"],
+Cell[1931, 61, 105, 2, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2073, 68, 82, 1, 27, "Input"],
+Cell[2158, 71, 69, 1, 27, "Output"]
+}, Open  ]],
+Cell[2242, 75, 91, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[2358, 80, 47, 1, 27, "Input"],
+Cell[2408, 83, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2480, 89, 53, 1, 27, "Input"],
+Cell[2536, 92, 58, 1, 27, "Output"]
+}, Open  ]],
+Cell[2609, 96, 108, 2, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[2742, 102, 66, 1, 27, "Input"],
+Cell[2811, 105, 38, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2886, 111, 44, 1, 27, "Input"],
+Cell[2933, 114, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3005, 120, 84, 1, 27, "Input"],
+Cell[3092, 123, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3164, 129, 85, 1, 27, "Input"],
+Cell[3252, 132, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3324, 138, 77, 1, 27, "Input"],
+Cell[3404, 141, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3476, 147, 92, 1, 27, "Input"],
+Cell[3571, 150, 56, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3664, 156, 55, 1, 27, "Input"],
+Cell[3722, 159, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3794, 165, 51, 1, 27, "Input"],
+Cell[3848, 168, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3920, 174, 45, 1, 27, "Input"],
+Cell[3968, 177, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4040, 183, 254, 7, 73, "Input"],
+Cell[4297, 192, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4369, 198, 112, 2, 27, "Input"],
+Cell[4484, 202, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4556, 208, 188, 3, 43, "Input"],
+Cell[4747, 213, 35, 1, 27, "Output"]
+}, Open  ]],
+Cell[4797, 217, 37, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[4859, 222, 49, 1, 27, "Input"],
+Cell[4911, 225, 35, 1, 27, "Output"]
+}, Open  ]],
+Cell[4961, 229, 103, 2, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[5089, 235, 47, 1, 27, "Input"],
+Cell[5139, 238, 35, 1, 27, "Output"]
+}, Open  ]],
+Cell[5189, 242, 45, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[5259, 247, 48, 1, 27, "Input"],
+Cell[5310, 250, 50, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5397, 256, 59, 1, 27, "Input"],
+Cell[5459, 259, 294, 5, 75, "Output"]
+}, Open  ]],
+Cell[5768, 267, 37, 1, 27, "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5842, 273, 23, 0, 69, "Section"],
+
+Cell[CellGroupData[{
+Cell[5890, 277, 49, 1, 27, "Input"],
+Cell[5942, 280, 27544, 691, 361, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[33523, 976, 71, 1, 27, "Input"],
+Cell[33597, 979, 37, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[33671, 985, 142, 3, 43, "Input"],
+Cell[33816, 990, 130928, 2478, 242, 50506, 1481, "GraphicsData", \
+"PostScript", "Graphics"],
+Cell[164747, 3470, 137, 3, 27, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

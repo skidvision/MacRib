@@ -1,0 +1,873 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     32307,        864]
+NotebookOptionsPosition[     30953,        812]
+NotebookOutlinePosition[     31360,        830]
+CellTagsIndexPosition[     31317,        827]
+WindowFrame->Normal
+ContainsDynamic->True *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Quit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.389791511394021*^9, 3.3897915124832993`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"$RManLinkName", "=", "\"\<ets_shm\>\""}]], "Input",
+ CellChangeTimes->{{3.389795150342183*^9, 3.389795179235799*^9}, {
+   3.389795214583126*^9, 3.389795218733713*^9}, 3.3897955064164047`*^9, {
+   3.389795762303553*^9, 3.389795763804948*^9}, 3.389826269710492*^9, 
+   3.3898263638964167`*^9, 3.3898276189405127`*^9, 3.389828802265011*^9, 
+   3.389829227854746*^9, 3.389829781653344*^9, 3.389830119713431*^9, 
+   3.38983261962344*^9, {3.389833269815442*^9, 3.3898332704285088`*^9}, {
+   3.389833333423142*^9, 3.3898333344989843`*^9}}],
+
+Cell[BoxData["\<\"ets_shm\"\>"], "Output",
+ CellChangeTimes->{
+  3.3897952257696123`*^9, {3.389795507504977*^9, 3.38979552704858*^9}, 
+   3.3897957701778107`*^9, 3.3898262709108267`*^9, 3.389826367726172*^9, 
+   3.389827619814842*^9, 3.389828805911127*^9, 3.3898292314614973`*^9, 
+   3.389829782342956*^9, 3.389830123177292*^9, 3.389832620435751*^9, 
+   3.3898332710062227`*^9, 3.3898333349249907`*^9, 3.38997558111362*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "$RManLinkName", "]"}]], "Input",
+ CellChangeTimes->{{3.389975587377684*^9, 3.389975594832918*^9}}],
+
+Cell[BoxData[
+ RowBox[{"<<", "RenderMan`"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "RenderMan`*"}]], "Input"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["RenderMan`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["RenderMan`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["RenderMan",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RenderMan"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiImager",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiImager"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RenderManReset",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RenderManReset"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiInterior",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiInterior"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RenderManStart",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RenderManStart"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiLanczosFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiLanczosFilter"},
+          
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RenderManStop",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RenderManStop"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiLastError",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiLastError"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiArchiveBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiArchiveBegin"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiLightSource",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiLightSource"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiArchiveEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiArchiveEnd"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiMatte",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiMatte"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiArchiveRecord",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiArchiveRecord"},
+          
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiMitchellFilter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiMitchellFilter"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiAreaLightSource",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiAreaLightSource"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiMotionBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiMotionBegin"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiAtmosphere",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiAtmosphere"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiMotionEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiMotionEnd"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiAttribute",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiAttribute"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiObjectBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiObjectBegin"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiAttributeBegin",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiAttributeBegin"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiObjectEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiObjectEnd"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiAttributeEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiAttributeEnd"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiObjectInstance",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiObjectInstance"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiBegin"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiOpacity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiOpacity"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiBesselFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiBesselFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiOption",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiOption"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiBlackmanHarrisFilter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiBlackmanHarrisFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiOrientation",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiOrientation"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiBound",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiBound"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiParaboloid",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiParaboloid"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiBoxFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiBoxFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPatch",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPatch"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCatmullRomFilter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiCatmullRomFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPerspective",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPerspective"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiClipping",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiClipping"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPixelFidelity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPixelFidelity"},
+          
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiClippingPlane",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiClippingPlane"},
+          
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPixelSamples",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPixelSamples"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiColor",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiColor"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPixelVariance",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPixelVariance"},
+          
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiColorSamples",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiColorSamples"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPoints",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPoints"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiConcatTransform",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiConcatTransform"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPointsPolygons",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiPointsPolygons"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCone",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiCone"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiPolygon",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiPolygon"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiContext",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiContext"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiProjection",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiProjection"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCoordinateSystem",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiCoordinateSystem"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiQuantize",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiQuantize"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCoordSysTransform",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiCoordSysTransform"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiReadArchive",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiReadArchive"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCropWindow",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiCropWindow"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiRelativeDetail",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiRelativeDetail"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCurves",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiCurves"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiReverseOrientation",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiReverseOrientation"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiCylinder",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiCylinder"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiRotate",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiRotate"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDeclare",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDeclare"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiScale",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiScale"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDeformation",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDeformation"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiScopedCoordinateSystem",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiScopedCoordinateSystem"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDepthOfField",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDepthOfField"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiScreenWindow",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiScreenWindow"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDetail",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDetail"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSeparableCatmullRomFilter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiSeparableCatmullRomFilter"},
+          
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDetailRange",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDetailRange"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiShadingInterpolation",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiShadingInterpolation"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDisk",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDisk"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiShadingRate",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiShadingRate"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDiskFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDiskFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiShutter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiShutter"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDisplacement",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDisplacement"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSides",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSides"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiDisplay",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiDisplay"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSincFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSincFilter"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiEnd"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSkew",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSkew"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorAbort",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiErrorAbort"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSolidBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSolidBegin"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorCleanup",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiErrorCleanup"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSolidEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSolidEnd"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorCondAbort",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiErrorCondAbort"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSphere",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSphere"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorIgnore",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiErrorIgnore"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiSurface",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiSurface"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorPrint",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiErrorPrint"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTextureCoordinates",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiTextureCoordinates"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiErrorPrintOnce",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiErrorPrintOnce"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTorus",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiTorus"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiExposure",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiExposure"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTransform",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiTransform"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiExterior",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiExterior"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTransformBegin",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiTransformBegin"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiFormat"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTransformEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiTransformEnd"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiFrameAspectRatio",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiFrameAspectRatio"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTranslate",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiTranslate"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiFrameBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiFrameBegin"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiTriangleFilter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiTriangleFilter"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiFrameEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiFrameEnd"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiWorldBegin",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiWorldBegin"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiGaussianFilter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiGaussianFilter"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RiWorldEnd",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiWorldEnd"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiGeometricApproximation",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`RiGeometricApproximation"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RtContextHandle",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RtContextHandle"},
+          
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiGeometry",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiGeometry"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RtLightHandle",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RtLightHandle"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiGetContext",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiGetContext"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["RtObjectHandle",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RtObjectHandle"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiHider",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiHider"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["$RenderManVersion",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3389961197-9897404", "RenderMan`$RenderManVersion"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiHyperboloid",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiHyperboloid"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["$RManDirectory",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`$RManDirectory"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiIdentity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiIdentity"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["$RManLink",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`$RManLink"},
+          ButtonNote->"RenderMan`"]},
+        {
+         ButtonBox["RiIlluminate",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961197-9897404", "RenderMan`RiIlluminate"},
+          ButtonNote->"RenderMan`"], ""}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.475]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{3.3899755981163883`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "$RMan*"}]], "Input"],
+
+Cell[BoxData[{
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["Global`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["Global`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["$RManLinkName",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961199-2815684", "Global`$RManLinkName"},
+          ButtonNote->"Global`"]}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.95]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]], "\n", 
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["RenderMan`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["RenderMan`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["$RManDirectory",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961199-2815684", "RenderMan`$RManDirectory"},
+          ButtonNote->"RenderMan`"], 
+         ButtonBox["$RManLink",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3389961199-2815684", "RenderMan`$RManLink"},
+          ButtonNote->"RenderMan`"]}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.475]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]}], "Print", "InfoCell",
+ CellChangeTimes->{3.38997559918489*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["something", "Section"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fname", "=", "\"\</Users/flip/Desktop/bob.rib\>\""}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RiBegin", "[", "fname", "]"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RiOption", "[", 
+  RowBox[{"\"\<limits\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<gridsize\>\"", ",", "512", ",", "\"\<bucketsize\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "32"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.389830131350318*^9, 3.389830134792368*^9}, {
+  3.389832677101879*^9, 3.389832681329073*^9}, {3.3898333502566633`*^9, 
+  3.389833354876121*^9}}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.389792221817644*^9, 3.389793487260017*^9, 
+  3.389795547921749*^9, 3.3898263072043858`*^9, 3.389826396199354*^9, 
+  3.389827644990505*^9, 3.389829066701498*^9, 3.3898293960598793`*^9, 
+  3.389829865813724*^9, 3.3898301811640043`*^9, 3.389832644150168*^9, 
+  3.3898327010453*^9, 3.38983328118548*^9, 3.3898333581518*^9, 
+  3.389975601401909*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RiEnd", "[", "]"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Import", "[", 
+  RowBox[{"fname", ",", "\"\<Text\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.389793467798273*^9, 3.389793499212191*^9}, {
+  3.389793792402679*^9, 3.38979379770182*^9}, {3.389793866771813*^9, 
+  3.3897938779411087`*^9}}],
+
+Cell[BoxData["\<\"##RenderMan RIB\\nversion 3.04\\nOption \\\"limits\\\" \
+\\\"gridsize\\\" [512]\\\"bucketsize\\\" [16 32]\\n\"\>"], "Output",
+ CellChangeTimes->{3.389793878549099*^9, 3.389795574690683*^9, 
+  3.389826315255135*^9, 3.389826401311658*^9, 3.389830185001439*^9, 
+  3.3898326509246264`*^9, 3.389832705873115*^9, 3.3898333150521517`*^9, 
+  3.389833363072914*^9, 3.389975602875404*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["something else", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Uninstall", "[", "$RManLink", "]"}]], "Input"],
+
+Cell[BoxData["\<\"/Library/Mathematica/Applications/RenderMan/MacRib.exe/\
+MacOSX-x86/MacRib.exe\"\>"], "Output",
+ CellChangeTimes->{3.389792226204335*^9, 3.389795576247778*^9, 
+  3.389826317145022*^9, 3.389826402125256*^9, 3.389829070697261*^9, 
+  3.389830250766445*^9, 3.3898333190927763`*^9, 3.389833370587784*^9, 
+  3.389975604703062*^9}]
+}, Open  ]],
+
+Cell[BoxData["Quit"], "Input"]
+}, Open  ]]
+},
+AutoGeneratedPackage->None,
+WindowSize->{775, 856},
+WindowMargins->{{218, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+Magnification->1.25,
+FrontEndVersion->"6.0 for Mac OS X x86 (32-bit) (April 20, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 120, 2, 33, "Input"],
+Cell[CellGroupData[{
+Cell[713, 27, 556, 8, 33, "Input"],
+Cell[1272, 37, 423, 6, 33, "Output"]
+}, Open  ]],
+Cell[1710, 46, 136, 2, 33, "Input"],
+Cell[1849, 50, 54, 1, 33, "Input"],
+Cell[CellGroupData[{
+Cell[1928, 55, 54, 1, 33, "Input"],
+Cell[1985, 58, 24523, 611, 1522, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26545, 674, 49, 1, 33, "Input"],
+Cell[26597, 677, 1897, 55, 131, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28531, 737, 28, 0, 83, "Section"],
+Cell[28562, 739, 108, 3, 33, "Input"],
+Cell[28673, 744, 82, 2, 33, "Input"],
+Cell[CellGroupData[{
+Cell[28780, 750, 421, 9, 33, "Input"],
+Cell[29204, 761, 394, 6, 33, "Output"]
+}, Open  ]],
+Cell[29613, 770, 71, 2, 33, "Input"],
+Cell[CellGroupData[{
+Cell[29709, 776, 262, 5, 33, "Input"],
+Cell[29974, 783, 396, 5, 91, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30419, 794, 33, 0, 83, "Section"],
+Cell[CellGroupData[{
+Cell[30477, 798, 70, 1, 33, "Input"],
+Cell[30550, 801, 342, 5, 53, "Output"]
+}, Open  ]],
+Cell[30907, 809, 30, 0, 33, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

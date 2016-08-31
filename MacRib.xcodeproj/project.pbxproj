@@ -3,34 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* MacRib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* MacRib.1 */; };
-		C30A11890C11D1FE00C673B2 /* dtex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A117B0C11D1FE00C673B2 /* dtex.h */; };
-		C30A118A0C11D1FE00C673B2 /* ImplicitField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A117C0C11D1FE00C673B2 /* ImplicitField.h */; };
-		C30A118B0C11D1FE00C673B2 /* ndspy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A117D0C11D1FE00C673B2 /* ndspy.h */; };
-		C30A118C0C11D1FE00C673B2 /* pointcloud.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A117E0C11D1FE00C673B2 /* pointcloud.h */; };
-		C30A118D0C11D1FE00C673B2 /* ri.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A117F0C11D1FE00C673B2 /* ri.h */; };
-		C30A118E0C11D1FE00C673B2 /* RifFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11800C11D1FE00C673B2 /* RifFilter.h */; };
-		C30A118F0C11D1FE00C673B2 /* RifPlugin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11810C11D1FE00C673B2 /* RifPlugin.h */; };
-		C30A11900C11D1FE00C673B2 /* RixInterfaces.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11820C11D1FE00C673B2 /* RixInterfaces.h */; };
-		C30A11910C11D1FE00C673B2 /* RslPlugin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11830C11D1FE00C673B2 /* RslPlugin.h */; };
-		C30A11920C11D1FE00C673B2 /* rx.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11840C11D1FE00C673B2 /* rx.h */; };
-		C30A11930C11D1FE00C673B2 /* shadeop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11850C11D1FE00C673B2 /* shadeop.h */; };
-		C30A11940C11D1FE00C673B2 /* slo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C30A11860C11D1FE00C673B2 /* slo.h */; };
-		C30A11950C11D1FE00C673B2 /* libprmansdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A11880C11D1FE00C673B2 /* libprmansdk.a */; };
 		C30A11AD0C11D36200C673B2 /* installpkg.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = C31FCB080714754B00C06E91 /* installpkg.sh */; };
 		C374EFE30C11FB1400635290 /* RibGlue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C374EFE20C11FB1400635290 /* RibGlue.h */; };
 		C3846FD50C10B7C00061A955 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3846FAA0C10B7BF0061A955 /* CoreFoundation.framework */; };
 		C38471150C10B8980061A955 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38470750C10B8980061A955 /* IOKit.framework */; };
 		C38C1D02070BB96500A962E5 /* MacRib.tm in Sources */ = {isa = PBXBuildFile; fileRef = C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */; };
 		C38C1D2F070CAED400A962E5 /* RibGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = C38C1D2D070CAED400A962E5 /* RibGlue.c */; };
-		C3A6B9EF0C076CE300C27891 /* mathlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A6B9EA0C076CE300C27891 /* mathlink.framework */; };
-		C3ACEEA5070BAB88008D6CBC /* mathlink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3ACEEA1070BAB88008D6CBC /* mathlink.h */; };
 		C3ACEF0B070BB4FB008D6CBC /* MacRib.tm in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */; };
+		C3FACF631D7767AE00D23E00 /* mathlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FACF621D7767AE00D23E00 /* mathlink.framework */; };
+		C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6151D7779E200D23E00 /* libphonon.dylib */; };
+		C3FAFB3E1D7779F000D23E00 /* libprman.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6161D7779E200D23E00 /* libprman.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -43,7 +31,7 @@
 			outputFiles = (
 				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).c",
 			);
-			script = "${MATHDEV}/mprep ${INPUT_FILE_NAME} -o \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.c\"";
+			script = "${MLDEV}/mprep ${INPUT_FILE_NAME} -o \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.c\"";
 		};
 /* End PBXBuildRule section */
 
@@ -55,20 +43,7 @@
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76FB00486AB0100D96B5E /* MacRib.1 in CopyFiles */,
-				C3ACEEA5070BAB88008D6CBC /* mathlink.h in CopyFiles */,
 				C3ACEF0B070BB4FB008D6CBC /* MacRib.tm in CopyFiles */,
-				C30A11890C11D1FE00C673B2 /* dtex.h in CopyFiles */,
-				C30A118A0C11D1FE00C673B2 /* ImplicitField.h in CopyFiles */,
-				C30A118B0C11D1FE00C673B2 /* ndspy.h in CopyFiles */,
-				C30A118C0C11D1FE00C673B2 /* pointcloud.h in CopyFiles */,
-				C30A118D0C11D1FE00C673B2 /* ri.h in CopyFiles */,
-				C30A118E0C11D1FE00C673B2 /* RifFilter.h in CopyFiles */,
-				C30A118F0C11D1FE00C673B2 /* RifPlugin.h in CopyFiles */,
-				C30A11900C11D1FE00C673B2 /* RixInterfaces.h in CopyFiles */,
-				C30A11910C11D1FE00C673B2 /* RslPlugin.h in CopyFiles */,
-				C30A11920C11D1FE00C673B2 /* rx.h in CopyFiles */,
-				C30A11930C11D1FE00C673B2 /* shadeop.h in CopyFiles */,
-				C30A11940C11D1FE00C673B2 /* slo.h in CopyFiles */,
 				C30A11AD0C11D36200C673B2 /* installpkg.sh in CopyFiles */,
 				C374EFE30C11FB1400635290 /* RibGlue.h in CopyFiles */,
 			);
@@ -79,27 +54,62 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* MacRib.exe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacRib.exe; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30A117B0C11D1FE00C673B2 /* dtex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dtex.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/dtex.h"; sourceTree = "<absolute>"; };
-		C30A117C0C11D1FE00C673B2 /* ImplicitField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ImplicitField.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/ImplicitField.h"; sourceTree = "<absolute>"; };
-		C30A117D0C11D1FE00C673B2 /* ndspy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ndspy.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/ndspy.h"; sourceTree = "<absolute>"; };
-		C30A117E0C11D1FE00C673B2 /* pointcloud.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pointcloud.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/pointcloud.h"; sourceTree = "<absolute>"; };
-		C30A117F0C11D1FE00C673B2 /* ri.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ri.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/ri.h"; sourceTree = "<absolute>"; };
-		C30A11800C11D1FE00C673B2 /* RifFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RifFilter.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/RifFilter.h"; sourceTree = "<absolute>"; };
-		C30A11810C11D1FE00C673B2 /* RifPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RifPlugin.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/RifPlugin.h"; sourceTree = "<absolute>"; };
-		C30A11820C11D1FE00C673B2 /* RixInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RixInterfaces.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/RixInterfaces.h"; sourceTree = "<absolute>"; };
-		C30A11830C11D1FE00C673B2 /* RslPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RslPlugin.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/RslPlugin.h"; sourceTree = "<absolute>"; };
-		C30A11840C11D1FE00C673B2 /* rx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rx.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/rx.h"; sourceTree = "<absolute>"; };
-		C30A11850C11D1FE00C673B2 /* shadeop.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = shadeop.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/shadeop.h"; sourceTree = "<absolute>"; };
-		C30A11860C11D1FE00C673B2 /* slo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = slo.h; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include/slo.h"; sourceTree = "<absolute>"; };
-		C30A11880C11D1FE00C673B2 /* libprmansdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprmansdk.a; path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/lib/libprmansdk.a"; sourceTree = "<absolute>"; };
 		C31FCB080714754B00C06E91 /* installpkg.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = installpkg.sh; path = package/installpkg.sh; sourceTree = "<group>"; };
 		C374EFE20C11FB1400635290 /* RibGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RibGlue.h; sourceTree = "<group>"; };
 		C3846FAA0C10B7BF0061A955 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		C38470750C10B8980061A955 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		C38C1D2D070CAED400A962E5 /* RibGlue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RibGlue.c; sourceTree = "<group>"; };
-		C3A6B9EA0C076CE300C27891 /* mathlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mathlink.framework; path = /Applications/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions/mathlink.framework; sourceTree = "<absolute>"; };
-		C3ACEEA1070BAB88008D6CBC /* mathlink.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mathlink.h; path = ../../../../../../Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions/mathlink.h; sourceTree = "<group>"; };
 		C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = MacRib.tm; sourceTree = "<group>"; };
+		C3FACF621D7767AE00D23E00 /* mathlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mathlink.framework; path = "/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/mathlink.framework"; sourceTree = "<absolute>"; };
+		C3FAE5651D7779B200D23E00 /* mathlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathlink.h; path = "../../../../Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/mathlink.framework/Headers/mathlink.h"; sourceTree = "<group>"; };
+		C3FAE5671D7779CC00D23E00 /* brickmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brickmap.h; sourceTree = "<group>"; };
+		C3FAE5681D7779CC00D23E00 /* dtex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtex.h; sourceTree = "<group>"; };
+		C3FAE5691D7779CC00D23E00 /* ImplicitField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitField.h; sourceTree = "<group>"; };
+		C3FAE56A1D7779CC00D23E00 /* ndspy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ndspy.h; sourceTree = "<group>"; };
+		C3FAE56B1D7779CC00D23E00 /* pointcloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointcloud.h; sourceTree = "<group>"; };
+		C3FAE56C1D7779CC00D23E00 /* prmanapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prmanapi.h; sourceTree = "<group>"; };
+		C3FAE5CA1D7779CC00D23E00 /* ri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ri.h; sourceTree = "<group>"; };
+		C3FAE5CB1D7779CC00D23E00 /* ri.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ri.hpp; sourceTree = "<group>"; };
+		C3FAE5CC1D7779CC00D23E00 /* Ric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ric.h; sourceTree = "<group>"; };
+		C3FAE5CD1D7779CC00D23E00 /* RifFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RifFilter.h; sourceTree = "<group>"; };
+		C3FAE5CE1D7779CC00D23E00 /* RifPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RifPlugin.h; sourceTree = "<group>"; };
+		C3FAE5CF1D7779CC00D23E00 /* RiTypesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiTypesHelper.h; sourceTree = "<group>"; };
+		C3FAE5D01D7779CC00D23E00 /* RixBxdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixBxdf.h; sourceTree = "<group>"; };
+		C3FAE5D11D7779CC00D23E00 /* RixBxdfLobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixBxdfLobe.h; sourceTree = "<group>"; };
+		C3FAE5D21D7779CC00D23E00 /* RixColorTemperature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixColorTemperature.h; sourceTree = "<group>"; };
+		C3FAE5D31D7779CC00D23E00 /* RixColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixColorUtils.h; sourceTree = "<group>"; };
+		C3FAE5D41D7779CC00D23E00 /* RixDeepTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixDeepTexture.h; sourceTree = "<group>"; };
+		C3FAE5D51D7779CC00D23E00 /* RixDisplacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixDisplacement.h; sourceTree = "<group>"; };
+		C3FAE5D61D7779CC00D23E00 /* RixDisplayFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixDisplayFilter.h; sourceTree = "<group>"; };
+		C3FAE5D71D7779CC00D23E00 /* RixIES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixIES.h; sourceTree = "<group>"; };
+		C3FAE5D81D7779CC00D23E00 /* RixIESInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixIESInline.h; sourceTree = "<group>"; };
+		C3FAE5D91D7779CC00D23E00 /* RixIntegrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixIntegrator.h; sourceTree = "<group>"; };
+		C3FAE5DA1D7779CC00D23E00 /* RixInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixInterfaces.h; sourceTree = "<group>"; };
+		C3FAE5DB1D7779CC00D23E00 /* RixLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixLight.h; sourceTree = "<group>"; };
+		C3FAE5DC1D7779CC00D23E00 /* RixLightFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixLightFilter.h; sourceTree = "<group>"; };
+		C3FAE5DD1D7779CC00D23E00 /* RixLighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixLighting.h; sourceTree = "<group>"; };
+		C3FAE5DE1D7779CC00D23E00 /* RixLPE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixLPE.h; sourceTree = "<group>"; };
+		C3FAE5DF1D7779CC00D23E00 /* RixLPEInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixLPEInline.h; sourceTree = "<group>"; };
+		C3FAE5E01D7779CC00D23E00 /* RixPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixPattern.h; sourceTree = "<group>"; };
+		C3FAE5E11D7779CC00D23E00 /* RixPhotonGuiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixPhotonGuiding.h; sourceTree = "<group>"; };
+		C3FAE5E21D7779CC00D23E00 /* RixProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixProjection.h; sourceTree = "<group>"; };
+		C3FAE5E31D7779CC00D23E00 /* RixRIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRIB.h; sourceTree = "<group>"; };
+		C3FAE5E41D7779CC00D23E00 /* RixRIBParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRIBParser.h; sourceTree = "<group>"; };
+		C3FAE5E51D7779CC00D23E00 /* RixRiCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRiCtl.h; sourceTree = "<group>"; };
+		C3FAE5E61D7779CC00D23E00 /* RixRNG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRNG.h; sourceTree = "<group>"; };
+		C3FAE5E71D7779CC00D23E00 /* RixRNGInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRNGInline.h; sourceTree = "<group>"; };
+		C3FAE5E81D7779CC00D23E00 /* RixRNGProgressive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixRNGProgressive.h; sourceTree = "<group>"; };
+		C3FAE5E91D7779CC00D23E00 /* RixSampleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixSampleFilter.h; sourceTree = "<group>"; };
+		C3FAE5EA1D7779CC00D23E00 /* RixShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixShading.h; sourceTree = "<group>"; };
+		C3FAE5EB1D7779CC00D23E00 /* RixShadingBuiltin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixShadingBuiltin.h; sourceTree = "<group>"; };
+		C3FAE5EC1D7779CC00D23E00 /* RixShadingParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixShadingParam.h; sourceTree = "<group>"; };
+		C3FAE5ED1D7779CC00D23E00 /* RixShadingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixShadingUtils.h; sourceTree = "<group>"; };
+		C3FAE5EE1D7779CC00D23E00 /* RixSubdEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixSubdEval.h; sourceTree = "<group>"; };
+		C3FAE5EF1D7779CC00D23E00 /* RixVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixVolume.h; sourceTree = "<group>"; };
+		C3FAE5F01D7779CC00D23E00 /* RtxPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtxPlugin.h; sourceTree = "<group>"; };
+		C3FAE5F11D7779CC00D23E00 /* rx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rx.h; sourceTree = "<group>"; };
+		C3FAE6151D7779E200D23E00 /* libphonon.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libphonon.dylib; sourceTree = "<group>"; };
+		C3FAE6161D7779E200D23E00 /* libprman.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprman.dylib; sourceTree = "<group>"; };
 		C6A0FF2C0290799A04C91782 /* MacRib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MacRib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,10 +118,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A6B9EF0C076CE300C27891 /* mathlink.framework in Frameworks */,
+				C3FACF631D7767AE00D23E00 /* mathlink.framework in Frameworks */,
+				C3FAFB3E1D7779F000D23E00 /* libprman.dylib in Frameworks */,
 				C3846FD50C10B7C00061A955 /* CoreFoundation.framework in Frameworks */,
+				C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */,
 				C38471150C10B8980061A955 /* IOKit.framework in Frameworks */,
-				C30A11950C11D1FE00C673B2 /* libprmansdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				08FB7795FE84155DC02AAC07 /* Source */,
-				C3ACEEA9070BABB9008D6CBC /* RenderMan */,
-				C3ACEE9F070BAB88008D6CBC /* Mathematica */,
+				C3FAE5641D77799B00D23E00 /* MathLink */,
+				C3FAFB641D777A1300D23E00 /* RenderMan */,
 				C30A10B00C11D1E700C673B2 /* Frameworks */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -161,50 +172,84 @@
 			path = /Applications/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions;
 			sourceTree = "<absolute>";
 		};
-		C30A117A0C11D1FE00C673B2 /* include */ = {
+		C3FAE5641D77799B00D23E00 /* MathLink */ = {
 			isa = PBXGroup;
 			children = (
-				C30A117B0C11D1FE00C673B2 /* dtex.h */,
-				C30A117C0C11D1FE00C673B2 /* ImplicitField.h */,
-				C30A117D0C11D1FE00C673B2 /* ndspy.h */,
-				C30A117E0C11D1FE00C673B2 /* pointcloud.h */,
-				C30A117F0C11D1FE00C673B2 /* ri.h */,
-				C30A11800C11D1FE00C673B2 /* RifFilter.h */,
-				C30A11810C11D1FE00C673B2 /* RifPlugin.h */,
-				C30A11820C11D1FE00C673B2 /* RixInterfaces.h */,
-				C30A11830C11D1FE00C673B2 /* RslPlugin.h */,
-				C30A11840C11D1FE00C673B2 /* rx.h */,
-				C30A11850C11D1FE00C673B2 /* shadeop.h */,
-				C30A11860C11D1FE00C673B2 /* slo.h */,
+				C3FAE5651D7779B200D23E00 /* mathlink.h */,
+				C3FACF621D7767AE00D23E00 /* mathlink.framework */,
+			);
+			name = MathLink;
+			sourceTree = "<group>";
+		};
+		C3FAE5661D7779CC00D23E00 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C3FAE5671D7779CC00D23E00 /* brickmap.h */,
+				C3FAE5681D7779CC00D23E00 /* dtex.h */,
+				C3FAE5691D7779CC00D23E00 /* ImplicitField.h */,
+				C3FAE56A1D7779CC00D23E00 /* ndspy.h */,
+				C3FAE56B1D7779CC00D23E00 /* pointcloud.h */,
+				C3FAE56C1D7779CC00D23E00 /* prmanapi.h */,
+				C3FAE5CA1D7779CC00D23E00 /* ri.h */,
+				C3FAE5CB1D7779CC00D23E00 /* ri.hpp */,
+				C3FAE5CC1D7779CC00D23E00 /* Ric.h */,
+				C3FAE5CD1D7779CC00D23E00 /* RifFilter.h */,
+				C3FAE5CE1D7779CC00D23E00 /* RifPlugin.h */,
+				C3FAE5CF1D7779CC00D23E00 /* RiTypesHelper.h */,
+				C3FAE5D01D7779CC00D23E00 /* RixBxdf.h */,
+				C3FAE5D11D7779CC00D23E00 /* RixBxdfLobe.h */,
+				C3FAE5D21D7779CC00D23E00 /* RixColorTemperature.h */,
+				C3FAE5D31D7779CC00D23E00 /* RixColorUtils.h */,
+				C3FAE5D41D7779CC00D23E00 /* RixDeepTexture.h */,
+				C3FAE5D51D7779CC00D23E00 /* RixDisplacement.h */,
+				C3FAE5D61D7779CC00D23E00 /* RixDisplayFilter.h */,
+				C3FAE5D71D7779CC00D23E00 /* RixIES.h */,
+				C3FAE5D81D7779CC00D23E00 /* RixIESInline.h */,
+				C3FAE5D91D7779CC00D23E00 /* RixIntegrator.h */,
+				C3FAE5DA1D7779CC00D23E00 /* RixInterfaces.h */,
+				C3FAE5DB1D7779CC00D23E00 /* RixLight.h */,
+				C3FAE5DC1D7779CC00D23E00 /* RixLightFilter.h */,
+				C3FAE5DD1D7779CC00D23E00 /* RixLighting.h */,
+				C3FAE5DE1D7779CC00D23E00 /* RixLPE.h */,
+				C3FAE5DF1D7779CC00D23E00 /* RixLPEInline.h */,
+				C3FAE5E01D7779CC00D23E00 /* RixPattern.h */,
+				C3FAE5E11D7779CC00D23E00 /* RixPhotonGuiding.h */,
+				C3FAE5E21D7779CC00D23E00 /* RixProjection.h */,
+				C3FAE5E31D7779CC00D23E00 /* RixRIB.h */,
+				C3FAE5E41D7779CC00D23E00 /* RixRIBParser.h */,
+				C3FAE5E51D7779CC00D23E00 /* RixRiCtl.h */,
+				C3FAE5E61D7779CC00D23E00 /* RixRNG.h */,
+				C3FAE5E71D7779CC00D23E00 /* RixRNGInline.h */,
+				C3FAE5E81D7779CC00D23E00 /* RixRNGProgressive.h */,
+				C3FAE5E91D7779CC00D23E00 /* RixSampleFilter.h */,
+				C3FAE5EA1D7779CC00D23E00 /* RixShading.h */,
+				C3FAE5EB1D7779CC00D23E00 /* RixShadingBuiltin.h */,
+				C3FAE5EC1D7779CC00D23E00 /* RixShadingParam.h */,
+				C3FAE5ED1D7779CC00D23E00 /* RixShadingUtils.h */,
+				C3FAE5EE1D7779CC00D23E00 /* RixSubdEval.h */,
+				C3FAE5EF1D7779CC00D23E00 /* RixVolume.h */,
+				C3FAE5F01D7779CC00D23E00 /* RtxPlugin.h */,
+				C3FAE5F11D7779CC00D23E00 /* rx.h */,
 			);
 			name = include;
-			path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/include";
+			path = "/Applications/Pixar/RenderManProServer-21.0/include";
 			sourceTree = "<absolute>";
 		};
-		C30A11870C11D1FE00C673B2 /* lib */ = {
+		C3FAE5F21D7779E200D23E00 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C30A11880C11D1FE00C673B2 /* libprmansdk.a */,
+				C3FAE6151D7779E200D23E00 /* libphonon.dylib */,
+				C3FAE6161D7779E200D23E00 /* libprman.dylib */,
 			);
 			name = lib;
-			path = "/Applications/Pixar/devkit/devkit.OSX-10.4.X86/lib";
+			path = "/Applications/Pixar/RenderManProServer-21.0/lib";
 			sourceTree = "<absolute>";
 		};
-		C3ACEE9F070BAB88008D6CBC /* Mathematica */ = {
+		C3FAFB641D777A1300D23E00 /* RenderMan */ = {
 			isa = PBXGroup;
 			children = (
-				C3A6B9EA0C076CE300C27891 /* mathlink.framework */,
-				C3ACEEA1070BAB88008D6CBC /* mathlink.h */,
-			);
-			name = Mathematica;
-			path = /Applications/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions;
-			sourceTree = "<absolute>";
-		};
-		C3ACEEA9070BABB9008D6CBC /* RenderMan */ = {
-			isa = PBXGroup;
-			children = (
-				C30A117A0C11D1FE00C673B2 /* include */,
-				C30A11870C11D1FE00C673B2 /* lib */,
+				C3FAE5F21D7779E200D23E00 /* lib */,
+				C3FAE5661D7779CC00D23E00 /* include */,
 			);
 			name = RenderMan;
 			sourceTree = "<group>";
@@ -249,7 +294,7 @@
 				LastUpgradeCheck = 0800;
 			};
 			buildConfigurationList = C3A6B9E10C076C1500C27891 /* Build configuration list for PBXProject "MacRib" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -299,70 +344,55 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(PROJECT_DIR)/**",
+					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = "$(HOME)/bin";
-				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/devkit.OSX-10.4.X86/lib\"/**";
+				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
+				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
-				WARNING_CFLAGS = "-Wno-long-double";
-				ZERO_LINK = NO;
+				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
+				WARNING_CFLAGS = "";
 			};
 			name = Development;
 		};
 		C3A6B9DF0C076C1500C27891 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(PROJECT_DIR)/**",
+					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions\"";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				INSTALL_PATH = "$(HOME)/bin";
-				LIBRARY_SEARCH_PATHS = (
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_4)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/G4/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/devkit.OSX-10.4.1.X86/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_4 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/devkit.OSX-10.4.X86/lib\"";
-				PRODUCT_NAME = MacRib;
-				WARNING_CFLAGS = "-Wno-long-double";
-				ZERO_LINK = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
+				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
+				PRODUCT_NAME = MacRib.exe;
+				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
+				WARNING_CFLAGS = "";
 			};
 			name = Deployment;
 		};
 		C3A6B9E00C076C1500C27891 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(PROJECT_DIR)/**",
+					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions\"";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				INSTALL_PATH = "$(HOME)/bin";
-				LIBRARY_SEARCH_PATHS = (
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_4)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/G4/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/devkit.OSX-10.4.1.X86/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_4 = "\"$(SYSTEM_APPS_DIR)/Pixar/devkit/devkit.OSX-10.4.X86/lib\"";
-				PRODUCT_NAME = MacRib;
-				WARNING_CFLAGS = "-Wno-long-double";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
+				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
+				PRODUCT_NAME = MacRib.exe;
+				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
+				WARNING_CFLAGS = "";
 			};
 			name = Default;
 		};
