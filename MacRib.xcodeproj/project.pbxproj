@@ -9,15 +9,12 @@
 /* Begin PBXBuildFile section */
 		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* MacRib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* MacRib.1 */; };
-		C30A11AD0C11D36200C673B2 /* installpkg.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = C31FCB080714754B00C06E91 /* installpkg.sh */; };
-		C374EFE30C11FB1400635290 /* RibGlue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C374EFE20C11FB1400635290 /* RibGlue.h */; };
 		C3846FD50C10B7C00061A955 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3846FAA0C10B7BF0061A955 /* CoreFoundation.framework */; };
 		C38471150C10B8980061A955 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38470750C10B8980061A955 /* IOKit.framework */; };
 		C38C1D02070BB96500A962E5 /* MacRib.tm in Sources */ = {isa = PBXBuildFile; fileRef = C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */; };
 		C38C1D2F070CAED400A962E5 /* RibGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = C38C1D2D070CAED400A962E5 /* RibGlue.c */; };
-		C3ACEF0B070BB4FB008D6CBC /* MacRib.tm in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */; };
 		C3FACF631D7767AE00D23E00 /* mathlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FACF621D7767AE00D23E00 /* mathlink.framework */; };
-		C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6151D7779E200D23E00 /* libphonon.dylib */; };
+		C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6151D7779E200D23E00 /* libphonon.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C3FAFB3E1D7779F000D23E00 /* libprman.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6161D7779E200D23E00 /* libprman.dylib */; };
 /* End PBXBuildFile section */
 
@@ -39,13 +36,10 @@
 		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76FB00486AB0100D96B5E /* MacRib.1 in CopyFiles */,
-				C3ACEF0B070BB4FB008D6CBC /* MacRib.tm in CopyFiles */,
-				C30A11AD0C11D36200C673B2 /* installpkg.sh in CopyFiles */,
-				C374EFE30C11FB1400635290 /* RibGlue.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -342,128 +336,60 @@
 		C3A6B9DE0C076C1500C27891 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
-				WARNING_CFLAGS = "";
 			};
 			name = Development;
 		};
 		C3A6B9DF0C076C1500C27891 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
-				WARNING_CFLAGS = "";
 			};
 			name = Deployment;
 		};
 		C3A6B9E00C076C1500C27891 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
-				WARNING_CFLAGS = "";
 			};
 			name = Default;
 		};
 		C3A6B9E20C076C1500C27891 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		C3A6B9E30C076C1500C27891 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Deployment;
 		};
 		C3A6B9E40C076C1500C27891 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Default;
 		};

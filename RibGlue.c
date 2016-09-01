@@ -219,7 +219,7 @@ void gRiGetContext(void)
 	return;
 }
 
-int gRiContext(int ip)
+int gRiContext(void* ip)
 {
 	RtContextHandle ctx;
 
@@ -278,7 +278,7 @@ int gRiDepthOfField(double fstop, double focallength, double focaldistance) {RiD
 int gRiShutter(double min, double max) {RiShutter(min,max); return RiLastError;}
 
 int gRiPixelVariance(double variation){ RiPixelVariance(variation); return RiLastError; }
-int gRiPixelFidelity(double variation){ RiPixelFidelity(variation); return RiLastError; }
+int gRiPixelFidelity(double variation){ /* RiPixelFidelity(variation); */ return RiLastError; }
 int gRiPixelSamples(double xsamples, double ysamples){ RiPixelSamples(xsamples, ysamples); return RiLastError; }
 //int gRiPixelFilter(RtFilterFunc filterfunc, float xwidth, float ywidth){ RiPixelFilter(filterfunc, xwidth, ywidth); return RiLastError; }
 int gRiExposure(double gain, double gamma){ RiExposure(gain, gamma); return RiLastError; }
@@ -463,7 +463,7 @@ error:
 	return;
 }
 
-int gRiIlluminate(int ip, char* state)
+int gRiIlluminate(void* ip, char* state)
 {
 	RtLightHandle light = (RtLightHandle)ip;
 	RiIlluminate(light,strcmp(state,"True")?1:0);
@@ -587,10 +587,11 @@ int gRiTransform(void)
 {
 	RtMatrix m;
 	float *mp = (float*)m;
-	double *a; long *dims;
-	char **heads; long d,i; int err = 0;
+	double *a; int *dims;
+	char **heads;
+    long i; int d, err = 0;
 	
-	MLGetRealArray(stdlink,&a,&dims,&heads,&d);
+	MLGetReal64Array(stdlink,&a,&dims,&heads,&d);
 	if(d!=2 || dims[0]!=4 || dims[1]!=4){
 		err = RIE_MISSINGDATA;
 		goto error;
@@ -601,18 +602,19 @@ int gRiTransform(void)
 	RiTransform(m);
 
 error:	
-	MLDisownRealArray(stdlink,a,dims,heads,d);
+	MLReleaseReal64Array(stdlink,a,dims,heads,d);
 	return err;
 }
 
 int gRiConcatTransform(RtMatrix transform)
 {
-	RtMatrix m;
-	float *mp = (float*)m;
-	double *a; long *dims;
-	char **heads; long d,i; int err = 0;
+    RtMatrix m;
+    float *mp = (float*)m;
+    double *a; int *dims;
+    char **heads;
+    long i; int d, err = 0;
 	
-	MLGetRealArray(stdlink,&a,&dims,&heads,&d);
+	MLGetReal64Array(stdlink,&a,&dims,&heads,&d);
 	if(d!=2 || dims[0]!=4 || dims[1]!=4){
 		err = RIE_MISSINGDATA;
 		goto error;
@@ -623,7 +625,7 @@ int gRiConcatTransform(RtMatrix transform)
 	RiConcatTransform(m);
 
 error:	
-	MLDisownRealArray(stdlink,a,dims,heads,d);
+	MLReleaseReal64Array(stdlink,a,dims,heads,d);
 	return err;
 }
 
@@ -684,12 +686,12 @@ void gRiTransformPoints(char* fromspace, char* tospace)
 {
 	RtPoint *m;
 	float *mp;
-	double *a,*ap; long *dims;
-    char **heads; long d,i;
+	double *a,*ap; int *dims, d;
+    char **heads; long i;
 	
-	MLGetRealArray(stdlink,&a,&dims,&heads,&d);
+	MLGetReal64Array(stdlink,&a,&dims,&heads,&d);
 	if(d!=2 || dims[1]!=3){
-		MLDisownRealArray(stdlink,a,dims,heads,d);
+		MLReleaseReal64Array(stdlink,a,dims,heads,d);
 		a=NULL;
 		return;
 	}
@@ -704,7 +706,7 @@ void gRiTransformPoints(char* fromspace, char* tospace)
 	for(mp=(float*)m,ap=a,i=0;i<dims[0]*dims[1];i++,mp++,ap++)
 			*ap=*mp;
 	
-	MLPutRealArray(stdlink,a,dims,NULL,d);
+	MLPutReal64Array(stdlink,a, dims,NULL,d);
 	
 	free(m);
 
@@ -1037,7 +1039,7 @@ void gRiObjectBegin(void)
 
 int gRiObjectEnd(void){ RiObjectEnd(); return RiLastError; }
 
-int gRiObjectInstance(int op)
+int gRiObjectInstance(void* op)
 {
 	RtObjectHandle obj;
 
