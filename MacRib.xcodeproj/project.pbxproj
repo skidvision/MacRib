@@ -13,8 +13,7 @@
 		C38471150C10B8980061A955 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38470750C10B8980061A955 /* IOKit.framework */; };
 		C38C1D02070BB96500A962E5 /* MacRib.tm in Sources */ = {isa = PBXBuildFile; fileRef = C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */; };
 		C38C1D2F070CAED400A962E5 /* RibGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = C38C1D2D070CAED400A962E5 /* RibGlue.c */; };
-		C3FACF631D7767AE00D23E00 /* mathlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FACF621D7767AE00D23E00 /* mathlink.framework */; };
-		C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6151D7779E200D23E00 /* libphonon.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C399FE881D78D98600E991B2 /* libMLi4.36.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C399FE871D78D98600E991B2 /* libMLi4.36.a */; };
 		C3FAFB3E1D7779F000D23E00 /* libprman.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FAE6161D7779E200D23E00 /* libprman.dylib */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +52,9 @@
 		C3846FAA0C10B7BF0061A955 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		C38470750C10B8980061A955 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		C38C1D2D070CAED400A962E5 /* RibGlue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RibGlue.c; sourceTree = "<group>"; };
+		C399FE861D78D97C00E991B2 /* mathlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathlink.h; path = "/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/mathlink.h"; sourceTree = "<absolute>"; };
+		C399FE871D78D98600E991B2 /* libMLi4.36.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMLi4.36.a; path = "/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/libMLi4.36.a"; sourceTree = "<absolute>"; };
 		C3ACEEF3070BAFF2008D6CBC /* MacRib.tm */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = MacRib.tm; sourceTree = "<group>"; };
-		C3FACF621D7767AE00D23E00 /* mathlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mathlink.framework; path = "/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/mathlink.framework"; sourceTree = "<absolute>"; };
-		C3FAE5651D7779B200D23E00 /* mathlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathlink.h; path = "../../../../Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/mathlink.framework/Headers/mathlink.h"; sourceTree = "<group>"; };
 		C3FAE5671D7779CC00D23E00 /* brickmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brickmap.h; sourceTree = "<group>"; };
 		C3FAE5681D7779CC00D23E00 /* dtex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtex.h; sourceTree = "<group>"; };
 		C3FAE5691D7779CC00D23E00 /* ImplicitField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitField.h; sourceTree = "<group>"; };
@@ -102,8 +101,7 @@
 		C3FAE5EF1D7779CC00D23E00 /* RixVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RixVolume.h; sourceTree = "<group>"; };
 		C3FAE5F01D7779CC00D23E00 /* RtxPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtxPlugin.h; sourceTree = "<group>"; };
 		C3FAE5F11D7779CC00D23E00 /* rx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rx.h; sourceTree = "<group>"; };
-		C3FAE6151D7779E200D23E00 /* libphonon.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libphonon.dylib; sourceTree = "<group>"; };
-		C3FAE6161D7779E200D23E00 /* libprman.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libprman.dylib; sourceTree = "<group>"; };
+		C3FAE6161D7779E200D23E00 /* libprman.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprman.dylib; path = "/Applications/Pixar/RenderManProServer-21.0/lib/libprman.dylib"; sourceTree = "<absolute>"; };
 		C6A0FF2C0290799A04C91782 /* MacRib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MacRib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,11 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FACF631D7767AE00D23E00 /* mathlink.framework in Frameworks */,
 				C3FAFB3E1D7779F000D23E00 /* libprman.dylib in Frameworks */,
 				C3846FD50C10B7C00061A955 /* CoreFoundation.framework in Frameworks */,
-				C3FAFB3D1D7779F000D23E00 /* libphonon.dylib in Frameworks */,
 				C38471150C10B8980061A955 /* IOKit.framework in Frameworks */,
+				C399FE881D78D98600E991B2 /* libMLi4.36.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				08FB7795FE84155DC02AAC07 /* Source */,
-				C3FAE5641D77799B00D23E00 /* MathLink */,
 				C3FAFB641D777A1300D23E00 /* RenderMan */,
+				C399FE891D78DA3900E991B2 /* MathLink Static */,
 				C30A10B00C11D1E700C673B2 /* Frameworks */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -166,13 +163,13 @@
 			path = /Applications/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit/CompilerAdditions;
 			sourceTree = "<absolute>";
 		};
-		C3FAE5641D77799B00D23E00 /* MathLink */ = {
+		C399FE891D78DA3900E991B2 /* MathLink Static */ = {
 			isa = PBXGroup;
 			children = (
-				C3FAE5651D7779B200D23E00 /* mathlink.h */,
-				C3FACF621D7767AE00D23E00 /* mathlink.framework */,
+				C399FE861D78D97C00E991B2 /* mathlink.h */,
+				C399FE871D78D98600E991B2 /* libMLi4.36.a */,
 			);
-			name = MathLink;
+			name = "MathLink Static";
 			sourceTree = "<group>";
 		};
 		C3FAE5661D7779CC00D23E00 /* include */ = {
@@ -229,20 +226,10 @@
 			path = "/Applications/Pixar/RenderManProServer-21.0/include";
 			sourceTree = "<absolute>";
 		};
-		C3FAE5F21D7779E200D23E00 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				C3FAE6151D7779E200D23E00 /* libphonon.dylib */,
-				C3FAE6161D7779E200D23E00 /* libprman.dylib */,
-			);
-			name = lib;
-			path = "/Applications/Pixar/RenderManProServer-21.0/lib";
-			sourceTree = "<absolute>";
-		};
 		C3FAFB641D777A1300D23E00 /* RenderMan */ = {
 			isa = PBXGroup;
 			children = (
-				C3FAE5F21D7779E200D23E00 /* lib */,
+				C3FAE6161D7779E200D23E00 /* libprman.dylib */,
 				C3FAE5661D7779CC00D23E00 /* include */,
 			);
 			name = RenderMan;
@@ -336,11 +323,6 @@
 		C3A6B9DE0C076C1500C27891 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/**",
-					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
-				);
-				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
@@ -350,11 +332,6 @@
 		C3A6B9DF0C076C1500C27891 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/**",
-					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
-				);
-				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
@@ -364,11 +341,6 @@
 		C3A6B9E00C076C1500C27891 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/**",
-					"\"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions/**\"",
-				);
-				LIBRARY_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib/**";
 				MLDEV = "$(SYSTEM_APPS_DIR)/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
 				PRODUCT_NAME = MacRib.exe;
 				RMANTREE = "$(SYSTEM_APPS_DIR)/Pixar/RenderManProServer-21.0";
@@ -378,18 +350,33 @@
 		C3A6B9E20C076C1500C27891 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib /Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
+				LIBRARY_SEARCH_PATHS = (
+					"/Applications/Pixar/RenderManProServer-21.0/lib",
+					"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions",
+				);
 			};
 			name = Development;
 		};
 		C3A6B9E30C076C1500C27891 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib /Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
+				LIBRARY_SEARCH_PATHS = (
+					"/Applications/Pixar/RenderManProServer-21.0/lib",
+					"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions",
+				);
 			};
 			name = Deployment;
 		};
 		C3A6B9E40C076C1500C27891 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "/Applications/Pixar/RenderManProServer-21.0/lib /Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions";
+				LIBRARY_SEARCH_PATHS = (
+					"/Applications/Pixar/RenderManProServer-21.0/lib",
+					"/Applications/Mathematica.app/Contents/SystemFiles/Links/MathLink/DeveloperKit/MacOSX-x86-64/CompilerAdditions",
+				);
 			};
 			name = Default;
 		};
