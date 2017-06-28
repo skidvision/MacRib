@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8DD76FA90486AB0100D96B5E"
-               BuildableName = "MacRib"
+               BuildableName = "MacRib.exe"
                BlueprintName = "MacRib"
                ReferencedContainer = "container:MacRib.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8DD76FA90486AB0100D96B5E"
-            BuildableName = "MacRib"
+            BuildableName = "MacRib.exe"
             BlueprintName = "MacRib"
             ReferencedContainer = "container:MacRib.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8DD76FA90486AB0100D96B5E"
-            BuildableName = "MacRib"
+            BuildableName = "MacRib.exe"
             BlueprintName = "MacRib"
             ReferencedContainer = "container:MacRib.xcodeproj">
          </BuildableReference>
@@ -81,7 +81,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8DD76FA90486AB0100D96B5E"
-            BuildableName = "MacRib"
+            BuildableName = "MacRib.exe"
             BlueprintName = "MacRib"
             ReferencedContainer = "container:MacRib.xcodeproj">
          </BuildableReference>

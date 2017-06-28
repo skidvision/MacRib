@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # installpkg.sh
 # RenderMan
@@ -10,15 +10,18 @@
 #
 #
 
+set -x
 PKG_NAME=RenderMan
-MMAPKGS=/Library/Mathematica/Applications
+
+MMAPKGS=~/Library/Mathematica/Applications
 PKG_DIR=$MMAPKGS/$PKG_NAME
-PLATFORM=MacOSX-x86
+PLATFORM=MacOSX-x86-64
 
 echo "Installing Mathematica Packages into $MMAPKGS"
 
-# can the old one
-rm -rf $PKG_DIR
+if [ -d ${PKG_DIR} ] ; then
+    /bin/rm -rf ${PKG_DIR}
+fi
 
 # move most recent package files into real directory 
 #cp $SOURCE_ROOT/package/$PKG_NAME/Internal/Source/*.m $SOURCE_ROOT/package/$PKG_NAME
@@ -26,7 +29,10 @@ rm -rf $PKG_DIR
 
 # install in mma package directory
 cp -r $SOURCE_ROOT/package/$PKG_NAME $MMAPKGS
+
+
 # copy executable
+mkdir -p $MMAPKGS/$PKG_NAME/$EXECUTABLE_NAME/$PLATFORM/
 cp $TARGET_BUILD_DIR/$EXECUTABLE_NAME $MMAPKGS/$PKG_NAME/$EXECUTABLE_NAME/$PLATFORM/
 
 # kill source
